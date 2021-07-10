@@ -1,8 +1,7 @@
 @charset 'UTF-8';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-* {   
-    background-color:#FFE6FA; 
+* {
     border:0;
     margin:0;
     padding:0;
@@ -10,33 +9,42 @@
     font-family: 'Open Sans', sans-serif; 
 }
 
-video { 
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    opacity:0.9;
-}
 
-/* Padrão das tags */
-header, .contando { display:block; margin:auto; text-align:center; }
+/* Padrão */
+header, .cont { display:block; margin:auto; text-align:center; }
+
+
+/* section */
+section {
+    position:absolute;
+    right:0;
+    width:100%;
+    min-height:100vh;
+    padding:100px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    transition:.7s;
+    z-index:2;
+}
 
 
 /* Cabeçalho */
+header { 
+    position:relative;
+    top:0;
+    left:0;
+    width:40%;
+    z-index:1;
+    justify-content:space-between;
+    align-items:center;
+}
 
 h1, .life { font-size:65px; font-family:Calibri; }
 
-.life { 
-    background-color:#26AD73; 
-    color:#F2F2F2; 
-    padding:7px; 
-    border-radius:15px; 
-}
+.life { background-color:#26AD73; border-radius:15px; color:#F2F2F2; padding:7px; }
 
-
-.contando { 
+.cont { 
     background-color:#FABD39;
     border-radius:19px;
     padding:9px;
@@ -45,4 +53,29 @@ h1, .life { font-size:65px; font-family:Calibri; }
     width:240px;
     margin-top:10px;
  }
+
+
+/* Configurações do vídeo */
+section video { 
+    position:absolute; 
+    top:0; 
+    left:0; 
+    width:100%; 
+    height:100%; 
+    object-fit:cover; 
+    opacity:.90; 
+}
+
+
+/* Para dispositivos menores */
+@media screen and (max-width:900px) {
+
+    header { width:100%; }
+}
+
+@media screen and (max-width:700px) {
+
+    header { width:100px; }
+}
+ 
 
