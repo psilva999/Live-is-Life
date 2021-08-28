@@ -27,6 +27,30 @@ body {
    object-fit:cover;
    opacity:.8;
    display:block;
+   animation:borrado 2s;
+   animation-fill-mode:forwards;
+}
+
+@keyframes borrado {
+   0% {
+      filter:blur(0px);
+   }
+
+   25% {
+      filter:blur(.5px);
+   }
+
+   50% {
+      filter:blur(1px);
+   }
+
+   75% {
+      filter:blur(1.5px);
+   }
+
+   100% {
+      filter:blur(2px);
+   }
 }
 
 section {
@@ -79,7 +103,7 @@ header {
    margin-top:300px;
    font-size:15px;
    user-select:none;
-   animation:mostraInicio 4.5s;
+   animation:mostraInicio 5s;
 }
 
 @keyframes mostraInicio {
@@ -106,8 +130,7 @@ header {
    margin-left:27px;
    font-size:35px;
    transform:rotate(90deg);
-   opacity:1;
-   animation:light 1.6s infinite;
+   animation:light 1.5s infinite;
 }
 
 @keyframes light {
