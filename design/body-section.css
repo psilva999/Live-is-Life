@@ -27,17 +27,13 @@ body {
    object-fit:cover;
    opacity:.8;
    display:block;
-   animation:borrado 2s;
+   animation:borrado 1.5s;
    animation-fill-mode:forwards;
 }
 
 @keyframes borrado {
    0% {
       filter:blur(0px);
-   }
-
-   50% {
-      filter:blur(1px);
    }
 
    100% {
