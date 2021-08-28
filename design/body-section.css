@@ -4,6 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&display=swap');
 
+/* font-family: 'Baloo Thambi 2', cursive; */
+
 * {
    border:0;
    margin:0;
@@ -36,23 +38,116 @@ section {
    align-items:center;
 }
 
-h1 {
+header {
+   display:flex;
+   margin-top:-100px;
+   justify-content:center;
+   align-items:center;
+}
+
+.life, .cont, .start {
+   letter-spacing:4px;
    font-family: 'Kalam', cursive;
+   color:#dac8c8;
+}
+
+.life {
    font-size:60px;
    text-transform:uppercase;
 }
 
 .cont { 
-   background:#D8A360;
    position:absolute;
    display:block;
-   margin-left:200px;
-   margin-top:-33px;
-   border-radius:13px;
-   padding:4px;
-   font-family: 'Baloo Thambi 2', cursive;
-   text-transform:uppercase;
+   margin-left:260px;
+   margin-top:80px;
    font-size:17px;
    transform:rotate(-6deg);
    opacity:.8;
- }
+}
+
+.start {
+   position:absolute;
+   background:none;
+   cursor:pointer;
+   display:block;
+   margin-top:300px;
+   font-size:17px;
+}
+
+.rotacionar {
+   position:absolute;
+   display:block;
+   margin-top:-20px;
+   margin-left:21px;
+   padding:5px;
+   font-size:50px;
+   transform:rotate(90deg);
+}
+
+@media (max-width:768px) {
+
+   .life {
+      font-size:50px;
+   }
+
+   .cont {
+      font-size:15px;
+      margin-left:225px;
+      margin-top:60px;
+   }
+
+   .start {
+      font-size:15px;
+   }
+
+   .rotacionar {
+      font-size:40px;
+   }
+}
+
+@media (max-width:500px) {
+
+   .life {
+      font-size:35px;
+   }
+
+   .cont {
+      font-size:12px;
+      margin-left:160px;
+      margin-top:50px;
+   }
+
+   .start {
+      font-size:13px;
+   }
+
+   .rotacionar {
+      margin-left:18px;
+      font-size:35px;
+   }
+}
+
+@media (max-height:400px) {
+
+   header {
+      position:absolute;
+      margin-top:20px;
+      top:0;
+   }
+
+   .cont {
+      width:169px;
+      font-size:12px;
+      margin-top:50px;
+   }
+
+   .start {
+      margin-top:200px;
+      font-size:12px;
+   }
+
+   .rotacionar {
+      margin-left:16px;
+   }
+}
