@@ -19,14 +19,14 @@ body {
 }
 
 .background {
-   position:absolute;
+   position:fixed;
    top:0;
    left:0;
-   width:100%;
-   height:100%;
+   width:100vw;
+   height:100vh;
    object-fit:cover;
-   filter:blur(5px);
    opacity:.8;
+   display:block;
 }
 
 section {
@@ -54,6 +54,7 @@ header {
 .life {
    font-size:60px;
    text-transform:uppercase;
+   animation:mostraInicio 2s;
 }
 
 .cont { 
@@ -63,7 +64,7 @@ header {
    margin-top:80px;
    font-size:17px;
    transform:rotate(-6deg);
-   opacity:.8;
+   animation:mostraInicio 3.5s;
 }
 
 .start {
@@ -73,12 +74,26 @@ header {
    position:absolute;
    padding-bottom:60px;
    padding-top:0px;
-   display:flex;
-   cursor:pointer;
    display:block;
+   cursor:pointer;
    margin-top:300px;
    font-size:15px;
    user-select:none;
+   animation:mostraInicio 4.5s;
+}
+
+@keyframes mostraInicio {
+   0% {
+      opacity:0;
+   }
+
+   50% {
+      opacity:0;
+   }
+
+   100% {
+      opacity:1;
+   }
 }
 
 .rotacionar {
@@ -91,6 +106,22 @@ header {
    margin-left:27px;
    font-size:35px;
    transform:rotate(90deg);
+   opacity:1;
+   animation:light 1.6s infinite;
+}
+
+@keyframes light {
+   0% {
+      opacity:1;
+   }
+
+   50% {
+      opacity:0;
+   }
+
+   100% {
+      opacity:1;
+   }
 }
 
 @media (max-width:768px) {
@@ -113,8 +144,7 @@ header {
    }
 
    .cont {
-      font-size:12px;
-      margin-left:160px;
+      margin-left:150px;
       margin-top:50px;
    }
 
