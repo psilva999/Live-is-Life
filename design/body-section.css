@@ -50,26 +50,26 @@ section {
    align-items:center;
 }
 
-header {
+.convite {
    display:flex;
    margin-top:-100px;
    justify-content:center;
    align-items:center;
 }
 
-.life, .cont, .start {
+.convite h1, span, button {
    letter-spacing:4px;
    font-family: 'Kalam', cursive;
    color:#dac8c8;
 }
 
-.life {
+.convite h1 {
    font-size:60px;
    text-transform:uppercase;
    animation:mostraInicio 1.5s;
 }
 
-.cont { 
+.convite span { 
    position:absolute;
    display:block;
    margin-left:260px;
@@ -79,7 +79,7 @@ header {
    animation:mostraInicio 3.0s;
 }
 
-.start {
+.convite button {
    background:none;
    border-radius:10px;
    height:63px;
@@ -108,7 +108,7 @@ header {
    }
 }
 
-.rotacionar {
+.convite .rotacionar {
    border-radius:50px;
    position:absolute;
    display:flex;
@@ -137,11 +137,11 @@ header {
 
 @media (max-width:768px) {
 
-   .life {
+   .convite h1 {
       font-size:50px;
    }
 
-   .cont {
+   .convite span {
       font-size:15px;
       margin-left:225px;
       margin-top:60px;
@@ -150,40 +150,44 @@ header {
 
 @media (max-width:500px) {
 
-   .life {
+   .convite h1 {
       font-size:35px;
    }
 
-   .cont {
+   .convite span {
       margin-left:150px;
       margin-top:50px;
    }
 
-   .start {
+   .convite button {
       padding-bottom:26px;
       font-size:13px;
    }
 
-   .rotacionar {
+   .convite .rotacionar {
       font-size:30px;
    }
 }
 
 @media (max-height:400px) {
 
-   header {
+   .convite {
       position:absolute;
       margin-top:20px;
       top:0;
    }
 
-   .cont {
+   .convite span {
       width:169px;
       font-size:12px;
       margin-top:50px;
    }
 
-   .start {
+   .convite button {
       margin-top:200px;
+   }
+
+   .convite .rotacionar {
+      margin-left:-45px;
    }
 }
