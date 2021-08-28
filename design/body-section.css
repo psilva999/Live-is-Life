@@ -67,21 +67,27 @@ header {
 }
 
 .start {
-   position:absolute;
    background:none;
+   height:40px;
+   position:absolute;
+   padding-bottom:60px;
+   padding-top:0px;
+   display:flex;
    cursor:pointer;
    display:block;
    margin-top:300px;
-   font-size:17px;
+   font-size:15px;
+   user-select:none;
 }
 
 .rotacionar {
    position:absolute;
-   display:block;
-   margin-top:-20px;
-   margin-left:21px;
-   padding:5px;
-   font-size:50px;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   margin-top:-2px;
+   margin-left:27px;
+   font-size:35px;
    transform:rotate(90deg);
 }
 
@@ -95,14 +101,6 @@ header {
       font-size:15px;
       margin-left:225px;
       margin-top:60px;
-   }
-
-   .start {
-      font-size:15px;
-   }
-
-   .rotacionar {
-      font-size:40px;
    }
 }
 
@@ -119,12 +117,12 @@ header {
    }
 
    .start {
+      padding-bottom:50px;
       font-size:13px;
    }
 
    .rotacionar {
-      margin-left:18px;
-      font-size:35px;
+      font-size:30px;
    }
 }
 
@@ -144,10 +142,5 @@ header {
 
    .start {
       margin-top:200px;
-      font-size:12px;
-   }
-
-   .rotacionar {
-      margin-left:16px;
    }
 }
