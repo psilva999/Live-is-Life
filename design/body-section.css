@@ -11,7 +11,6 @@
    margin:0;
    padding:0;
    box-sizing:border-box; 
-  
 }
 
 body {
@@ -51,35 +50,39 @@ section {
 }
 
 .convite {
+   display:none;
+}
+
+.convite.active {
    display:flex;
    margin-top:-100px;
    justify-content:center;
    align-items:center;
 }
 
-.convite h1, span, button {
+.convite.active h1, span, button {
    letter-spacing:4px;
    font-family: 'Kalam', cursive;
    color:#dac8c8;
 }
 
-.convite h1 {
+.convite.active h1 {
    font-size:60px;
    text-transform:uppercase;
-   animation:mostraInicio 1.5s;
+   animation:mostra 1.5s;
 }
 
-.convite span { 
+.convite.active span { 
    position:absolute;
    display:block;
    margin-left:260px;
    margin-top:80px;
    font-size:17px;
    transform:rotate(-6deg);
-   animation:mostraInicio 3.0s;
+   animation:mostra 3.0s;
 }
 
-.convite button {
+.convite.active button {
    background:none;
    border-radius:10px;
    height:63px;
@@ -91,10 +94,151 @@ section {
    margin-top:300px;
    font-size:15px;
    user-select:none;
-   animation:mostraInicio 4.5s;
+   animation:mostra 4.5s;
 }
 
-@keyframes mostraInicio {
+.convite.active .rotacionar {
+   border-radius:50px;
+   position:absolute;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   margin-top:-2px;
+   margin-left:27px;
+   font-size:35px;
+   transform:rotate(90deg);
+   animation:light 1.5s infinite;
+}
+
+#optar-musica {
+   display:none;
+}
+
+#optar-musica.active {
+   font-family: 'Kalam', cursive;
+   color:#dac8c8;
+   display:flex;
+   justify-content:center;
+   height:145px;
+   animation:mostra .5s;
+}
+
+#optar-musica.active h1 {
+   font-size:30px;
+}
+
+#optar-musica.active button {
+   background:none;
+   cursor:pointer;
+   position:absolute;
+   display:block;
+   margin-top:80px;
+   font-size:22px;
+}
+
+#optar-musica.active .sim, .no {
+   border-radius:20px;
+   padding:13px 30px 9px 30px;
+   opacity:.8;
+}
+
+#optar-musica.active .sim {
+   background:rgb(133, 172, 133);
+   margin-right:170px;
+}
+
+#optar-musica.active .no {
+   background:rgb(165, 118, 29);
+   margin-left:170px;
+}
+
+#optar-musica.active .sim:hover, .no:hover {
+   opacity:1;
+}
+
+@media (max-width:768px) {
+
+   .convite.active h1 {
+      font-size:50px;
+   }
+
+   .convite.active span {
+      font-size:15px;
+      margin-left:225px;
+      margin-top:60px;
+   }
+
+   #optar-musica.active {
+      height:130px;
+   }
+
+   #optar-musica.active h1 {
+      font-size:25px;
+   }
+
+   #optar-musica.active button {
+      font-size:15px;
+   }
+}
+
+@media (max-width:500px) {
+
+   .convite.active h1 {
+      font-size:35px;
+   }
+
+   .convite.active span {
+      margin-left:150px;
+      margin-top:50px;
+   }
+
+   .convite.active button {
+      padding-bottom:26px;
+      font-size:13px;
+   }
+
+   .convite.active .rotacionar {
+      font-size:30px;
+   }
+
+   #optar-musica.active {
+      height:115px;
+   }
+
+   #optar-musica.active h1 {
+      font-size:21px;
+   }
+
+   #optar-musica.active button {
+      margin-top:70px;
+      font-size:13px;
+   }
+}
+
+@media (max-height:400px) {
+
+   .convite.active {
+      position:absolute;
+      margin-top:20px;
+      top:0;
+   }
+
+   .convite.active span {
+      width:169px;
+      font-size:12px;
+      margin-top:50px;
+   }
+
+   .convite.active button {
+      margin-top:200px;
+   }
+
+   .convite.active .rotacionar {
+      margin-left:-45px;
+   }
+}
+
+@keyframes mostra {
    0% {
       opacity:0;
    }
@@ -106,19 +250,6 @@ section {
    100% {
       opacity:1;
    }
-}
-
-.convite .rotacionar {
-   border-radius:50px;
-   position:absolute;
-   display:flex;
-   justify-content:center;
-   align-items:center;
-   margin-top:-2px;
-   margin-left:27px;
-   font-size:35px;
-   transform:rotate(90deg);
-   animation:light 1.5s infinite;
 }
 
 @keyframes light {
@@ -132,62 +263,5 @@ section {
 
    100% {
       opacity:1;
-   }
-}
-
-@media (max-width:768px) {
-
-   .convite h1 {
-      font-size:50px;
-   }
-
-   .convite span {
-      font-size:15px;
-      margin-left:225px;
-      margin-top:60px;
-   }
-}
-
-@media (max-width:500px) {
-
-   .convite h1 {
-      font-size:35px;
-   }
-
-   .convite span {
-      margin-left:150px;
-      margin-top:50px;
-   }
-
-   .convite button {
-      padding-bottom:26px;
-      font-size:13px;
-   }
-
-   .convite .rotacionar {
-      font-size:30px;
-   }
-}
-
-@media (max-height:400px) {
-
-   .convite {
-      position:absolute;
-      margin-top:20px;
-      top:0;
-   }
-
-   .convite span {
-      width:169px;
-      font-size:12px;
-      margin-top:50px;
-   }
-
-   .convite button {
-      margin-top:200px;
-   }
-
-   .convite .rotacionar {
-      margin-left:-45px;
    }
 }
