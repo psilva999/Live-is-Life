@@ -1,0 +1,73 @@
+@charset 'UTF-8';
+
+#jornada {
+   display:none;
+}
+
+#jornada.active {
+   position:absolute;
+   top:5px;
+   border-radius:10px;
+   background:#dfdada;
+   width:75vw;
+   display:flex;
+   justify-content:center;
+   animation:mostra .2s;
+}
+
+#player {
+   display:none;
+}
+
+#player.active {
+   border-radius:10px;
+   position:fixed;
+   background:#c09e9e;
+   bottom:0;
+   height:40px;
+   width:350px;
+   display:flex; 
+   justify-content:space-between;
+   align-items:center;
+   padding:0px 9px 0px 9px;
+   opacity:.8;
+   animation:mostra .2s;
+}
+
+#player.active:hover {
+   opacity:1;
+}
+
+#jornada.active #formulario p {
+   display:block;
+   
+}
+
+#jornada.active #formulario p {
+   display:block;
+   margin:30px;
+}
+
+@media (max-width:500px) {
+   #jornada.active {
+      width:85vw;
+   }
+
+   #player.active {
+      width:100vw;
+   }
+}
+
+@keyframes mostra {
+   0% {
+      opacity:0;
+   }
+
+   50% {
+      opacity:0;
+   }
+
+   100% {
+      opacity:1;
+   }
+}

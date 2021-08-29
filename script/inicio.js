@@ -1,6 +1,9 @@
 var altera = {
    cabecalho: document.querySelector('.convite'),
-   optarMusica: document.querySelector('#optar-musica')
+   optarMusica: document.querySelector('#optar-musica'),
+
+   player: document.querySelector('#player'),
+   jornada: document.querySelector('#jornada')
 }
 
 var clicaNoBotao = {
@@ -17,9 +20,14 @@ clicaNoBotao.inicial.addEventListener('click', () => {
 })
 
 clicaNoBotao.aceitaSom.addEventListener('click', () => {
+   altera.optarMusica.classList.toggle('active')
 
+   altera.player.classList.toggle('active')
+   altera.jornada.classList.toggle('active')   
 })
 
 clicaNoBotao.recusaSom.addEventListener('click', () => {
+   altera.optarMusica.classList.toggle('active')
 
+   altera.jornada.classList.toggle('active')
 })

@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta charset="UTF-8">
 
-    <link rel="shortcut icon" type="image/x-icon" href="midia/images/mitty.ico">
-    <link rel="stylesheet" href="design/body-section.css">
+   <link rel="shortcut icon" type="image/x-icon" href="midia/images/mitty.ico">
+   <link rel="stylesheet" href="design/body-section-header-article.css">
 
-    <title>Live is Life</title>
+   <link rel="stylesheet" href="design/player-formulario.css">
+   <link rel="stylesheet" href="design/player.css">
+
+   <link rel="stylesheet" href="design/pause-play.css">
+
+   <title>Live is Life</title>
 </head>
 
 <body>
@@ -31,6 +36,44 @@
          <button class="no">Não</button>
       </article>
 
+      <article id="jornada">
+
+         <div id="player">
+            <img src="midia/images/skip-back.svg" class="skip">
+            <img src="midia/images/back-15-seconds.svg" class="opta-15-segundos">
+
+            <div class="play-pause">
+               <div class="play"></div>
+
+               <div class="pause active"></div>
+            </div>
+
+            <img src="midia/images/skip-15-seconds.svg" class="opta-15-segundos">
+            <img src="midia/images/skip-forward.svg" class="skip">
+
+            <img src="midia/images/sound.svg" class="sound active">
+            <img src="midia/images/muted.svg" class="muted">
+
+            <img src="midia/images/subtitles.svg" class="subtitle active">
+         </div>
+         
+         <form id="formulario">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit doloribus blanditiis praesentium in reprehenderit,
+               assumenda repellendus omnis eos animi obcaecati ipsam, fuga, laudantium impedit sit ea. Ducimus unde quod ipsum.
+            </p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolore officiis eaque quis facere obcaecati architecto provident, ipsa expedita amet minima facilis adipisci dolores odit nulla, repellendus saepe laudantium dignissimos.</p>
+            <p>A aliquam nostrum magnam neque animi itaque officiis architecto! Cupiditate perferendis quis odit delectus, provident quibusdam reiciendis, deserunt vel consequatur maiores doloremque facere alias molestias inventore eveniet. Quisquam, itaque totam?</p>
+            <p>Sunt laborum praesentium illo pariatur magni porro exercitationem eos laudantium incidunt nostrum voluptatibus ipsam expedita quisquam tempora, at voluptas id fugiat neque sint soluta veniam quam iure eius velit. Quia?</p>
+            <p>Quam error culpa assumenda, minus eum magni! Sed quos doloremque itaque ea est dolorum explicabo aliquam ex? Sapiente, tenetur deserunt ut optio ex repellat et corrupti tempore sed fugit inventore?</p>
+            <p>Laborum illo aliquam sed mollitia, aspernatur asperiores nam ullam eius cumque tempore necessitatibus iure voluptate ut rerum doloremque unde quidem nulla autem perferendis explicabo incidunt praesentium similique fuga quas. Quisquam!</p>
+            <p>Corrupti aliquam placeat, totam voluptate earum ea nam error, minus saepe distinctio ratione repellendus laborum maxime autem et eius! Quo minima provident distinctio saepe numquam quas voluptates deserunt similique iusto!</p>
+            <p>Iusto aspernatur sit rerum. Repellat alias, eum eius fugit accusantium sed cum pariatur assumenda deleniti eligendi aperiam soluta voluptas nihil, sit impedit accusamus? Assumenda eaque, in cum explicabo repellat ratione.</p>
+            <p>Illum necessitatibus labore atque est ullam dolorem, quis accusamus adipisci dolore temporibus minus aliquam consectetur consequatur sequi! Inventore nesciunt dolore quisquam eveniet ad, laboriosam numquam, reprehenderit sunt corporis possimus sapiente?</p>
+            <p>Temporibus ullam cupiditate eveniet porro accusantium reiciendis at quae quaerat corrupti eligendi pariatur sed molestiae quos quis sint, aperiam dolorem magni earum beatae quas, culpa deserunt dolore odit exercitationem? Ullam.</p>
+         </form>
+      </article>
+
         <!--fonte da imagem de fundo: https://unsplash.com/photos/78A265wPiO4
             david bowie - https://www.youtube.com/watch?v=reYtFi9Tr-w
 
@@ -40,5 +83,6 @@
     </section>
 
     <script src="script/inicio.js"></script>
+    <script src="script/player.js"></script>
 </body>
 </html>
