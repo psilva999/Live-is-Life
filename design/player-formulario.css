@@ -50,11 +50,11 @@
 
 @media (max-width:500px) {
    #jornada.active {
-      width:85vw;
+      width:95vw;
    }
 
    #player.active {
-      width:100vw;
+      width:80vw;
    }
 }
 
