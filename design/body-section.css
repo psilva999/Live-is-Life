@@ -62,7 +62,7 @@ section {
 
 .convite.active h1, span, button {
    letter-spacing:4px;
-   font-family: 'Kalam', cursive;
+   font-family:'Kalam', cursive;
    color:#dac8c8;
 }
 
@@ -148,7 +148,7 @@ section {
 }
 
 #optar-musica.active .no {
-   background:rgb(165, 118, 29);
+   background:#a38a4a;
    margin-left:170px;
 }
 
@@ -178,6 +178,14 @@ section {
 
    #optar-musica.active button {
       font-size:15px;
+   }
+
+   #optar-musica.active .sim {
+      margin-right:140px;
+   }
+
+   #optar-musica.active .no {
+      margin-left:140px;
    }
 }
 
@@ -211,7 +219,15 @@ section {
 
    #optar-musica.active button {
       margin-top:70px;
-      font-size:13px;
+      font-size:12px;
+   }
+
+   #optar-musica.active .sim {
+      margin-right:120px;
+   }
+
+   #optar-musica.active .no {
+      margin-left:120px;
    }
 }
 
