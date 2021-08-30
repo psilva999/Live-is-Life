@@ -15,6 +15,39 @@
    animation:mostra .2s;
 }
 
+.nome-musica {
+   display:none;
+}
+
+.nome-musica.active {
+   font-family: 'Baloo Thambi 2', cursive;
+   background:#c09e9e;
+   border-radius:10px;
+   position:fixed;
+   display:flex;
+   justify-content:center;
+   top:0px;
+   opacity:.7;
+   padding:7px;
+}
+
+.nome-musica.active:hover {
+   opacity:1;
+}
+
+.nome-musica.active a {
+   text-decoration:none;
+   color:black;
+   font-size:15px;
+}
+
+.nome-musica.active img {
+   position:relative;
+   top:-3px;
+   width:15px;
+   height:15px;
+}
+
 #player {
    display:none;
 }
@@ -54,7 +87,7 @@
    }
 
    #player.active {
-      width:80vw;
+      width:90vw;
    }
 }
 

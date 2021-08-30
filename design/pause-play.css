@@ -21,7 +21,7 @@
 
 #player.active .play.active {
    position:relative;
-   left:3px;
+   left:4px;
    width:0;
    height:0;
    border:12px solid transparent;
