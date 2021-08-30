@@ -13,7 +13,7 @@
    box-sizing:border-box; 
 }
 
-/* * {
+* {
   scrollbar-width: thin;
   scrollbar-color:#7c6a6a;
 }
@@ -30,7 +30,7 @@
   background-color:#c09e9e;
   border-radius:5px;
   border: 3px solid #c09e9e;
-} */
+}
 
 body {
    background:#5A5A52;
@@ -238,6 +238,48 @@ section {
    #optar-musica.active button {
       margin-top:70px;
       font-size:12px;
+   }
+
+   #optar-musica.active .sim {
+      margin-right:120px;
+   }
+
+   #optar-musica.active .no {
+      margin-left:120px;
+   }
+}
+
+@media (max-width:370px) {
+   .convite.active h1 {
+      font-size:25px;
+   }
+
+   .convite.active span {
+      font-size:11px;
+      margin-left:110px;
+      margin-top:50px;
+   }
+
+   .convite.active button {
+      padding-bottom:18px;
+      font-size:12px;
+   }
+
+   .convite.active .rotacionar {
+      font-size:25px;
+   }
+
+   #optar-musica.active {
+      height:110px;
+   }
+
+   #optar-musica.active h1 {
+      font-size:17px;
+   }
+
+   #optar-musica.active button {
+      margin-top:70px;
+      font-size:11px;
    }
 
    #optar-musica.active .sim {
