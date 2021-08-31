@@ -13,35 +13,35 @@ var mudaPara = {
    segundaParteForm: document.querySelector('.segunda-parte'),
 
    terceiraParteForm: document.querySelector('.terceira-parte'),
-   resultado: document.querySelector('.essencia')
+   resultado: document.querySelector('#essencia')
 }
 
 botaoQue.entregaPrimeiraEtapa.addEventListener('click', () => {
    mudaPara.primeiraParteForm.classList.toggle('active')
-
+   
    mudaPara.segundaParteForm.classList.add('active')
 })
 
 botaoQue.entregaSegundaEtapa.addEventListener('click', () => {
    mudaPara.segundaParteForm.classList.toggle('active')
-
+   
    mudaPara.terceiraParteForm.classList.add('active')
 })
 
 botaoQue.finalizaEtapas.addEventListener('click', () => {
    mudaPara.terceiraParteForm.classList.toggle('active')
-
+   
    mudaPara.resultado.classList.add('active')
 })
 
 botaoQue.voltaPrimeiraEtapa.addEventListener('click', () => {
    mudaPara.segundaParteForm.classList.toggle('active')
-
+   
    mudaPara.primeiraParteForm.classList.add('active')
 })
 
 botaoQue.voltaSegundaEtapa.addEventListener('click', () => {
    mudaPara.terceiraParteForm.classList.toggle('active')
-
+   
    mudaPara.segundaParteForm.classList.add('active')
 })
