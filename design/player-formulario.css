@@ -17,6 +17,9 @@
    position:absolute;
    top:0px;
    padding:30px;
+   display:block;
+   overflow-y:auto;
+   height:100vh;
 }
 
 .primeira-parte, .segunda-parte, .terceira-parte {
@@ -31,7 +34,7 @@
    animation:mostra .2s;
 } 
 
-#infos-primeira-etapa, #infos-segunda-etapa, #entregar-formulario {
+span {
    cursor:pointer;
 }
 
