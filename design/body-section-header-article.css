@@ -210,11 +210,11 @@ section {
 
 @media (max-width:500px) {
    .convite.active h1 {
-      font-size:45px;
+      font-size:40px;
    }
 
    .convite.active span {
-      margin-left:200px;
+      margin-left:170px;
       margin-top:55px;
       font-size:14px;
    }
@@ -250,7 +250,23 @@ section {
    }
 }
 
-@media (max-width:330px) {
+@media (max-width:410px) {
+   .convite.active h1 {
+      font-size:35px;
+   }
+
+   .convite.active span {
+      margin-left:140px;
+      margin-top:55px;
+      font-size:13px;
+   }
+
+   #optar-musica.active h1 {
+      font-size:19px;
+   }
+}
+
+@media (max-width:310px) {
    .convite.active h1 {
       font-size:25px;
    }
