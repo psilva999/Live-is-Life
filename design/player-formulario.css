@@ -12,11 +12,27 @@
 }
 
 #jornada.active #formulario {
-   background:#dfdada;
-   border-radius:10px;
+   background:#F2F2F2;
+   border-radius:2px;
    position:absolute;
    top:0px;
    padding:30px;
+}
+
+.primeira-parte, .segunda-parte, .terceira-parte {
+   display:none;
+}
+
+.primeira-parte.active, .segunda-parte.active, .terceira-parte.active {
+   display:block;
+} 
+
+.segunda-parte.active, .terceira-parte.active {
+   animation:mostra .2s;
+} 
+
+#infos-primeira-etapa, #infos-segunda-etapa, #entregar-formulario {
+   cursor:pointer;
 }
 
 .nome-musica {
@@ -79,7 +95,7 @@
 }
 
 #player.active {
-   border-radius:10px;
+   border-radius:3px;
    position:fixed;
    background:#e5bc82;
    bottom:0;
@@ -104,7 +120,7 @@
 
 @media (max-width:800px) {
     #jornada.active #formulario {
-      width:85vw;
+      width:95vw;
    }
 }
 
