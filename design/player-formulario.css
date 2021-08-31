@@ -15,6 +15,7 @@
    background:#dfdada;
    border-radius:10px;
    position:absolute;
+   top:0px;
    padding:30px;
 }
 
@@ -24,7 +25,7 @@
 
 .nome-musica.active {
    font-family: 'Baloo Thambi 2', cursive;
-   background:#c09e9e;
+   background:#e5bc82;
    border-radius:10px;
    position:fixed;
    display:flex;
@@ -57,7 +58,7 @@
 
 .tempo-musica.active {
    display:block;
-   background:#c09e9e;
+   background:#e5bc82;
    border-radius:2px;
    position:fixed;
    display:flex;
@@ -80,7 +81,7 @@
 #player.active {
    border-radius:10px;
    position:fixed;
-   background:#c09e9e;
+   background:#e5bc82;
    bottom:0;
    height:40px;
    width:350px;
@@ -101,17 +102,15 @@
    margin:10px;
 }
 
+@media (max-width:800px) {
+    #jornada.active #formulario {
+      width:85vw;
+   }
+}
+
 @media (max-width:500px) {
-   #jornada.active {
-      width:90vw;
-   }
-
-   #jornada.active #formulario {
-      width:85vw;
-   }
-
    #player.active {
-      width:85vw;
+      width:100vw;
    }
 }
 

@@ -250,7 +250,7 @@ section {
    }
 }
 
-@media (max-width:370px) {
+@media (max-width:330px) {
    .convite.active h1 {
       font-size:25px;
    }
