@@ -100,7 +100,7 @@
 
 #jornada.active #formulario p {
    display:block;
-   margin:30px;
+   margin:60px;
 }
 
 @media (max-width:500px) {
