@@ -1,0 +1,25 @@
+@charset 'UTF-8';
+
+.primeira-parte {
+   display:none;
+}
+
+.primeira-parte.active {
+   display:block;
+} 
+
+.segunda-parte {
+   display:none;
+}
+
+.segunda-parte.active {
+   display:block;
+}
+
+.terceira-parte {
+   display:none;
+}
+
+.terceira-parte.active {
+   display:block;
+} 

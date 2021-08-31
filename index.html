@@ -9,8 +9,9 @@
    <link rel="stylesheet" href="design/body-section-header-article.css">
 
    <link rel="stylesheet" href="design/player-formulario.css">
-   <link rel="stylesheet" href="design/player.css">
+   <link rel="stylesheet" href="design/etapas-formulario.css">
 
+   <link rel="stylesheet" href="design/player.css">
    <link rel="stylesheet" href="design/pause-play.css">
 
    <title>Live is Life</title>
@@ -39,182 +40,193 @@
       <article id="jornada">
          <form id="formulario" method="post">
 
-            <div class="id">
+            <div class="primeira-parte active">
                <p>
                   <label for="name-user">Nome</label>
                   <input type="text" id="nome-user" placeholder="Digíte seu nome">
                </p>
-               
+            
                <p>
                   <label for="nasce-user">Data de nascimento:</label>
                   <input type="date" id="nasce-user">
                </p>
-            </div>
-
-            <div class="sexo"> <h1>Sexo</h1>
-               <input type="radio" name="pSexo" id="masculino">
-               <label for="masculino">Masculino</label>
-            
-               <input type="radio" name="pSexo" id="feminino">
-               <label for="feminino">Feminino</label>
-            
-               <input type="radio" name="pSexo" id="outro">
-               <label for="outro">Outro</label>
-            
-               <input type="radio" name="pSexo" id="nao-informado">
-               <label for="nao-informado">Prefiro não informar</label>
-            </div>
-
-            <div class="exercicios"> <h1>Gosta de treinar seu físico</h1>
-               <input type="radio" name="pLifestyle" id="muzy">
-               <label for="muzy">Gosto até demais</label>
-
-               <input type="radio" name="pLifestyle" id="cariani">
-               <label for="cariani">Faço regularmente</label>
-
-               <input type="radio" name="pLifestyle" id="mais-menos">
-               <label for="mais-menos">Mais ou menos</label>
-
-               <input type="radio" name="pLifestyle" id="ryan">
-               <label for="ryan">Estou bem com meu físico atual</label>
-
-               <input type="radio" name="pLifestyle" id="simpson">
-               <label for="simpson">Sou sedentário</label>
-            </div>
-
-            <div class="peso-altura">
+               
+               <div class="sexo"> <h1>Sexo</h1>
+                  <input type="radio" name="pSexo" id="masculino">
+                  <label for="masculino">Masculino</label>
+               
+                  <input type="radio" name="pSexo" id="feminino">
+                  <label for="feminino">Feminino</label>
+               
+                  <input type="radio" name="pSexo" id="outro">
+                  <label for="outro">Outro</label>
+               
+                  <input type="radio" name="pSexo" id="nao-informado">
+                  <label for="nao-informado">Prefiro não informar</label>
+               </div>
+               
+               <div class="exercicios">
+                  <h1>Gosta de treinar seu físico?</h1>
+                  <input type="radio" name="pLifestyle" id="muzy">
+                  <label for="muzy">Gosto até demais</label>
+               
+                  <input type="radio" name="pLifestyle" id="cariani">
+                  <label for="cariani">Faço regularmente</label>
+               
+                  <input type="radio" name="pLifestyle" id="mais-menos">
+                  <label for="mais-menos">Mais ou menos</label>
+               
+                  <input type="radio" name="pLifestyle" id="ryan">
+                  <label for="ryan">Estou bem com meu físico atual</label>
+               
+                  <input type="radio" name="pLifestyle" id="simpson">
+                  <label for="simpson">Sou sedentário</label>
+               </div>
+               
                <p>
                   <label for="altura">Altura:</label>
                   <input type="number" name="pAltura" id="altura">
                </p>
-               
+            
                <p>
                   <label for="peso">Peso:</label>
                   <input type="number" name="sPeso" id="peso">
                </p>
             </div>
-
-            <div class="dieta"> <h1>Como está sua dieta?</h1>
-               <input type="radio" name="sAlm" id="saudavel">
-               <label for="saudavel">Saudável</label>
-
-               <input type="radio" name="sAlm" id="flexivel">
-               <label for="flexivel">Flexível</label>
-
-               <input type="radio" name="sAlm" id="desregrada">
-               <label for="desregrada">Desregrada</label>
-            </div>
-
-            <div class="saude"> <h1>Saúde</h1>
-               <input type="radio" name="pSaude" id="excelente">
-               <label for="excelente">Excelênte</label>
-               
-               <input type="radio" name="pSaude" id="se-cuida">
-               <label for="se-cuida">Sigo me cuidando</label>
-               
-               <input type="radio" name="pSaude" id="nao-sabe">
-               <label for="nao-sabe">Não sei</label>
-
-               <input type="radio" name="pSaude" id="serio">
-               <label for="serio">Problemas bem sérios</label>
-               
-               <input type="radio" name="pSaude" id="graves">
-               <label for="graves">Problemas graves</label>
-            </div>
-
-            <div class="vida-sexual"> <h1>Como está sua vida Sexual?</h1>
-               <input type="radio" name="pSexo" id="nao-informa-vida-sexual">
-               <label for="nao-informa-vida-sexual">Prefiro não informar</label>
-
-               <input type="radio" name="pSexo" id="baixa">
-               <label for="baixa">Em baixa</label>
-
-               <input type="radio" name="pSexo" id="equilibrada">
-               <label for="equilibrada">Equilibrada</label>
-
-               <input type="radio" name="pSexo" id="ativa">
-               <label for="ativa">Bem ativa</label>
-            </div>
-
-            <div class="sono"> <h1>Quantas horas você dorme normalmente?</h1>
-               <input type="radio" name="qSono" id="sono-nulo">
-               <label for="sono-nulo">Nenhuma</label>
-
-               <input type="radio" name="qSono" id="dorme-mal">
-               <label for="dorme-mal">2 a 4</label>
-               
-               <input type="radio" name="qSono" id="sono-normal">
-               <label for="sono-normal">5 a 8</label>
-               
-               <input type="radio" name="qSono" id="dorminhoco">
-               <label for="dorminhoco">Sou dorminhoco(a)</label>
-            </div>
-
-            <div class="kids"> <h1>Pensa em ter filhos</h1>
-               <input type="radio" name="pKids" id="jamais">
-               <label for="jamais">Jamais</label>
             
-               <input type="radio" name="pKids" id="talvez">
-               <label for="talvez">Talvez</label>
-            
-               <input type="radio" name="pKids" id="sim-kids">
-               <label for="sim-kids">Sim/Já tenho</label>
-            </div>
+            <div class="segunda-parte">
+               <div class="dieta"> <h1>Como está sua dieta?</h1>
 
-            <div class="substancias"> <h1>Utiliza alguma das substâncias abaixo?</h1>
-               <input type="radio" name="pSubstancias" id="alcool">
-               <label for="alcool">Álcool</label>
+                  <input type="radio" name="sAlm" id="saudavel">
+                  <label for="saudavel">Saudável</label>
                
-               <input type="radio" name="pSubstancias" id="cigarro">
-               <label for="cigarro">Cigarro</label>
-
-               <input type="radio" name="pSubstancias" id="entorpecentes">
-               <label for="entorpecentes">Entorpecentes (maconha, crack, heroína, etc.)</label>
-
-               <input type="radio" name="pSubstancias" id="ex-alcoolatra">
-               <label for="ex-alcoolatra">Ex-alcoólatra</label>
+                  <input type="radio" name="sAlm" id="flexivel">
+                  <label for="flexivel">Flexível</label>
                
-               <input type="radio" name="pSubstancias" id="ex-fumante">
-               <label for="ex-fumante">Ex-fumante</label>
-
-               <input type="radio" name="pSubstancias" id="ex-drogado">
-               <label for="ex-drogado">Ex-Drogado</label>
+                  <input type="radio" name="sAlm" id="desregrada">
+                  <label for="desregrada">Desregrada</label>
+               </div>
                
-               <input type="radio" name="pSubstancias" id="limpo-substancias">
-               <label for="limpo-substancias">Nenhuma das anteriores</label>
+               <div class="saude">
+                  <h1>Saúde</h1>
+                  <input type="radio" name="pSaude" id="excelente">
+                  <label for="excelente">Excelênte</label>
+               
+                  <input type="radio" name="pSaude" id="se-cuida">
+                  <label for="se-cuida">Sigo me cuidando</label>
+               
+                  <input type="radio" name="pSaude" id="nao-sabe">
+                  <label for="nao-sabe">Não sei</label>
+               
+                  <input type="radio" name="pSaude" id="serio">
+                  <label for="serio">Problemas bem sérios</label>
+               
+                  <input type="radio" name="pSaude" id="graves">
+                  <label for="graves">Problemas graves</label>
+               </div>
+               
+               <div class="vida-sexual"> <h1>Como está sua vida Sexual?</h1>
+                  <input type="radio" name="pSexo" id="nao-informa-vida-sexual">
+                  <label for="nao-informa-vida-sexual">Prefiro não informar</label>
+               
+                  <input type="radio" name="pSexo" id="baixa">
+                  <label for="baixa">Em baixa</label>
+               
+                  <input type="radio" name="pSexo" id="equilibrada">
+                  <label for="equilibrada">Equilibrada</label>
+               
+                  <input type="radio" name="pSexo" id="ativa">
+                  <label for="ativa">Bem ativa</label>
+               </div>
+               
+               <div class="sono"> <h1>Quantas horas você dorme normalmente?</h1>
+                  <input type="radio" name="qSono" id="sono-nulo">
+                  <label for="sono-nulo">Nenhuma</label>
+               
+                  <input type="radio" name="qSono" id="dorme-mal">
+                  <label for="dorme-mal">2 a 4</label>
+               
+                  <input type="radio" name="qSono" id="sono-normal">
+                  <label for="sono-normal">5 a 8</label>
+               
+                  <input type="radio" name="qSono" id="dorminhoco">
+                  <label for="dorminhoco">Sou dorminhoco(a)</label>
+               </div>
+               
+               <div class="kids"> <h1>Pensa em ter filhos</h1>
+                  <input type="radio" name="pKids" id="jamais">
+                  <label for="jamais">Jamais</label>
+               
+                  <input type="radio" name="pKids" id="talvez">
+                  <label for="talvez">Talvez</label>
+               
+                  <input type="radio" name="pKids" id="sim-kids">
+                  <label for="sim-kids">Sim/Já tenho</label>
+               </div>
             </div>
+            
+            <div class="terceira-parte">
+               <div class="substancias">
 
-            <div class="ansiedade"> <h1>Você tem ansiedade?</h1>
-               <input type="radio" name="ansioso" id="nenhuma-ansi">
-               <label for="nenhuma-ansi">Nenhuma</label>
-            
-               <input type="radio" name="ansioso" id="pouca-ans">
-               <label for="pouca-ans">De vez em quando</label>
-            
-               <input type="radio" name="ansioso" id="bastante-ansioso">
-               <label for="bastante-ans">Sou bastante ansioso</label>
-            </div>
+                  <h1>Utiliza alguma das substâncias abaixo?</h1>
+                  <input type="radio" name="pSubstancias" id="alcool">
+                  <label for="alcool">Álcool</label>
+               
+                  <input type="radio" name="pSubstancias" id="cigarro">
+                  <label for="cigarro">Cigarro</label>
+               
+                  <input type="radio" name="pSubstancias" id="entorpecentes">
+                  <label for="entorpecentes">Entorpecentes (maconha, crack, heroína, etc.)</label>
+               
+                  <input type="radio" name="pSubstancias" id="ex-alcoolatra">
+                  <label for="ex-alcoolatra">Ex-alcoólatra</label>
+               
+                  <input type="radio" name="pSubstancias" id="ex-fumante">
+                  <label for="ex-fumante">Ex-fumante</label>
+               
+                  <input type="radio" name="pSubstancias" id="ex-drogado">
+                  <label for="ex-drogado">Ex-Drogado</label>
+               
+                  <input type="radio" name="pSubstancias" id="limpo-substancias">
+                  <label for="limpo-substancias">Nenhuma das anteriores</label>
+               </div>
+               
+               <div class="ansiedade">
+                  <h1>Você tem ansiedade?</h1>
+                  <input type="radio" name="ansioso" id="nenhuma-ansi">
+                  <label for="nenhuma-ansi">Nenhuma</label>
+               
+                  <input type="radio" name="ansioso" id="pouca-ans">
+                  <label for="pouca-ans">De vez em quando</label>
+               
+                  <input type="radio" name="ansioso" id="bastante-ansioso">
+                  <label for="bastante-ans">Sou bastante ansioso</label>
+               </div>
+               
+               <div class="Depressão">
+                  <h1>Você tem depressão?</h1>
+                  <input type="radio" name="depre" id="nenhuma-depre">
+                  <label for="nenhuma-depre">Nenhuma</label>
+               
+                  <input type="radio" name="depre" id="tratamento-depre">
+                  <label for="tratamento-depre">Tenho mas estou em tratameto</label>
+               
+                  <input type="radio" name="depre" id="ajuda-depre">
+                  <label for="ajuda-depre">Tenho e preciso de ajuda</label>
+               </div>
+               
+               <div class="suicidio">
+                  <h1>Já pensou em suicídio?</h1>
+                  <input type="radio" name="gatilho" id="n-suicidio">
+                  <label for="n-suicidio">Nunca</label>
+               
+                  <input type="radio" name="gatilho" id="as-vezes-suicidio">
+                  <label for="as-vezes-suicidio">De vez em quando</label>
+               
+                  <input type="radio" name="gatilho" id="constante-suicidio">
+                  <label for="constante-suicidio">Constantemente</label>
+               </div>
 
-            <div class="Depressão"> <h1>Você tem depressão?</h1>
-               <input type="radio" name="depre" id="nenhuma-depre">
-               <label for="nenhuma-depre">Nenhuma</label>
-            
-               <input type="radio" name="depre" id="tratamento-depre">
-               <label for="tratamento-depre">Tenho mas estou em tratameto</label>
-            
-               <input type="radio" name="depre" id="ajuda-depre">
-               <label for="ajuda-depre">Tenho e preciso de ajuda</label>
-            </div>
-
-            <div class="suicidio"> <h1>Já pensou em suicídio?</h1>
-               <input type="radio" name="gatilho" id="n-suicidio">
-               <label for="n-suicidio">Nunca</label>
-            
-               <input type="radio" name="gatilho" id="as-vezes-suicidio">
-               <label for="as-vezes-suicidio">De vez em quando</label>
-            
-               <input type="radio" name="gatilho" id="constante-suicidio">
-               <label for="constante-suicidio">Constantemente</label>
             </div>
          </form>
 
