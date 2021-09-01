@@ -25,7 +25,7 @@
 
 .configura-nome, .nascimento {
    display:block;
-   padding-bottom:30px;
+   margin-bottom:30px;
 }
 
 .configura-nome input {
@@ -107,8 +107,12 @@
    display:block;
    margin-top:-24px;
    margin-left:30px;
-   width:225px;
+   width:190px;
    text-align:left;
+}
+
+.exercicios #bem-corpo {
+   width:160px;
 }
 
 .exercicios input {
@@ -158,13 +162,12 @@
    height:265px;
    display:block;
    margin-top:-275px;
-   margin-left:250px;
+   margin-left:240px;
    opacity:.8;
 }
 
 .altura-do-usuario {
-   padding:10px;
-   margin:70px 0px 30px 0px;
+   margin:30px 0px 30px 0px;
 }
 
 #altura-user, #peso-user {
@@ -178,13 +181,34 @@
    margin-left:15px;
 }
 
-@media (max-width:960px) {
+@media (max-width:970px) {
+   #formulario .configura-nome label, input {
+      display:block;  
+   }
+
+   #formulario .configura-nome input {
+      margin-left:50px;
+   }
+
+   #formulario .nascimento label, input {
+      display:block;
+   }
+
+   #formulario .nascimento input {
+      margin-left:50px;
+   }
+
+   #formulario h1 {
+      font-size:18px;
+   }
+
    #formulario label {
       font-size:15px;
+      letter-spacing:1px;
    }
 
    .sexo label {
-      width:178px;
+      width:158px;
       text-align:left;
       display:block;
       margin:-21px 0px 0px 100px;
@@ -206,51 +230,76 @@
       margin-left:0px;
       margin-right:0px;
       margin-bottom:2px;
-      height:435px;
-      width:400px;
+      height:400px;
    }
 
-   .exercicios #cariani, #exercicios-contantes, #mais-menos, #ryan, #simpson {
+   .exercicios #mais-menos, #ryan, #simpson {
       display:block;
-      margin-top:240px;
    }
 
    .exercicios .alinhado {
       display:block;
-      margin-top:-22px;
+      margin-top:-21px;
    }
 
-   #mais-menos, #varia, #ryan, #bem-corpo, #simpson, #sedentario {
+   #cariani, #exercicios-constantes, #mais-menos, #ryan, #simpson, #gosta-demais, #treino-regular, #varia, #bem-corpo, #sedentario {
       position:relative;
    }
 
-   #mais-menos, #varia {
-      top:-312px;
-      left:200px;
+   #cariani, #gosta-demais {
+      top:200px;
+      left:-15px;
    }
 
-   #varia {
-      width:124px;
+   #exercicios-constantes, #treino-regular {
+      top:185px;
+      left:-15px;
+   }
+
+   #formulario #varia {
+      width:120px;
+   }
+ 
+   #mais-menos, #varia {
+      top:96px;
+      left:165px;
    }
 
    #ryan, #bem-corpo {
-      top:-522px;
-      left:200px;
+      top:80px;
+      left:165px;
    }
 
-   #bem-corpo {
-      width:130px;
+   .exercicios #bem-corpo {
+      width:115px;
    }
 
    #simpson, #sedentario {
-      top:-750px;
+      top:45px;
+      left:-15px;
    } 
 
    .exercicios embed {
-      width:290px;
+      width:295px;
       height:225px;
-      margin-top:-1135px;
-      margin-left:45px;
+      margin-top:-300px;
+      margin-left:0px;
+   }
+
+   .altura-do-usuario {
+      margin:15px 0px 15px 0px;
+   }
+
+   .altura-do-usuario input {
+      margin-left:40px;
+   }
+
+   #altura-user, #peso-user {
+      padding:10px 15px 10px 15px;
+   }
+
+   #peso-user {
+      margin-left:40px;
    }
 
    #infos-primeira-etapa a {

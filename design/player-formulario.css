@@ -81,7 +81,7 @@ span a {
    color:black;
    text-decoration:none;
    display:block;
-   margin:40px 0px 100px 7px;
+   margin:40px 0px 100px 0px;
    text-transform:uppercase;
 }
 
@@ -180,9 +180,10 @@ span a {
    margin:10px;
 }
 
-@media (max-width:960px) {
+@media (max-width:970px) {
    #formulario .fases {
-      font-size:22px;
+      font-size:19px;
+      letter-spacing:4px;
    }
 
    #volta-primeira-etapa, #volta-segunda-etapa {
@@ -193,8 +194,8 @@ span a {
 }
 
 @media (max-width:800px) {
-    #jornada.active #formulario {
-      width:95vw;
+   #jornada.active #formulario {
+      width:98vw;
    }
 }
 
