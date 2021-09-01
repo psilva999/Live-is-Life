@@ -1,47 +1,37 @@
-var botaoQue = {
-   entregaPrimeiraEtapa: document.querySelector('#infos-primeira-etapa'),
-   entregaSegundaEtapa: document.querySelector('#infos-segunda-etapa'),
+var saberSeTreinaFisico = document.querySelector('.exercicios')
 
-   voltaPrimeiraEtapa: document.querySelector('#volta-primeira-etapa'),
-   voltaSegundaEtapa: document.querySelector('#volta-segunda-etapa'),
+saberSeTreinaFisico.addEventListener('click', () => {
+   var exercicios = {
+      gostaDemais: document.querySelector('#cariani'),
+      fazConstantemente: document.querySelector('#exercicios-constantes'),
 
-   finalizaEtapas: document.querySelector('#entregar-formulario')
-}
+      maisMenos: document.querySelector('#mais-menos'),
 
-var mudaPara = {
-   primeiraParteForm: document.querySelector('.primeira-parte'),
-   segundaParteForm: document.querySelector('.segunda-parte'),
+      bemComFisico: document.querySelector('#ryan'),
+      sedentario: document.querySelector('#simpson')
+   }
 
-   terceiraParteForm: document.querySelector('.terceira-parte'),
-   resultado: document.querySelector('#essencia')
-}
+   var mudaGif = document.querySelector('#gif-exercicios')
 
-botaoQue.entregaPrimeiraEtapa.addEventListener('click', () => {
-   mudaPara.primeiraParteForm.classList.toggle('active')
-   
-   mudaPara.segundaParteForm.classList.add('active')
+   if (exercicios.gostaDemais.checked) {
+      mudaGif.src = '../midia/video-audios-gif/cariani.gif'
+   }
+
+   else if (exercicios.fazConstantemente.checked) {
+      mudaGif.src = '../midia/video-audios-gif/constante.gif'
+   }
+
+   else if (exercicios.maisMenos.checked) {
+      mudaGif.src = '../midia/video-audios-gif/mais-menos.gif'
+   }
+
+   else if (exercicios.bemComFisico.checked) {
+      mudaGif.src = '../midia/video-audios-gif/ryan-pizza.gif'
+   }
+
+   else if (exercicios.sedentario.checked) {
+      mudaGif.src = '../midia/video-audios-gif/simpsons.gif'
+   }
 })
 
-botaoQue.entregaSegundaEtapa.addEventListener('click', () => {
-   mudaPara.segundaParteForm.classList.toggle('active')
-   
-   mudaPara.terceiraParteForm.classList.add('active')
-})
-
-botaoQue.finalizaEtapas.addEventListener('click', () => {
-   mudaPara.terceiraParteForm.classList.toggle('active')
-   
-   mudaPara.resultado.classList.add('active')
-})
-
-botaoQue.voltaPrimeiraEtapa.addEventListener('click', () => {
-   mudaPara.segundaParteForm.classList.toggle('active')
-   
-   mudaPara.primeiraParteForm.classList.add('active')
-})
-
-botaoQue.voltaSegundaEtapa.addEventListener('click', () => {
-   mudaPara.terceiraParteForm.classList.toggle('active')
-   
-   mudaPara.segundaParteForm.classList.add('active')
-})
+//exercicios.mudaGif.src = 'midia/video-audios-gif/'

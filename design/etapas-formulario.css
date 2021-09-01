@@ -1,2 +1,260 @@
 @charset 'UTF-8';
 
+#formulario h1, label {
+   opacity:.7;
+}
+
+#formulario h1 {
+   font-size:22px;
+}
+
+#formulario label {
+   font-size:19px;
+   letter-spacing:2px;
+}
+
+#formulario input {
+   font-family:'Baloo Thambi 2', cursive;
+   opacity:.8;
+   letter-spacing:2px;
+}
+
+#formulario input:focus {
+   outline:0;   
+}
+
+.configura-nome, .nascimento {
+   display:block;
+   padding-bottom:30px;
+}
+
+.configura-nome input {
+   border-radius:10px;
+   padding:10px 15px 10px 15px;
+   border:1px solid rgba(0,0,0,.2);
+   font-size:17px;
+}
+
+.nascimento {
+   padding-top:10px;
+   text-align:center;
+}
+
+.nascimento input {
+   border-radius:10px;
+   padding:10px 15px 10px 15px;
+   border:1px solid rgba(0,0,0,.2);
+   font-size:17px;
+}
+
+.sexo label {
+   width:220px;
+   text-align:left;
+   display:block;
+   margin:-25px 0px 0px 190px;
+}
+
+.sexo input {
+   display:block;
+   margin:20px 0px 0px 150px;
+   appearance:none;
+   height:20px;
+   width:20px;
+   transition:all 0.15s ease-out 0s;
+   background:#cbd1d8;
+   border:none;
+   color:#fff;
+}
+
+.sexo input:hover {
+  background:#9faab7;
+}
+
+.sexo input:checked {
+  background:#40e0d0;
+}
+
+.sexo input:checked::before {
+   position:relative;
+   left:3.5px;
+   content: '✔';
+}
+
+.sexo input:checked::after {
+  background:#40e0d0;
+  content: '';
+  display: block;
+}
+
+.sexo input {
+  border-radius:50%;
+}
+
+.sexo input::after {
+  border-radius:50%;
+}
+
+.exercicios {
+   padding:10px;
+   margin:40px;
+}
+
+.exercicios h1 {
+   padding-bottom:30px;
+}
+
+.exercicios label {
+   display:block;
+   margin-top:-24px;
+   margin-left:30px;
+   width:225px;
+   text-align:left;
+}
+
+.exercicios input {
+   display:block;
+   margin-top:30px;
+   appearance:none;
+   height:20px;
+   width:20px;
+   transition:all 0.15s ease-out 0s;
+   background:#cbd1d8;
+   border:none;
+   color:#fff;
+}
+
+.exercicios input:hover {
+  background:#9faab7;
+}
+
+.exercicios input:checked {
+  background:#40e0d0;
+}
+
+.exercicios input:checked::before {
+   position:relative;
+   left:3.5px;
+   content: '✔';
+}
+
+.exercicios input:checked::after {
+  background:#40e0d0;
+  content: '';
+  display: block;
+}
+
+.exercicios input {
+  border-radius:50%;
+}
+
+.exercicios input::after {
+  border-radius:50%;
+}
+
+.exercicios embed {
+   border-radius:17px;
+   box-shadow:1px 1px 2px black;
+   width:350px;
+   height:265px;
+   display:block;
+   margin-top:-275px;
+   margin-left:250px;
+   opacity:.8;
+}
+
+.altura-do-usuario {
+   padding:10px;
+   margin:70px 0px 30px 0px;
+}
+
+#altura-user, #peso-user {
+   border-radius:10px;
+   padding:10px 15px 10px 15px;
+   border:1px solid rgba(0,0,0,.2);
+   font-size:17px;
+}
+
+#peso-user {
+   margin-left:15px;
+}
+
+@media (max-width:960px) {
+   #formulario label {
+      font-size:15px;
+   }
+
+   .sexo label {
+      width:178px;
+      text-align:left;
+      display:block;
+      margin:-21px 0px 0px 100px;
+   }
+
+   .sexo input {
+      display:block;
+      margin:20px 0px 0px 70px;
+      appearance:none;
+      height:20px;
+      width:20px;
+      transition:all 0.15s ease-out 0s;
+      background:#cbd1d8;
+      border:none;
+      color:#fff;
+   }
+
+   .exercicios {
+      margin-left:0px;
+      margin-right:0px;
+      margin-bottom:2px;
+      height:435px;
+      width:400px;
+   }
+
+   .exercicios #cariani, #exercicios-contantes, #mais-menos, #ryan, #simpson {
+      display:block;
+      margin-top:240px;
+   }
+
+   .exercicios .alinhado {
+      display:block;
+      margin-top:-22px;
+   }
+
+   #mais-menos, #varia, #ryan, #bem-corpo, #simpson, #sedentario {
+      position:relative;
+   }
+
+   #mais-menos, #varia {
+      top:-312px;
+      left:200px;
+   }
+
+   #varia {
+      width:124px;
+   }
+
+   #ryan, #bem-corpo {
+      top:-522px;
+      left:200px;
+   }
+
+   #bem-corpo {
+      width:130px;
+   }
+
+   #simpson, #sedentario {
+      top:-750px;
+   } 
+
+   .exercicios embed {
+      width:290px;
+      height:225px;
+      margin-top:-1135px;
+      margin-left:45px;
+   }
+
+   #infos-primeira-etapa a {
+      font-size:19px;
+      margin-left:9px;
+   }
+}

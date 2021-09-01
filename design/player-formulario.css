@@ -16,16 +16,19 @@
    border-radius:2px;
    position:absolute;
    top:0px;
-   padding:30px;
-   display:block;
+   padding:10px;
+   display:flex;
    overflow-y:auto;
+   width:75vw;
    height:100vh;
+   justify-content:center;
    scrollbar-width:thin;
-  scrollbar-color:#7c6a6a;
+   scrollbar-color:#7c6a6a;
+   font-family: 'Baloo Thambi 2', cursive;
 }
 
 #formulario::-webkit-scrollbar {
-  width:13px;
+  width:7px;
 }
 
 #formulario::-webkit-scrollbar-track {
@@ -33,13 +36,20 @@
 }
 
 #formulario::-webkit-scrollbar-thumb {
-  background-color:#c09e9e;
+  background-color:#e5bc82;
   border-radius:5px;
-  border: 3px solid #c09e9e;
+  border:3px solid #e5bc82;
 }
 
 #formulario div {
-   margin:40px 0px 60px 0px;
+   text-align:center;
+}
+
+#formulario .fases {
+   padding-top:60px;
+   padding-bottom:60px;
+   font-size:30px;
+   letter-spacing:6px;
 }
 
 .primeira-parte, .segunda-parte, .terceira-parte {
@@ -52,15 +62,39 @@
 
 .segunda-parte.active, .terceira-parte.active {
    animation:mostra .2s;
-} 
+}
 
 span {
    cursor:pointer;
 }
 
+span img {
+   width:20px;
+   height:20px;
+   opacity:.8;
+}
+span img:hover {
+   opacity:1;
+}
+
 span a {
    color:black;
    text-decoration:none;
+   display:block;
+   margin:40px 0px 100px 7px;
+   text-transform:uppercase;
+}
+
+#volta-primeira-etapa, #volta-segunda-etapa {
+   position:absolute;
+   top:85px;
+   left:20px;
+}
+
+#infos-primeira-etapa, #infos-segunda-etapa, #entregar-formulario {
+   padding:10px;
+   font-size:21px;
+   font-family:'Baloo Thambi 2', cursive;
 }
 
 .nome-musica {
@@ -86,14 +120,14 @@ span a {
 .nome-musica.active a {
    text-decoration:none;
    color:black;
-   font-size:15px;
+   font-size:11px;
 }
 
 .nome-musica.active img {
    position:relative;
    top:-3px;
-   width:15px;
-   height:15px;
+   width:12px;
+   height:12px;
 }
 
 .tempo-musica {
@@ -144,6 +178,18 @@ span a {
 #jornada.active #formulario p {
    display:block;
    margin:10px;
+}
+
+@media (max-width:960px) {
+   #formulario .fases {
+      font-size:22px;
+   }
+
+   #volta-primeira-etapa, #volta-segunda-etapa {
+      position:absolute;
+      top:78px;
+      left:20px;
+   }
 }
 
 @media (max-width:800px) {
