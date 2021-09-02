@@ -241,11 +241,16 @@
    }
 
    .opcoes label, input {
+      background:red;
       position:relative;
    }
 
    .opcoes label {
       top:2px;
+   }
+
+   #formulario .opcoes label {
+      width:130px;
    }
 
    #exercicios-constantes, #treino-regular {
