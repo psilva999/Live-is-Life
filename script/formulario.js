@@ -14,23 +14,23 @@ saberSeTreinaFisico.addEventListener('click', () => {
    var mudaGif = document.querySelector('#gif-exercicios')
 
    if (exercicios.gostaDemais.checked) {
-      mudaGif.src = 'midia/video-audios-gif/cariani.gif'
+      mudaGif.src = 'https://i.ibb.co/yhvymQY/gosto-muito.gif'
    }
 
    else if (exercicios.fazConstantemente.checked) {
-      mudaGif.src = 'midia/video-audios-gif/constante.gif'
+      mudaGif.src = 'https://i.ibb.co/6HRQbxt/constante.gif'
    }
 
    else if (exercicios.maisMenos.checked) {
-      mudaGif.src = 'midia/video-audios-gif/mais-menos.gif'
+      mudaGif.src = 'https://i.ibb.co/hFK1j48/mais-menos.webp'
    }
 
    else if (exercicios.bemComFisico.checked) {
-      mudaGif.src = 'midia/video-audios-gif/ryan-pizza.gif'
+      mudaGif.src = 'https://i.ibb.co/yhBCv3q/ryan-pizza.gif'
    }
 
    else if (exercicios.sedentario.checked) {
-      mudaGif.src = 'midia/video-audios-gif/simpsons.gif'
+      mudaGif.src = 'https://i.ibb.co/C9ZvbRP/sedentario.jpg'
    }
 })
 

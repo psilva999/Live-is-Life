@@ -61,13 +61,13 @@
    height:20px;
    width:20px;
    transition:all 0.15s ease-out 0s;
-   background:#cbd1d8;
+   background:white;
    border:none;
    color:#fff;
 }
 
 .sexo input:hover {
-  background:#9faab7;
+  background:#bfc7d1;
 }
 
 .sexo input:checked {
@@ -103,12 +103,17 @@
    padding-bottom:30px;
 }
 
-.exercicios label {
+#formulario .exercicios label {
+   letter-spacing:0px;
    display:block;
    margin-top:-24px;
-   margin-left:30px;
-   width:190px;
+   margin-left:25px;
+   width:156px;
    text-align:left;
+}
+
+#formulario .exercicios #bem-corpo {
+   width:130px;
 }
 
 .exercicios #bem-corpo {
@@ -117,18 +122,18 @@
 
 .exercicios input {
    display:block;
-   margin-top:30px;
+   margin-top:15px;
    appearance:none;
    height:20px;
    width:20px;
    transition:all 0.15s ease-out 0s;
-   background:#cbd1d8;
+   background:white;
    border:none;
    color:#fff;
 }
 
 .exercicios input:hover {
-  background:#9faab7;
+  background:#bfc7d1;
 }
 
 .exercicios input:checked {
@@ -155,15 +160,18 @@
   border-radius:50%;
 }
 
+.exercicios .opcoes {
+   margin-top:20px;
+}
+
 .exercicios embed {
-   border-radius:17px;
-   box-shadow:1px 1px 2px black;
+   border-radius:3px;
    width:350px;
-   height:265px;
+   height:245px;
+   margin-top:-230px;
+   margin-left:200px;
    display:block;
-   margin-top:-275px;
-   margin-left:240px;
-   opacity:.8;
+   opacity:1;
 }
 
 .altura-do-usuario {
@@ -187,7 +195,9 @@
    }
 
    #formulario .configura-nome input {
-      margin-left:50px;
+      margin:auto;
+      font-size:16px;
+      padding:5px;
    }
 
    #formulario .nascimento label, input {
@@ -195,7 +205,9 @@
    }
 
    #formulario .nascimento input {
-      margin-left:50px;
+      margin:auto;
+      font-size:16px;
+      padding:5px;
    }
 
    #formulario h1 {
@@ -215,74 +227,69 @@
    }
 
    .sexo input {
-      display:block;
       margin:20px 0px 0px 70px;
-      appearance:none;
-      height:20px;
-      width:20px;
-      transition:all 0.15s ease-out 0s;
-      background:#cbd1d8;
-      border:none;
-      color:#fff;
    }
 
    .exercicios {
-      margin-left:0px;
-      margin-right:0px;
-      margin-bottom:2px;
       height:400px;
    }
 
-   .exercicios #mais-menos, #ryan, #simpson {
-      display:block;
+   .opcoes {
+      position:relative;
+      top:195px;
+      height:110px;
    }
 
-   .exercicios .alinhado {
-      display:block;
-      margin-top:-21px;
-   }
-
-   #cariani, #exercicios-constantes, #mais-menos, #ryan, #simpson, #gosta-demais, #treino-regular, #varia, #bem-corpo, #sedentario {
+   .opcoes label, input {
       position:relative;
    }
 
-   #cariani, #gosta-demais {
-      top:200px;
-      left:-15px;
+   .opcoes label {
+      top:2px;
    }
 
    #exercicios-constantes, #treino-regular {
-      top:185px;
-      left:-15px;
+      top:-35px;
+      left:130px;
    }
 
-   #formulario #varia {
-      width:120px;
+   #treino-regular {
+      top:-32px;
    }
- 
+
    #mais-menos, #varia {
-      top:96px;
-      left:165px;
+      top:-25px;
+   }
+
+   #varia {
+      top:-23px;
    }
 
    #ryan, #bem-corpo {
-      top:80px;
-      left:165px;
+      top:-60px;
+      left:130px;
    }
 
-   .exercicios #bem-corpo {
-      width:115px;
+   #formulario .opcoes #bem-corpo {
+      width:110px;
+   }
+
+   #bem-corpo {
+      top:-57px;
    }
 
    #simpson, #sedentario {
-      top:45px;
-      left:-15px;
-   } 
+      top:-70px;
+   }
+
+   #sedentario {
+      top:-68px;
+   }
 
    .exercicios embed {
-      width:295px;
+      width:285px;
       height:225px;
-      margin-top:-300px;
+      margin-top:-155px;
       margin-left:0px;
    }
 
@@ -290,20 +297,8 @@
       margin:15px 0px 15px 0px;
    }
 
-   .altura-do-usuario input {
-      margin-left:40px;
-   }
-
    #altura-user, #peso-user {
-      padding:10px 15px 10px 15px;
-   }
-
-   #peso-user {
-      margin-left:40px;
-   }
-
-   #infos-primeira-etapa a {
-      font-size:19px;
-      margin-left:9px;
+      margin:auto;
+      padding:5px;
    }
 }

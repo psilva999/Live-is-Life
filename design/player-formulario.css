@@ -12,7 +12,7 @@
 }
 
 #jornada.active #formulario {
-   background:#F2F2F2;
+   background:#d8cbb9;
    border-radius:2px;
    position:absolute;
    top:0px;
@@ -36,9 +36,9 @@
 }
 
 #formulario::-webkit-scrollbar-thumb {
-  background-color:#e5bc82;
+  background-color:#B59047;
   border-radius:5px;
-  border:3px solid #e5bc82;
+  border:3px solid #B59047;
 }
 
 #formulario div {
@@ -64,37 +64,47 @@
    animation:mostra .2s;
 }
 
-span {
-   cursor:pointer;
+#formulario #volta-primeira-etapa, #volta-segunda-etapa {
+   position:absolute;
+   top:85px;
+   left:3px;
 }
 
-span img {
+#formulario span img {
    width:20px;
    height:20px;
    opacity:.8;
 }
-span img:hover {
+
+#formulario span img:hover {
    opacity:1;
 }
 
-span a {
+#formulario #infos-primeira-etapa, #infos-segunda-etapa, #entregar-formulario {
+   font-size:19px;
+   display:block;
+   margin-top:80px;
+   padding-bottom:100px;
+   font-family:'Kalam', cursive;
+   letter-spacing:2px;
+}
+
+#formulario div #proxima-pagina {
+   border-radius:10px;
+   position:relative;
+   left:4px;
    color:black;
    text-decoration:none;
-   display:block;
-   margin:40px 0px 100px 0px;
    text-transform:uppercase;
+   opacity:.8;
+   padding:7px 6px 3px 6px;
+   background:#F2F2F2;
+   border-bottom:2px solid rgba(0,0,0,.7);
 }
 
-#volta-primeira-etapa, #volta-segunda-etapa {
-   position:absolute;
-   top:85px;
-   left:20px;
-}
-
-#infos-primeira-etapa, #infos-segunda-etapa, #entregar-formulario {
-   padding:10px;
-   font-size:21px;
-   font-family:'Baloo Thambi 2', cursive;
+#formulario div #proxima-pagina:hover {
+   opacity:.9;
+   border-bottom:0px;
 }
 
 .nome-musica {
@@ -144,7 +154,6 @@ span a {
    align-items:center;
    bottom:40px;
    padding:5px;
-   opacity:.8;
 }
 
 .tempo-musica.active .barra {
@@ -167,12 +176,7 @@ span a {
    justify-content:space-between;
    align-items:center;
    padding:0px 9px 0px 9px;
-   opacity:.8;
    animation:mostra .2s;
-}
-
-#player.active:hover {
-   opacity:1;
 }
 
 #jornada.active #formulario p {
@@ -182,20 +186,27 @@ span a {
 
 @media (max-width:970px) {
    #formulario .fases {
-      font-size:19px;
-      letter-spacing:4px;
+      font-size:18px;
+      letter-spacing:2px;
+      padding-bottom:20px;
    }
 
-   #volta-primeira-etapa, #volta-segunda-etapa {
+   #formulario #volta-primeira-etapa, #volta-segunda-etapa {
       position:absolute;
-      top:78px;
-      left:20px;
+      top:75px;
+      left:0px;
+   }
+
+   #formulario #proxima-pagina {
+      margin-left:0px;
+      padding:7px 6px 3px 6px;
+      font-size:13px;
    }
 }
 
 @media (max-width:800px) {
    #jornada.active #formulario {
-      width:98vw;
+      width:100vw;
    }
 }
 

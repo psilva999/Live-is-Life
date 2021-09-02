@@ -5,7 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <meta charset="UTF-8">
 
-   <link rel="shortcut icon" type="image/x-icon" href="midia/images/mitty.ico">
+   <link rel="shortcut icon" type="image/x-icon" href="midia/mitty.ico">
    <link rel="stylesheet" href="design/body-section-header-article.css">
 
    <link rel="stylesheet" href="design/player-formulario.css">
@@ -40,7 +40,7 @@
       <article id="jornada">
          <form id="formulario" method="post">
 
-            <div class="primeira-parte active"> <h1 class="fases">Começo - Fase 1/3</h1>
+            <div class="primeira-parte active"> <h1 class="fases" id="titulo-primeira-fase">Começo - Fase 1/3</h1>
                <div class="configura-nome">
                   <label for="name-user">Nome</label>
                   <input type="text" id="nome-user" minlength="1" maxlength="12" placeholder="Pode ser apelido">
@@ -66,24 +66,25 @@
                   <label for="nao-informado">Prefiro não informar</label>
                </div>
                
-               <div class="exercicios">
-                  <h1>Gosta de treinar seu físico?</h1>
-                  <input type="radio" name="pLifestyle" id="cariani">
-                  <label for="cariani" class="alinhado" id="gosta-demais">Gosto até demais</label>
-               
-                  <input type="radio" name="pLifestyle" id="exercicios-constantes">
-                  <label for="exercicios-constantes" class="alinhado" id="treino-regular">Faço regularmente</label>
-               
-                  <input type="radio" name="pLifestyle" id="mais-menos">
-                  <label for="mais-menos" class="alinhado" id="varia">Mais ou menos</label>
-               
-                  <input type="radio" name="pLifestyle" id="ryan">
-                  <label for="ryan" class="alinhado" id="bem-corpo">Estou de bem com meu corpo</label>
-               
-                  <input type="radio" name="pLifestyle" id="simpson">
-                  <label for="simpson" class="alinhado" id="sedentario">Sou sedentário</label>
+               <div class="exercicios"> <h1>Gosta de se exercitar?</h1>
+                  <div class="opcoes">
+                     <input type="radio" name="pLifestyle" id="cariani">
+                     <label for="cariani" class="alinhado" id="gosta-demais">Minha paixão</label>
+                     
+                     <input type="radio" name="pLifestyle" id="exercicios-constantes">
+                     <label for="exercicios-constantes" class="alinhado" id="treino-regular">Faço regularmente</label>
+                     
+                     <input type="radio" name="pLifestyle" id="mais-menos">
+                     <label for="mais-menos" class="alinhado" id="varia">Mais ou menos</label>
+                     
+                     <input type="radio" name="pLifestyle" id="ryan">
+                     <label for="ryan" class="alinhado" id="bem-corpo">Estou de bem com meu corpo</label>
+                     
+                     <input type="radio" name="pLifestyle" id="simpson">
+                     <label for="simpson" class="alinhado" id="sedentario">Sou sedentário</label>
+                  </div>  
 
-                  <embed src="midia/video-audios-gif/padrao.gif" id="gif-exercicios">
+                  <embed src="https://i.ibb.co/cyLDj5v/padrao.gif" id="gif-exercicios">
                </div>
                
                <div class="altura-do-usuario">
@@ -96,14 +97,16 @@
                   <input type="number" name="sPeso" id="peso-user">
                </div>
 
-               <span id="infos-primeira-etapa">
-                  <a href="#titulo-segunda-parte">Levantar</a>
-               </span>
+               <div id="infos-primeira-etapa">
+                  <a href="#titulo-segunda-parte" id="proxima-pagina">Levantar</a>
+               </div>
             </div>
             
             <div class="segunda-parte"> <h1 id="titulo-segunda-parte" class="fases">Escolhas - Fase 2/3</h1>
                <span id="volta-primeira-etapa">
-                  <img src="midia/images/arrow-left.svg">
+                  <a href="#titulo-primeira-fase" id="volta-partes">
+                     <img src="midia/svg/arrow-left.svg">
+                  </a>
                </span>
 
                <div class="dieta"> <h1>Como está sua dieta?</h1>
@@ -175,14 +178,16 @@
                   <label for="sim-kids">Sim/Já tenho</label>
                </div>
 
-               <span id="infos-segunda-etapa">
-                  <a href="#titulo-terceira-parte">Caminhar</a>
-               </span>
+               <div id="infos-segunda-etapa">
+                  <a href="#titulo-terceira-parte" id="proxima-pagina">Caminhar</a>
+               </div>
             </div>
             
             <div class="terceira-parte"> <h1 id="titulo-terceira-parte" class="fases">Consequências - Fase 3/3</h1>
                <span id="volta-segunda-etapa">
-                  <img src="midia/images/arrow-left.svg">
+                  <a href="#titulo-segunda-fase" id="volta-partes">
+                     <img src="midia/svg/arrow-left.svg">
+                  </a>
                </span>
 
                <div class="substancias">
@@ -246,9 +251,9 @@
                   <label for="constante-suicidio">Constantemente</label>
                </div>
 
-               <span id="entregar-formulario">
-                  <a href="#passa-titulo-essencia">Refletir</a>
-               </span>
+               <div id="entregar-formulario">
+                  <a href="#passa-titulo-essencia" id="proxima-pagina">Refletir</a>
+               </div>
             </div>
          </form>
 
@@ -258,7 +263,7 @@
 
          <div class="nome-musica">
             <a href="https://www.youtube.com/watch?v=reYtFi9Tr-w" target="_blank">Space Oddity - David Bowie
-               <img src="midia/images/external-link.svg">
+               <img src="midia/svg/external-link.svg">
             </a>
          </div>
          
@@ -269,10 +274,10 @@
          </div>
          
          <div id="player">
-            <img src="midia/images/subtitles.svg" class="subtitle active">
+            <img src="midia/svg/subtitles.svg" class="subtitle active">
 
-            <img src="midia/images/skip-back.svg" class="skip">
-            <img src="midia/images/back-15-seconds.svg" class="opta-15-segundos">
+            <img src="midia/svg/skip-back.svg" class="skip">
+            <img src="midia/svg/back-15-seconds.svg" class="opta-15-segundos">
          
             <div class="play-pause">
                <div class="play"></div>
@@ -280,11 +285,11 @@
                <div class="pause active"></div>
             </div>
          
-            <img src="midia/images/skip-15-seconds.svg" class="opta-15-segundos">
-            <img src="midia/images/skip-forward.svg" class="skip">
+            <img src="midia/svg/skip-15-seconds.svg" class="opta-15-segundos">
+            <img src="midia/svg/skip-forward.svg" class="skip">
          
-            <img src="midia/images/sound.svg" class="sound active">
-            <img src="midia/images/muted.svg" class="muted">
+            <img src="midia/svg/sound.svg" class="sound active">
+            <img src="midia/svg/muted.svg" class="muted">
          </div>
       </article>
 
