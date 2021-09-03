@@ -211,6 +211,10 @@
 }
 
 @media (max-width:500px) {
+   #formulario div {
+      background:red;
+   }
+
    #player.active {
       width:100vw;
    }
