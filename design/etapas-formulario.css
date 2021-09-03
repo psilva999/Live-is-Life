@@ -308,6 +308,10 @@
 }
 
 @media (max-width:500px) {
+   .exercicios {
+      height:380px;
+   }
+
    .exercicios .opcoes {
       top:180px;
    }
