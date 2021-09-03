@@ -217,6 +217,12 @@
       margin:auto;
    }
 
+   #formulario .fases {
+      width:200px;
+      display:block;
+      margin:auto;
+   }
+
    #formulario .configura-nome #nome-user, #nasce-user, #altura-user, #peso-user {
       width:160px;
    }
