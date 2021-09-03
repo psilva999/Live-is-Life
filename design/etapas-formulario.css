@@ -360,4 +360,10 @@
       margin-top:-155px;
       margin-left:0px;
    }
+
+   .altura-do-usuario {
+      width:210px;
+      display:block;
+      margin:auto auto 30px auto;
+   }
 }

@@ -211,8 +211,18 @@
 }
 
 @media (max-width:500px) {
-   #formulario div {
-      background:red;
+   #formulario .configura-nome, .nascimento, .sexo, .peso-usuario, #infos-primeira-etapa, #infos-segunda-etapa, #entregar-formulario {
+      width:210px;
+      display:block;
+      margin:auto;
+   }
+
+   #formulario .sexo label {
+      margin-left:28px;
+   }
+
+   #formulario .sexo input {
+      margin-left:3px;
    }
 
    #player.active {
