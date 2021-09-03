@@ -1,3 +1,5 @@
+var formulario = document.querySelector('#formulario')
+
 var botaoQue = {
    entregaPrimeiraEtapa: document.querySelector('#infos-primeira-etapa'),
    entregaSegundaEtapa: document.querySelector('#infos-segunda-etapa'),
@@ -10,15 +12,15 @@ var botaoQue = {
 
 var mudaPara = {
    primeiraParteForm: document.querySelector('.primeira-parte'),
-   segundaParteForm: document.querySelector('.segunda-parte'),
 
+   segundaParteForm: document.querySelector('.segunda-parte'),
    terceiraParteForm: document.querySelector('.terceira-parte'),
    resultado: document.querySelector('#essencia')
 }
 
 botaoQue.entregaPrimeiraEtapa.addEventListener('click', () => {
    mudaPara.primeiraParteForm.classList.toggle('active')
-   
+
    mudaPara.segundaParteForm.classList.add('active')
 })
 
@@ -31,6 +33,7 @@ botaoQue.entregaSegundaEtapa.addEventListener('click', () => {
 botaoQue.finalizaEtapas.addEventListener('click', () => {
    mudaPara.terceiraParteForm.classList.toggle('active')
    
+   formulario.style.background = '#F2F2F2'
    mudaPara.resultado.classList.add('active')
 })
 

@@ -1,1 +1,66 @@
 @charset 'UTF-8';
+
+#formulario .segunda-parte div {
+   display:block;
+   margin:auto;
+   margin-bottom:30px;
+   width:300px;
+}
+
+#formulario .segunda-parte h1 {
+   display:block;
+   margin-bottom:30px;
+}
+
+#formulario .segunda-parte input {
+   margin-top:20px;
+   position:relative;
+   right:75px;
+}
+
+#formulario .segunda-parte label {
+   position:relative;
+   top:-22px;
+   display:block;
+   margin:auto;
+   text-align:left;
+   width:90px;
+}
+
+.dieta input, .saude input, .vida-sexual input, .sono input, .kids input {
+   display:block;
+   margin-top:0px;
+   margin-left:150px;
+   appearance:none;
+   height:20px;
+   width:20px;
+   transition:all 0.15s ease-out 0s;
+   background:white;
+   border:none;
+   color:#fff;
+   border-radius:50%;
+}
+
+.dieta input:hover, .saude input:hover, .vida-sexual input:hover, .sono input:hover, .kids input:hover {
+   background:#bfc7d1;
+}
+
+.dieta input:checked, .saude input:checked, .vida-sexual input:checked, .sono input:checked, .kids input:checked {
+   background:#40e0d0;
+}
+
+.dieta input:checked::before, .saude input:checked::before, .vida-sexual input:checked::before, .sono input:checked::before, .kids input:checked::before {
+   position:relative;
+   left:3.5px;
+   content:'✔';
+}
+
+.dieta input:checked::after, .saude input:checked::after, .vida-sexual input:checked::after, .sono input:checked::after, .kids input:checked::after {
+   background:#40e0d0;
+   content:'';
+   display:block;
+}
+
+.dieta input::after, .saude input::after, .vida-sexual input::after, .sono input::after, .kids input::after {
+   border-radius:50%;
+}

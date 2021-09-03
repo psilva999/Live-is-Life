@@ -1,1 +1,68 @@
 @charset 'UTF-8';
+
+#formulario .terceira-parte div {
+   display:block;
+   margin:auto;
+   margin-bottom:30px;
+   width:300px;
+}
+
+#formulario .terceira-parte h1 {
+   display:block;
+   margin-bottom:30px;
+}
+
+#formulario .terceira-parte input {
+   margin-top:20px;
+   position:relative;
+   right:75px;
+}
+
+#formulario .terceira-parte label {
+   position:relative;
+   top:-22px;
+   display:block;
+   margin:auto;
+   text-align:left;
+   width:90px;
+}
+
+.substancias input, .ansiedade input, .depressao input, .suicidio input {
+   display:block;
+   margin:20px 0px 0px 150px;
+   appearance:none;
+   height:20px;
+   width:20px;
+   transition:all 0.15s ease-out 0s;
+   background:white;
+   border:none;
+   color:#fff;
+}
+
+.ansiedade input, .depressao input, .suicidio input {
+   border-radius:50%;
+}
+
+.substancias input:hover, .ansiedade input:hover, .depressao input:hover, .suicidio input:hover {
+   background:#bfc7d1;
+}
+
+.substancias input:checked, .ansiedade input:checked, .depressao input:checked, .suicidio input:checked {
+   background:#40e0d0;
+}
+
+.substancias input:checked::before, .ansiedade input:checked::before, .depressao input:checked::before, .suicidio input:checked::before {
+   position:relative;
+   left:3.5px;
+   content:'✔';
+}
+
+.substancias input:checked::after, .ansiedade input:checked::after, .depressao input:checked::after, .suicidio input:checked::after {
+   background:#40e0d0;
+   content:'';
+   display:block;
+}
+
+.ansiedade input::after, .depressao input::after, .suicidio input::after {
+   border-radius:50%;
+}
