@@ -212,9 +212,13 @@
 
 @media (max-width:500px) {
    #formulario .configura-nome, .nascimento, .sexo, .peso-usuario, #infos-primeira-etapa, #infos-segunda-etapa, #entregar-formulario {
-      width:210px;
+      width:180px;
       display:block;
       margin:auto;
+   }
+
+   #formulario .configura-nome #nome-user, #nasce-user, #altura-user, #peso-user {
+      width:160px;
    }
 
    #formulario .sexo label {
