@@ -310,9 +310,14 @@
 @media (max-width:500px) {
    #formulario .exercicios {
       background:red;
-      width:245px;
+      width:225px;
       height:370px;
       padding:0px;
+   }
+
+   .exercicios h1 {
+      padding-bottom:0px;
+      margin-bottom:50px;
    }
 
    .exercicios .opcoes {
@@ -328,13 +333,14 @@
       top:5px;
    }
 
+   #formulario .opcoes #exercicios-constantes {
+      top:-31px;
+   }
+
    #formulario .opcoes #treino-regular {
       width:90px;
       font-size:13px;
-   }
-
-   #formulario #treino-regular {
-      top:-30px;
+      top:-27px;
    }
 
    #formulario .opcoes #mais-menos, #varia {
@@ -347,11 +353,8 @@
    }
 
    #formulario .opcoes #bem-corpo {
-      width:90px;
+      width:70px;
       font-size:13px;
-   }
-
-   #formulario #bem-corpo {
       top:-55px;
    }
 
@@ -360,17 +363,18 @@
    }
 
    #formulario .opcoes #simpson, #sedentario {
-      top:-85px;
+      top:-105px;
    }
 
    #formulario .opcoes #sedentario {
-      width:100px;
-      top:-80px;
+      width:90px;
+      top:-100px;
       font-size:13px;
    }
 
-   .exercicios embed {
-      width:245px;
+   .exercicios #gif-exercicios {
+      background:yellow;
+      width:225px;
       height:205px;
       margin-top:-155px auto;
    }
