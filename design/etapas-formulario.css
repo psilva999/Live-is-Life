@@ -309,6 +309,7 @@
 
 @media (max-width:500px) {
    #formulario .exercicios {
+      background:red;
       width:245px;
       height:370px;
       padding:0px;
