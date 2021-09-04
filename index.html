@@ -7,9 +7,9 @@
 
    <link rel="shortcut icon" type="image/x-icon" href="midia/mitty.ico">
    <link rel="stylesheet" href="design/body-section-header-article.css">
-   <link rel="stylesheet" href="design/player-form.css">
-
+   <link rel="stylesheet" href="design/form.css">
    <link rel="stylesheet" href="design/etapas-levantar.css">
+
    <link rel="stylesheet" href="design/caminhar.css">
    <link rel="stylesheet" href="design/refletir.css">
    <link rel="stylesheet" href="design/resultado.css">
@@ -264,23 +264,19 @@
 
          </div>
 
-         <div class="nome-musica">
-            <a href="https://www.youtube.com/watch?v=reYtFi9Tr-w" target="_blank">Space Oddity - David Bowie
-               <img src="midia/svg/external-link.svg">
-            </a>
-         </div>
+         <div class="nome-musica"></div>
          
          <div class="tempo-musica">
-            <div class="momento-da-musica">00:00</div>
+            <div class="momento-da-musica"></div>
             <div class="barra">/</div>
-            <div class="total">00:00</div>
+            <div class="total"></div>
          </div>
          
          <div id="player">
             <img src="midia/svg/subtitles.svg" class="subtitle active">
 
-            <img src="midia/svg/skip-back.svg" class="skip">
-            <img src="midia/svg/back-15-seconds.svg" class="opta-15-segundos">
+            <img src="midia/svg/skip-back.svg" class="skip-back">
+            <img src="midia/svg/back-15-seconds.svg" class="volta-15-segundos" data-skip='-15'>
          
             <div class="play-pause">
                <div class="play"></div>
@@ -288,12 +284,14 @@
                <div class="pause active"></div>
             </div>
          
-            <img src="midia/svg/skip-15-seconds.svg" class="opta-15-segundos">
-            <img src="midia/svg/skip-forward.svg" class="skip">
+            <img src="midia/svg/skip-15-seconds.svg" class="avanca-15-segundos" data-skip='15'>
+            <img src="midia/svg/skip-forward.svg" class="skip-forward">
          
             <img src="midia/svg/sound.svg" class="sound active">
             <img src="midia/svg/muted.svg" class="muted">
          </div>
+
+         <audio src="midia/audios/stay-alive-jose-gonzalez.mp3" id="audio"></audio>
       </article>
 
         <!--fonte da imagem de fundo: https://unsplash.com/photos/78A265wPiO4
@@ -302,9 +300,7 @@
             stay alive - https://www.youtube.com/watch?v=OgO2U4quFDk&t=35s-->
     </section>
 
-    <script src="script/inicio.js"></script>
-    <script src="script/player.js"></script>
-
+    <script src="script/inicio-player.js"></script>
     <script src="script/etapas-form.js"></script>
     <script src="script/formulario.js"></script>
 
