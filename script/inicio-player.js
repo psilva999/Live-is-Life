@@ -31,7 +31,8 @@ var mexeNo = {
    trocaMusica: document.querySelector('.skip-forward'),
    desabilitaTrocaMusica: document.querySelector('.skip-forward-off'),
 
-   ligaDesligaLegenda: document.querySelector('.subtitle')
+   ligaDesligaLegenda: document.querySelector('.subtitle'),
+   subtitleMusica: document.querySelector('.legenda-musica')
 }
 
 clicaNoBotao.inicial.addEventListener('click', () => {
@@ -77,13 +78,18 @@ function proximoSom() {
    altera.nomeMusica.innerHTML = "<a href='https://www.youtube.com/watch?v=OgO2U4quFDk' target='_blank'>Of Monsters and Men – Dirty Paws<img src='midia/svg/external-link.svg'></a>"
 
    mexeNo.tempoTotalDaMusica.innerHTML = `04:20`
-   if (mexeNo.play.classList.contains('active')) {
+   noFinal()
 
+   if (mexeNo.play.classList.contains('active')) {
       mexeNo.play.classList.remove('active')
+
       mexeNo.pause.classList.add('active')
       mexeNo.audio.play()
    }
-   noFinal()
+
+   else {
+      mexeNo.audio.play()
+   }
 }
 
 function mudaMinutosSegundos() {
@@ -211,9 +217,13 @@ mexeNo.voltaMusica.addEventListener('click', () => {
 mexeNo.ligaDesligaLegenda.addEventListener('click', () => {
    if (mexeNo.ligaDesligaLegenda.classList.contains('active')) {
       mexeNo.ligaDesligaLegenda.classList.remove('active')
+
+      mexeNo.subtitleMusica.style.display = 'none'
    }
 
-   else {
-      mexeNo.ligaDesligaLegenda.classList.add('active')
+   else { 
+      mexeNo.ligaDesligaLegenda.classList.add('active') 
+
+      mexeNo.subtitleMusica.style.display = 'block'
    }
 })

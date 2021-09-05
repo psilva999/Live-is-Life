@@ -1,12 +1,16 @@
 @charset 'UTF-8';
 
+#player.active, .nome-musica.active, .tempo-musica.active {
+   background-color:#772f1a;
+   background-image: linear-gradient(315deg, #772f1a 0%, #f2a65a 74%);
+}
+
 .nome-musica {
    display:none;
 }
 
 .nome-musica.active {
    font-family: 'Baloo Thambi 2', cursive;
-   background:#e5bc82;
    border-radius:10px;
    position:fixed;
    display:flex;
@@ -41,7 +45,6 @@
    font-family: 'Baloo Thambi 2', cursive;
    font-size:15px;
    display:block;
-   background:#e5bc82;
    border-radius:2px;
    position:fixed;
    display:flex;
@@ -76,7 +79,6 @@
 #player.active {
    border-radius:3px;
    position:fixed;
-   background:#e5bc82;
    bottom:0;
    height:40px;
    width:350px;
@@ -123,7 +125,7 @@
    background:black;
    border-style:double;
    border-width:0px 9px 0px 9px;
-   border-color:#e5bc82;
+   border-color:#C77D44;
 }
 
 #player.active .restart {
@@ -163,6 +165,18 @@
 
 #player.active .subtitle.active {
    border-bottom:3px solid black;
+}
+
+.legenda-musica {
+   position:absolute;
+   top:40px;
+   width:230px;
+   display:none;
+   color:black;
+   font-size:12px;
+   text-align:center;
+   text-transform:uppercase;
+   font-family: 'Baloo Thambi 2', cursive;
 }
 
 @media (max-width:500px) {
