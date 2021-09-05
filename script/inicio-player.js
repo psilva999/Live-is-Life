@@ -77,7 +77,12 @@ function proximoSom() {
    altera.nomeMusica.innerHTML = "<a href='https://www.youtube.com/watch?v=OgO2U4quFDk' target='_blank'>Of Monsters and Men – Dirty Paws<img src='midia/svg/external-link.svg'></a>"
 
    mexeNo.tempoTotalDaMusica.innerHTML = `04:20`
-   pausePlay()
+   if (mexeNo.play.classList.contains('active')) {
+
+      mexeNo.play.classList.remove('active')
+      mexeNo.pause.classList.add('active')
+      mexeNo.audio.play()
+   }
    noFinal()
 }
 
