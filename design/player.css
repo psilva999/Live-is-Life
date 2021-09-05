@@ -51,17 +51,22 @@
    padding:5px;
 }
 
+.momento-da-musica {
+   padding:1px;
+   width:40px;
+   text-align:left;
+}
+
 .tempo-musica.active .barra {
-   width:17px;
+   width:15px;
    text-align:center;
 }
 
-.momento-da-musica {
+.total {
    position:relative;
-   top:0px;
-   padding:1px;
-   width:40px;
-   left:2px;
+   width:39px;
+   padding:1px 2px 1px 1px;
+   text-align:center;
 }
 
 #player {
@@ -82,7 +87,7 @@
    animation:mostra .2s;
 }
 
-#player.active .play-pause, .volta-15-segundos, .avanca-15-segundos, .skip-forward, .sound.active, .muted.active, .subtitle, .subtitle.active {
+#player.active .play-pause, .restart, .volta-15-segundos, .avanca-15-segundos, .skip-back, .skip-forward, .sound.active, .muted.active, .subtitle, .subtitle.active {
    cursor:pointer;
 }
 
@@ -121,12 +126,23 @@
    border-color:#e5bc82;
 }
 
+#player.active .restart {
+   display:none;
+}
+
+#player.active .restart.active {
+   display:block;
+   width:22px;
+   height:22px;
+}
+
 #player.active .volta-15-segundos, .avanca-15-segundos {
    width:25px;
    height:25px;
 }
 
-.skip-back {
+.skip-forward-off {
+   display:none;
    opacity:.5;
 }
 
@@ -141,10 +157,11 @@
 #player.active .subtitle {
    width:22px;
    height:22px;
+   border-radius:3px;
+   border-bottom:1px solid black;
 }
 
 #player.active .subtitle.active {
-   border-radius:3px;
    border-bottom:3px solid black;
 }
 
