@@ -85,16 +85,19 @@
 #formulario #infos-primeira-etapa, #infos-segunda-etapa, #entregar-formulario {
    font-size:19px;
    display:block;
-   margin-top:80px;
+   margin:80px auto auto auto;
+   width:120px;
    padding-bottom:100px;
    font-family:'Kalam', cursive;
    letter-spacing:2px;
+   position:relative;
+   left:3px;
 }
 
 #formulario div #proxima-pagina {
    border-radius:10px;
    position:relative;
-   left:4px;
+   left:0px;
    color:black;
    text-decoration:none;
    text-transform:uppercase;
@@ -108,8 +111,6 @@
    opacity:.9;
    border-bottom:0px;
 }
-
-
 
 #jornada.active #formulario p {
    display:block;
@@ -132,6 +133,11 @@
    #formulario #volta-primeira-etapa img, #volta-segunda-etapa img {
       width:16px;
       height:16px;
+   }
+
+   #formulario #infos-primeira-etapa, #infos-segunda-etapa, #entregar-formulario {
+      width:90px;
+      left:4px;
    }
 
    #formulario #proxima-pagina {
