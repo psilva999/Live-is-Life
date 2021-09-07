@@ -165,6 +165,8 @@ clicaNoBotao.aceitaSom.addEventListener('click', () => {
 
    tempoVideo()
    mexeNo.audio.play()
+   mexeNo.audio.volume = 0.4
+
    altera.jornada.classList.toggle('active')
 })
 
@@ -243,18 +245,39 @@ mexeNo.containerSound.addEventListener('click', () => {
    }
 })
 
+function setVolume() {
+   mexeNo.audio.volume = mexeNo.alteraSom.value / 10000
+   
+   if (mexeNo.alteraSom.value == 0) {
+      mexeNo.som.classList.remove('active')
+      mexeNo.somDesligado.classList.add('active')
+   }
+
+   else if (mexeNo.alteraSom.value >= 1) {
+      mexeNo.somDesligado.classList.remove('active')
+      mexeNo.som.classList.add('active')
+   }
+}
+
+mexeNo.alteraSom.addEventListener('mousemove', setVolume)
+
 mexeNo.som.addEventListener('click', () => {
    mexeNo.audio.muted = true
+   mexeNo.alteraSom.value = 0
 
    mexeNo.som.classList.remove('active')
    mexeNo.somDesligado.classList.add('active')
+   mexeNo.alteraSom.classList.add('active')
 })
 
 mexeNo.somDesligado.addEventListener('click', () => {
    mexeNo.audio.muted = false
+   mexeNo.audio.volume = 0.4
+   mexeNo.alteraSom.value = 4000
 
    mexeNo.somDesligado.classList.remove('active')
    mexeNo.som.classList.add('active')
+   mexeNo.alteraSom.classList.add('active')
 })
 
 mexeNo.containerSound.addEventListener('mouseover', () => {
@@ -267,6 +290,7 @@ mexeNo.containerSound.addEventListener('mouseout', () => {
 
 mexeNo.alteraSom.addEventListener('mouseover', () => {
    mexeNo.alteraSom.classList.add('active')
+   mexeNo.audio.muted = false
 })
 
 mexeNo.alteraSom.addEventListener('mouseout', () => {
