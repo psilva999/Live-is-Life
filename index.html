@@ -293,20 +293,21 @@
             <img src="midia/svg/skip-15-seconds.svg" class="avanca-15-segundos" data-skip='15'>
             <img src="midia/svg/skip-forward.svg" class="skip-forward">
             <img src="midia/svg/skip-forward.svg" class="skip-forward-off">
-         
-            <img src="midia/svg/sound.svg" class="sound active">
-            <img src="midia/svg/muted.svg" class="muted">
+            
+            <div id='container-som'>
+               <img src="midia/svg/sound.svg" class="sound active">
+               <img src="midia/svg/muted.svg" class="muted">
+            </div>
          </div>
-
          <audio src="midia/audios/stay-alive-jose-gonzalez.mp3" id="audio"></audio>
-      </article>
 
+      </article>
+      <input type="range" name='sound' id="altera-som" min="0" max="10000" step="1000">
+   </section>
         <!--fonte da imagem de fundo: https://unsplash.com/photos/78A265wPiO4
 
             monster and man - https://www.youtube.com/watch?v=OgO2U4quFDk&t=35s
             stay alive - https://www.youtube.com/watch?v=OgO2U4quFDk&t=35s-->
-    </section>
-
     <script src="script/inicio-player.js"></script>
     <script src="script/etapas-form.js"></script>
     <script src="script/formulario.js"></script>

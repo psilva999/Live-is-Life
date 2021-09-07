@@ -19,9 +19,9 @@ var mudaPara = {
 }
 
 botaoQue.entregaPrimeiraEtapa.addEventListener('click', () => {
-   formulario.style.backgroundColor = '#861657'
-   formulario.style.backgroundImage = 'linear-gradient(326deg, #861657 0%, #ffa69e 74%)'
-
+   formulario.style.backgroundColor = '#f5d020'
+   formulario.style.backgroundImage = 'linear-gradient(315deg, #f5d020 0%, #f53803 74%)'
+   
    mudaPara.primeiraParteForm.classList.toggle('active')
    mudaPara.segundaParteForm.classList.add('active')
 })
@@ -43,16 +43,16 @@ botaoQue.finalizaEtapas.addEventListener('click', () => {
 })
 
 botaoQue.voltaPrimeiraEtapa.addEventListener('click', () => {
-   formulario.style.backgroundColor = '#bd4f6c'
-   formulario.style.backgroundImage = 'linear-gradient(326deg, #bd4f6c 0%, #d7816a 74%)'
+   formulario.style.backgroundColor = '#f9484a'
+   formulario.style.backgroundImage = 'linear-gradient(315deg, #f9484a 0%, #fbd72b 74%)'
 
    mudaPara.segundaParteForm.classList.toggle('active')
    mudaPara.primeiraParteForm.classList.add('active')
 })
 
 botaoQue.voltaSegundaEtapa.addEventListener('click', () => {
-   formulario.style.backgroundColor = '#861657'
-   formulario.style.backgroundImage = 'linear-gradient(326deg, #861657 0%, #ffa69e 74%)'
+   formulario.style.backgroundColor = '#f5d020'
+   formulario.style.backgroundImage = 'linear-gradient(315deg, #f5d020 0%, #f53803 74%)'
 
    mudaPara.terceiraParteForm.classList.toggle('active')
    mudaPara.segundaParteForm.classList.add('active')

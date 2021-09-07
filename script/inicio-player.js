@@ -22,7 +22,7 @@ var mexeNo = {
 
    play: document.querySelector('.play'),
    pause: document.querySelector('.pause'),
-   restart:document.querySelector('.restart'),
+   restart: document.querySelector('.restart'),
 
    voltaQuinzeSeg: document.querySelector('.volta-15-segundos'),
    avancaQuinzeSeg: document.querySelector('.avanca-15-segundos'),
@@ -30,6 +30,11 @@ var mexeNo = {
    voltaMusica: document.querySelector('.skip-back'),
    trocaMusica: document.querySelector('.skip-forward'),
    desabilitaTrocaMusica: document.querySelector('.skip-forward-off'),
+
+   containerSound: document.querySelector('#container-som'),
+   som: document.querySelector('.sound'),
+   alteraSom: document.querySelector('#altera-som'),
+   somDesligado: document.querySelector('.muted'),
 
    ligaDesligaLegenda: document.querySelector('.subtitle'),
    subtitleMusica: document.querySelector('.legenda-musica')
@@ -226,4 +231,44 @@ mexeNo.ligaDesligaLegenda.addEventListener('click', () => {
 
       mexeNo.subtitleMusica.style.display = 'block'
    }
+})
+
+mexeNo.containerSound.addEventListener('click', () => {
+   if (mexeNo.alteraSom.classList.contains('active')) {
+      mexeNo.alteraSom.classList.remove('active')
+   }
+
+   else {
+      mexeNo.alteraSom.classList.add('active')
+   }
+})
+
+mexeNo.som.addEventListener('click', () => {
+   mexeNo.audio.muted = true
+
+   mexeNo.som.classList.remove('active')
+   mexeNo.somDesligado.classList.add('active')
+})
+
+mexeNo.somDesligado.addEventListener('click', () => {
+   mexeNo.audio.muted = false
+
+   mexeNo.somDesligado.classList.remove('active')
+   mexeNo.som.classList.add('active')
+})
+
+mexeNo.containerSound.addEventListener('mouseover', () => {
+   mexeNo.alteraSom.classList.add('active')
+})
+
+mexeNo.containerSound.addEventListener('mouseout', () => {
+   mexeNo.alteraSom.classList.remove('active')
+})
+
+mexeNo.alteraSom.addEventListener('mouseover', () => {
+   mexeNo.alteraSom.classList.add('active')
+})
+
+mexeNo.alteraSom.addEventListener('mouseout', () => {
+   mexeNo.alteraSom.classList.remove('active')
 })

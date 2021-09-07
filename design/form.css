@@ -24,8 +24,9 @@
    scrollbar-width:thin;
    scrollbar-color:#7c6a6a;
    font-family: 'Baloo Thambi 2', cursive;
-   background-color:#bd4f6c;
-   background-image:linear-gradient(326deg, #bd4f6c 0%, #d7816a 74%);
+   background-color:#f9484a;
+   background-image:linear-gradient(315deg, #f9484a 0%, #fbd72b 74%);
+
 }
 
 #formulario::-webkit-scrollbar {
@@ -142,7 +143,7 @@
 
 @media (max-width:800px) {
    #jornada.active #formulario {
-      width:95vw;
+      width:98vw;
    }
 }
 

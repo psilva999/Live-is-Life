@@ -148,6 +148,12 @@
    opacity:.5;
 }
 
+#container-som {
+   position:relative;
+   padding-top:15px;
+   top:-8px;
+}
+
 #player.active .sound, .muted {
    display:none;
 }
@@ -155,6 +161,34 @@
 #player.active .sound.active, .muted.active {
    display:block;
 }
+
+#altera-som {
+   display:none;
+}
+
+#altera-som.active {
+   position:absolute;
+   transform:rotate(-90deg);
+   display:block;
+   margin-left:310px;
+   bottom:78px;
+   width:75px;
+   height:6px;
+   border-radius:10px;
+   /* appearance:none;
+   background:black;
+   cursor:pointer; */
+}
+
+/*#altera-som::-webkit-slider-thumb {
+   border-radius:50%;
+   width:13px;
+   height:13px;
+   cursor:pointer;
+   appearance:none; 
+   background-color:#772f1a;
+   background-image: linear-gradient(315deg, #772f1a 0%, #f2a65a 74%);
+}*/
 
 #player.active .subtitle {
    width:22px;
@@ -182,6 +216,10 @@
 @media (max-width:500px) {
    #player.active {
       width:100vw;
+   }
+
+   #altera-som.active {
+      right:-20px;
    }
 }
 
