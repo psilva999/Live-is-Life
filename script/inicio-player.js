@@ -79,6 +79,9 @@ function proximoSom() {
    mexeNo.trocaMusica.style.display = 'none'
    mexeNo.desabilitaTrocaMusica.style.display = 'block'
 
+   mexeNo.subtitleMusica.classList.remove('stay-alive')
+   mexeNo.subtitleMusica.classList.add('dirty-paws')
+
    mexeNo.audio.src = 'midia/audios/of-monsters-and-men-dirty-paws.mp3'
    altera.nomeMusica.innerHTML = "<a href='https://www.youtube.com/watch?v=OgO2U4quFDk' target='_blank'>Of Monsters and Men – Dirty Paws<img src='midia/svg/external-link.svg'></a>"
 
@@ -95,35 +98,6 @@ function proximoSom() {
    else {
       mexeNo.audio.play()
    }
-}
-
-function mudaMinutosSegundos() {
-   var aparece = {
-      momentoDaMusica: document.querySelector('.momento-da-musica'),
-      mudaMinutos: Math.floor(mexeNo.audio.currentTime / 60, 10),
-      mudaSegundos: Math.floor(mexeNo.audio.currentTime % 60)
-   }
-
-   if (aparece.mudaSegundos >= 0 && aparece.mudaSegundos < 10) {
-      aparece.momentoDaMusica.innerHTML = `0${aparece.mudaMinutos}:0${aparece.mudaSegundos}`
-   }
-
-   else {
-      aparece.momentoDaMusica.innerHTML = `0${aparece.mudaMinutos}:${aparece.mudaSegundos}`
-   }
-
-   if (aparece.mudaMinutos == 4 && aparece.mudaSegundos == 25) {
-      proximoSom()
-   }  
-
-   retiraPlay()
-   function retiraPlay() {
-      if (aparece.mudaMinutos == 4 && aparece.mudaSegundos >= 20 && mexeNo.restart.classList.contains('active')) {
-         retiraActivePlayPause()
-      }
-   }
-
-   noFinal()
 }
 
 function noFinal() {
@@ -209,6 +183,12 @@ mexeNo.voltaMusica.addEventListener('click', () => {
    }
 
    else {
+      if (mexeNo.subtitleMusica.classList.contains('dirty-paws')) {
+         mexeNo.subtitleMusica.classList.remove('dirty-paws')
+
+         mexeNo.subtitleMusica.classList.add('stay-alive')
+      }
+
       mexeNo.audio.src = 'midia/audios/stay-alive-jose-gonzalez.mp3'
       altera.nomeMusica.innerHTML = "<a href='https://www.youtube.com/watch?v=_HWRGKfSq3A' target='_blank'>Stay Alive - José González <img src='midia/svg/external-link.svg'></a>"
 
@@ -296,3 +276,515 @@ mexeNo.alteraSom.addEventListener('mouseover', () => {
 mexeNo.alteraSom.addEventListener('mouseout', () => {
    mexeNo.alteraSom.classList.remove('active')
 })
+
+function mudaMinutosSegundos() {
+   var aparece = {
+      momentoDaMusica: document.querySelector('.momento-da-musica'),
+      mudaMinutos: Math.floor(mexeNo.audio.currentTime / 60, 10),
+      mudaSegundos: Math.floor(mexeNo.audio.currentTime % 60)
+   }
+
+   var legendaStayAlive = document.querySelector('.legenda-musica')
+
+   if (aparece.mudaSegundos >= 0 && aparece.mudaSegundos < 10) {
+      aparece.momentoDaMusica.innerHTML = `0${aparece.mudaMinutos}:0${aparece.mudaSegundos}`
+   }
+
+   else {
+      aparece.momentoDaMusica.innerHTML = `0${aparece.mudaMinutos}:${aparece.mudaSegundos}`
+   }
+
+   if (aparece.mudaMinutos == 4 && aparece.mudaSegundos == 25) {
+      proximoSom()
+   }
+
+   retiraPlay()
+   function retiraPlay() {
+      if (aparece.mudaMinutos == 4 && aparece.mudaSegundos >= 20 && mexeNo.restart.classList.contains('active')) {
+         retiraActivePlayPause()
+      }
+   }
+   noFinal()
+
+   if (legendaStayAlive.classList.contains('stay-alive')) {
+      if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 0 && aparece.mudaSegundos < 13) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 13 && aparece.mudaSegundos <= 16) {
+         legendaStayAlive.innerHTML = 'Há um ritmo de pressa nos dias de hoje'
+      }
+
+      else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos > 16 && aparece.mudaSegundos < 19) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 19 && aparece.mudaSegundos <= 22) {
+         legendaStayAlive.innerHTML = 'Onde as luzes não se movem e as cores não desaparecem'
+      }
+
+      else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 23 && aparece.mudaSegundos <= 25) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 26 && aparece.mudaSegundos <= 28) {
+         legendaStayAlive.innerHTML = 'Te deixa vazio, com nada além de sonhos'
+      }
+
+      else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 29 && aparece.mudaSegundos <= 31) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 32 && aparece.mudaSegundos <= 35) {
+         legendaStayAlive.innerHTML = 'Em um mundo que se tornou superficial. Em um mundo que se tornou pobre'
+      }
+
+      else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 36 && aparece.mudaSegundos <= 38) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 39 && aparece.mudaSegundos <= 41) {
+         legendaStayAlive.innerHTML = 'Às vezes há coisas que um homem não pode saber'
+      }
+
+      else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 42 && aparece.mudaSegundos <= 44) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 45 && aparece.mudaSegundos <= 48) {
+         legendaStayAlive.innerHTML = 'Engrenagens não ligam e as folhas não crescem'
+      }
+
+      else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 49 && aparece.mudaSegundos <= 51) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 52 && aparece.mudaSegundos <= 54) {
+         legendaStayAlive.innerHTML = 'Não há lugar para correr e não há gasolina'
+      }
+
+      else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 55 && aparece.mudaSegundos <= 57) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 58 || aparece.mudaMinutos == 1 && aparece.mudaSegundos <= 1) {
+         legendaStayAlive.innerHTML = 'O motor não liga e o trem não parte'
+      }
+
+      else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 2 && aparece.mudaSegundos <= 4) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 5 && aparece.mudaSegundos <= 7) {
+         legendaStayAlive.innerHTML = 'Motores não ligam e o trem não parte'
+      }
+
+      else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 8 && aparece.mudaSegundos <= 10) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 11 && aparece.mudaSegundos <= 13) {
+         legendaStayAlive.innerHTML = 'Eu vou ficar com você esta noite'
+      }
+
+      else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 14 && aparece.mudaSegundos <= 17) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 18 && aparece.mudaSegundos <= 20) {
+         legendaStayAlive.innerHTML = 'Te abraçar até a luz da manhã'
+      }
+
+      else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 21 && aparece.mudaSegundos <= 23) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 24 && aparece.mudaSegundos <= 27) {
+         legendaStayAlive.innerHTML = 'De manhã assistir um novo dia nascer'
+      }
+
+      else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 28 && aparece.mudaSegundos <= 30) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 31 && aparece.mudaSegundos <= 33) {
+         legendaStayAlive.innerHTML = 'Nós vamos fazer o que for apenas para permanecermos vivos'
+      }
+
+      else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 34 && aparece.mudaSegundos <= 36) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 37 && aparece.mudaSegundos <= 39) {
+         legendaStayAlive.innerHTML = 'Nós vamos fazer o que for apenas para permanecermos vivos'
+      }
+
+      else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 40 && aparece.mudaSegundos <= 43) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 44 && aparece.mudaSegundos <= 46) {
+         legendaStayAlive.innerHTML = 'Bem o que eu sinto é a maneira que eu escrevo'
+      }
+
+      else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 47 && aparece.mudaSegundos <= 48) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 49 && aparece.mudaSegundos <= 51) {
+         legendaStayAlive.innerHTML = 'Não é como os pensamentos do homem que mente'
+      }
+
+      else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 52 && aparece.mudaSegundos <= 54) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 55 && aparece.mudaSegundos <= 57) {
+         legendaStayAlive.innerHTML = 'Há uma verdade e ela está do nosso lado'
+      }
+
+      else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 58 && aparece.mudaSegundos <= 59) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 00 && aparece.mudaSegundos <= 2) {
+         legendaStayAlive.innerHTML = 'O amanhecer está chegando, abra seus olhos'
+      }
+
+      else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 3 && aparece.mudaSegundos <= 5) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 6 && aparece.mudaSegundos <= 8) {
+         legendaStayAlive.innerHTML = 'Olhe para o sol conforme os novos dias amanhecem'
+      }
+
+      else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 9 && aparece.mudaSegundos <= 10) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 11 && aparece.mudaSegundos <= 13) {
+         legendaStayAlive.innerHTML = 'Eu vou esperar por você hoje à noite'
+      }
+
+      else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 14 && aparece.mudaSegundos <= 16) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 17 && aparece.mudaSegundos <= 19) {
+         legendaStayAlive.innerHTML = 'Você está aqui para sempre e você está ao meu lado'
+      }
+
+      else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 20 && aparece.mudaSegundos <= 21) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 22 && aparece.mudaSegundos <= 24) {
+         legendaStayAlive.innerHTML = 'Eu estive esperando por toda minha vida'
+      }
+
+      else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 25 && aparece.mudaSegundos <= 27) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 28 && aparece.mudaSegundos <= 30) {
+         legendaStayAlive.innerHTML = 'Para sentir o seu coração como se estivesse marcando o tempo'
+      }
+
+      else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 31 && aparece.mudaSegundos <= 32) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 33 && aparece.mudaSegundos <= 36) {
+         legendaStayAlive.innerHTML = 'Nós vamos fazer o que for apenas para permanecermos vivos'
+      }
+
+      else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 36 && aparece.mudaSegundos <= 54) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 55 && aparece.mudaSegundos <= 57) {
+         legendaStayAlive.innerHTML = 'O amanhecer está chegando, abra seus olhos'
+      }
+
+      else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 58 && aparece.mudaSegundos <= 59 || aparece.mudaMinutos == 3 && aparece.mudaSegundos >= 00 && aparece.mudaSegundos <= 01) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 3 && aparece.mudaSegundos >= 2 && aparece.mudaSegundos <= 5) {
+         legendaStayAlive.innerHTML = 'O amanhecer está chegando, abra seus olhos'
+      }
+
+      else if (aparece.mudaMinutos == 3 && aparece.mudaSegundos >= 6 && aparece.mudaSegundos <= 8) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 3 && aparece.mudaSegundos >= 9 && aparece.mudaSegundos <= 11) {
+         legendaStayAlive.innerHTML = 'O amanhecer está chegando, abra seus olhos'
+      }
+
+      else if (aparece.mudaMinutos == 3 && aparece.mudaSegundos >= 12 && aparece.mudaSegundos <= 16) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 3 && aparece.mudaSegundos >= 17 && aparece.mudaSegundos <= 19) {
+         legendaStayAlive.innerHTML = 'O amanhecer está chegando, abra seus olhos'
+      }
+
+      else if (aparece.mudaMinutos == 3 && aparece.mudaSegundos >= 20 && aparece.mudaSegundos <= 30) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 3 && aparece.mudaSegundos >= 31 && aparece.mudaSegundos <= 35) {
+         legendaStayAlive.innerHTML = 'Olhe para o sol conforme os dias nascem'
+      }
+
+      else if (aparece.mudaMinutos == 3 && aparece.mudaSegundos >= 36 && aparece.mudaSegundos <= 40) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 3 && aparece.mudaSegundos >= 41 && aparece.mudaSegundos <= 43) {
+         legendaStayAlive.innerHTML = 'Há um ritmo de pressa nos dias de hoje'
+      }
+
+      else if (aparece.mudaMinutos == 3 && aparece.mudaSegundos >= 44 && aparece.mudaSegundos <= 46) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 3 && aparece.mudaSegundos >= 47 && aparece.mudaSegundos <= 49) {
+         legendaStayAlive.innerHTML = 'Onde as luzes não se movem e as cores não desaparecem'
+      }
+
+      else if (aparece.mudaMinutos == 3 && aparece.mudaSegundos >= 50 && aparece.mudaSegundos <= 53) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 3 && aparece.mudaSegundos >= 54 && aparece.mudaSegundos <= 56) {
+         legendaStayAlive.innerHTML = 'Te deixa vazio, com nada além de sonhos'
+      }
+
+      else if (aparece.mudaMinutos == 3 && aparece.mudaSegundos >= 57 && aparece.mudaSegundos <= 59) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 4 && aparece.mudaSegundos >= 0 && aparece.mudaSegundos <= 2) {
+         legendaStayAlive.innerHTML = 'Em um mundo que se tornou superficial. Em um mundo que se tornou pobre.'
+      }
+
+      else if (aparece.mudaMinutos == 4 && aparece.mudaSegundos >= 3 && aparece.mudaSegundos <= 5) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 4 && aparece.mudaSegundos >= 6 && aparece.mudaSegundos <= 9) {
+         legendaStayAlive.innerHTML = 'Mas há uma verdade e ela está do nosso lado'
+      }
+
+      else if (aparece.mudaMinutos == 4 && aparece.mudaSegundos >= 10 && aparece.mudaSegundos <= 12) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 4 && aparece.mudaSegundos >= 13 && aparece.mudaSegundos <= 15) {
+         legendaStayAlive.innerHTML = 'O amanhecer está chegando abra seus olhos'
+      }
+
+      else if (aparece.mudaMinutos == 4 && aparece.mudaSegundos >= 16 && aparece.mudaSegundos <= 18) {
+         legendaStayAlive.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 4 && aparece.mudaSegundos >= 19 && aparece.mudaSegundos <= 23) {
+         legendaStayAlive.innerHTML = 'Olhe para o sol conforme um novo dia nasce'
+      }
+
+      else if (aparece.mudaMinutos == 4 && aparece.mudaSegundos >= 24) {
+         legendaStayAlive.innerHTML = ''
+      }
+   }
+
+   var legendaDirtyPaws = document.querySelector('.legenda-musica')
+
+   if (legendaDirtyPaws.classList.contains('dirty-paws')) {
+      if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 0 && aparece.mudaSegundos <= 16) {
+         legendaDirtyPaws.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 17 && aparece.mudaSegundos <= 19) {
+         legendaDirtyPaws.innerHTML = 'Pulando para cima e para baixo'
+      }
+      
+      else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 20 && aparece.mudaSegundos <= 21) {
+         legendaDirtyPaws.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 22 && aparece.mudaSegundos <= 24) {
+         legendaDirtyPaws.innerHTML = 'Minha cabeça é um animal'
+      }
+
+      else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos == 25) {
+         legendaDirtyPaws.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 26 && aparece.mudaSegundos <= 28) {
+         legendaDirtyPaws.innerHTML = 'E uma vez havia um animal'
+      }
+
+      else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos == 29) {
+         legendaDirtyPaws.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 30 && aparece.mudaSegundos <= 32) {
+         legendaDirtyPaws.innerHTML = 'Ele tinha um filho que cortava a grama'
+      }
+
+      else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 33 && aparece.mudaSegundos <= 34) {
+         legendaDirtyPaws.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 35 && aparece.mudaSegundos <= 37) {
+         legendaDirtyPaws.innerHTML = 'O filho era um garoto legal'
+      }
+
+      else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos == 38) {
+         legendaDirtyPaws.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 39 && aparece.mudaSegundos <= 41) {
+         legendaDirtyPaws.innerHTML = 'Eles tinham uma libélula de estimação'
+      }
+
+      else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos == 42) {
+         legendaDirtyPaws.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 43 && aparece.mudaSegundos <= 45) {
+         legendaDirtyPaws.innerHTML = 'A libélula um dia fugiu'
+      }
+
+      else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos == 46) {
+         legendaDirtyPaws.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 47 && aparece.mudaSegundos <= 50) {
+         legendaDirtyPaws.innerHTML = 'Mas voltou com uma história para contar'
+      }
+
+      else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 51 || aparece.mudaMinutos == 1 && aparece.mudaSegundos <= 11) {
+         legendaDirtyPaws.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 12 && aparece.mudaSegundos <= 14) {
+         legendaDirtyPaws.innerHTML = 'Suas patas sujas e casaco peludo'
+      }
+
+      else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 15 && aparece.mudaSegundos <= 17) {
+         legendaDirtyPaws.innerHTML = 'Ela fugiu para a encosta da floresta'
+      }
+
+      else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 18 && aparece.mudaSegundos <= 19) {
+         legendaDirtyPaws.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 20 && aparece.mudaSegundos <= 22) {
+         legendaDirtyPaws.innerHTML = 'A floresta de árvores falantes'
+      }
+
+      else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos == 23) {
+         legendaDirtyPaws.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 24 && aparece.mudaSegundos <= 26) {
+         legendaDirtyPaws.innerHTML = 'Elas cantavam sobre os pássaros e as abelhas'
+      }
+
+      else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 27 && aparece.mudaSegundos <= 28) {
+         legendaDirtyPaws.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 29 && aparece.mudaSegundos <= 31) {
+         legendaDirtyPaws.innerHTML = 'As abelhas tinham declarado uma guerra'
+      }
+
+      else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 32 && aparece.mudaSegundos <= 35) {
+         legendaDirtyPaws.innerHTML = 'O céu não era grande o suficiente para todos eles'
+      }
+
+      else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos == 36) {
+         legendaDirtyPaws.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 37 && aparece.mudaSegundos <= 39) {
+         legendaDirtyPaws.innerHTML = 'Os pássaros receberam ajuda debaixo'
+      }
+
+      else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 39 && aparece.mudaSegundos <= 40) {
+         legendaDirtyPaws.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 41 && aparece.mudaSegundos <= 44) {
+         legendaDirtyPaws.innerHTML = 'De patas sujas e das criaturas da neve'
+      }
+
+      else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 45 && aparece.mudaSegundos <= 59 || aparece.mudaSegundos == 2 && aparece.mudaSegundos <= 23) {
+         legendaDirtyPaws.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 23 && aparece.mudaSegundos <= 25) {
+         legendaDirtyPaws.innerHTML = 'E por um tempo as coisas ficaram frias'
+      }
+
+      else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos == 26) {
+         legendaDirtyPaws.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 27 && aparece.mudaSegundos <= 29) {
+         legendaDirtyPaws.innerHTML = 'Elas se esconderam, assustadas, em seus buracos'
+      }
+
+      else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 30 && aparece.mudaSegundos <= 31) {
+         legendaDirtyPaws.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 32 && aparece.mudaSegundos <= 33) {
+         legendaDirtyPaws.innerHTML = 'A floresta que um dia era verde'
+      }
+
+      else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 34 && aparece.mudaSegundos <= 35) {
+         legendaDirtyPaws.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 36 && aparece.mudaSegundos <= 38) {
+         legendaDirtyPaws.innerHTML = 'Foi pintada de preto por aquelas máquinas assassinas'
+      }
+
+      else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos == 39) {
+         legendaDirtyPaws.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 40 && aparece.mudaSegundos <= 42) {
+         legendaDirtyPaws.innerHTML = 'Mas ela e seus amigos peludos'
+      }
+
+      else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos == 43) {
+         legendaDirtyPaws.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 44 && aparece.mudaSegundos <= 46) {
+         legendaDirtyPaws.innerHTML = 'Derrubaram a abelha rainha e os seus homens'
+      }
+
+      else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 47 && aparece.mudaSegundos <= 48) {
+         legendaDirtyPaws.innerHTML = ''
+      }
+
+      else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 49 && aparece.mudaSegundos <= 51) {
+         legendaDirtyPaws.innerHTML = 'E é assim que a história acaba'
+      }
+
+      else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 52 && aparece.mudaSegundos <= 55) {
+         legendaDirtyPaws.innerHTML = 'A história da fera com aquelas quatro patas sujas'
+      }
+
+      else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 56 && aparece.mudaSegundos <= 59 || aparece.mudaMinutos == 3 && aparece.mudaSegundos >= 0 && aparece.mudaSegundos <= 59 || aparece.mudaMinutos == 4 && aparece.mudaSegundos >= 0 && aparece.mudaSegundos <= 19) {
+         legendaDirtyPaws.innerHTML = ''
+      }
+   }
+}
