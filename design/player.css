@@ -12,29 +12,63 @@
 .nome-musica.active {
    font-family: 'Baloo Thambi 2', cursive;
    border-radius:10px;
+   width:200px;
    position:fixed;
    display:flex;
    justify-content:center;
    top:0px;
    opacity:.7;
    padding:7px;
+   overflow:hidden;
+   text-decoration:none;
+   color:black;
 }
 
 .nome-musica.active:hover {
    opacity:1;
 }
 
-.nome-musica.active a {
-   text-decoration:none;
-   color:black;
+.nome-musica.active ul {
+   list-style:none;
    font-size:11px;
+   display:flex;
+}
+
+.nome-musica.active ul:hover {
+   animation-play-state:paused;
+}
+
+.nome-musica.active .stay-alive {
+   animation:passandoStayAlive 10s linear infinite;
+}
+
+@keyframes passandoStayAlive {
+   0% { transform:translateX(180px); }
+
+   100% { transform:translateX(-168px); }
+}
+
+.nome-musica.active .dirty-paws {
+   animation:passandoDirtyPaws 10s linear infinite;
+}
+
+@keyframes passandoDirtyPaws {
+   0% { transform:translateX(185px); }
+
+   100% { transform:translateX(-190px); }
+}
+
+.nome-musica.active li {
+   margin-right:3px;
+   flex-shrink:0;
+   white-space:nowrap;
 }
 
 .nome-musica.active img {
    position:relative;
-   top:-3px;
-   width:12px;
-   height:12px;
+   top:-1px;
+   width:13px;
+   height:13px;
 }
 
 .tempo-musica {

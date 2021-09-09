@@ -81,9 +81,10 @@ function proximoSom() {
 
    mexeNo.subtitleMusica.classList.remove('stay-alive')
    mexeNo.subtitleMusica.classList.add('dirty-paws')
-
    mexeNo.audio.src = 'midia/audios/of-monsters-and-men-dirty-paws.mp3'
-   altera.nomeMusica.innerHTML = "<a href='https://www.youtube.com/watch?v=OgO2U4quFDk' target='_blank'>Of Monsters and Men – Dirty Paws<img src='midia/svg/external-link.svg'></a>"
+
+   altera.nomeMusica.href = 'https://www.youtube.com/watch?v=OgO2U4quFDk'
+   altera.nomeMusica.innerHTML = "<ul class='dirty-paws'><li>Of</li><li>Monsters</li><li>and</li><li>Men -</li><li> Dirty</li><li>Paws</li><img src='midia/svg/external-link.svg'></ul>"
 
    mexeNo.tempoTotalDaMusica.innerHTML = `04:20`
    noFinal()
@@ -132,7 +133,8 @@ clicaNoBotao.aceitaSom.addEventListener('click', () => {
    altera.optarMusica.classList.toggle('active')
    altera.nomeMusica.classList.add('active')
 
-   altera.nomeMusica.innerHTML = "<a href='https://www.youtube.com/watch?v=_HWRGKfSq3A' target='_blank'>Stay Alive - José González <img src='midia/svg/external-link.svg'></a>"
+   altera.nomeMusica.href = 'https://www.youtube.com/watch?v=_HWRGKfSq3A'
+   altera.nomeMusica.innerHTML = "<ul class='stay-alive'><li>Stay</li><li>Alive -</li><li> José</li><li>Gonzalez</li><img src='midia/svg/external-link.svg'></ul>"
 
    altera.tempoDaMusica.classList.add('active')
    altera.player.classList.add('active')
@@ -188,9 +190,10 @@ mexeNo.voltaMusica.addEventListener('click', () => {
 
          mexeNo.subtitleMusica.classList.add('stay-alive')
       }
-
       mexeNo.audio.src = 'midia/audios/stay-alive-jose-gonzalez.mp3'
-      altera.nomeMusica.innerHTML = "<a href='https://www.youtube.com/watch?v=_HWRGKfSq3A' target='_blank'>Stay Alive - José González <img src='midia/svg/external-link.svg'></a>"
+
+      altera.nomeMusica.href = 'https://www.youtube.com/watch?v=_HWRGKfSq3A'
+      altera.nomeMusica.innerHTML = "<ul class='stay-alive'><li>Stay</li><li>Alive -</li><li> José</li><li>Gonzalez</li><img src='midia/svg/external-link.svg'></ul>"
 
       mexeNo.desabilitaTrocaMusica.style.display = 'none'
       mexeNo.trocaMusica.style.display = 'block'
