@@ -112,14 +112,18 @@
                </span>
 
                <div class="dieta"> <h1>Como é sua alimentaçao?</h1>
-                  <input type="radio" name="sAlm" id="saudavel">
-                  <label for="saudavel">Saudável</label>
-               
-                  <input type="radio" name="sAlm" id="flexivel">
-                  <label for="flexivel">Flexível</label>
-               
-                  <input type="radio" name="sAlm" id="desregrada">
-                  <label for="desregrada">Desregrada</label>
+                  <img src="midia/images/alm-padrao.jpg" id="img-alimentacao">
+
+                  <div class="envolve-alm">
+                     <input type="radio" name="sAlm" id="saudavel">
+                     <label for="saudavel" id="label-saudavel">Saudável</label>
+                     
+                     <input type="radio" name="sAlm" id="flexivel">
+                     <label for="flexivel" id="label-flex">Flexível</label>
+                     
+                     <input type="radio" name="sAlm" id="desregrada">
+                     <label for="desregrada" id="label-desregrada">Desregrada</label>
+                  </div>
                </div>
                
                <div class="saude">
@@ -244,14 +248,31 @@
                
                <div class="suicidio">
                   <h1>Já pensou em suicídio?</h1>
-                  <input type="radio" name="gatilho" id="n-suicidio">
+                  <input type="radio" name="pergunta-gatilho" id="n-suicidio">
                   <label for="n-suicidio">Nunca</label>
                
-                  <input type="radio" name="gatilho" id="as-vezes-suicidio">
+                  <input type="radio" name="pergunta-gatilho" id="as-vezes-suicidio">
                   <label for="as-vezes-suicidio">De vez em quando</label>
                
-                  <input type="radio" name="gatilho" id="constante-suicidio">
+                  <input type="radio" name="pergunta-gatilho" id="constante-suicidio">
                   <label for="constante-suicidio">Constantemente</label>
+               </div>
+
+               <div class="satisfeito-vida"> <h1>Como está sua vida atualmente?</h1>
+                  <input type="radio" name="satisfacao" id="muito-bom">
+                  <label for="muito-bom">Vivendo a vida dos meus sonhos</label>
+                  
+                  <input type="radio" name="satisfacao" id="bom">
+                  <label for="bom">Lutando para ter a vida que eu quero</label>
+                  
+                  <input type="radio" name="satisfacao" id="nao-sei">
+                  <label for="nao-sei">Não sei</label>
+
+                  <input type="radio" name="satisfacao" id="ruim">
+                  <label for="ruim">Estou deixando a vida passar</label>
+
+                  <input type="radio" name="satisfacao" id="muito-ruim">
+                  <label for="muito-ruim">Estou na pior fase da minha vida</label>
                </div>
 
                <div id="entregar-formulario">
@@ -308,44 +329,8 @@
             stay alive - https://www.youtube.com/watch?v=OgO2U4quFDk&t=35s-->
    <script src="script/inicio-player.js"></script>
    <script src="script/etapas-form.js"></script>
-   <script src="script/formulario.js"></script>
    
-   <script>
-      var saberSeTreinaFisico = document.querySelector('.exercicios')
-
-      saberSeTreinaFisico.addEventListener('click', () => {
-         var exercicios = {
-            gostaDemais: document.querySelector('#cariani'),
-            fazConstantemente: document.querySelector('#exercicios-constantes'),
-
-            maisMenos: document.querySelector('#mais-menos'),
-
-            bemComFisico: document.querySelector('#ryan'),
-            sedentario: document.querySelector('#simpson')
-         }
-
-         var mudaGif = document.querySelector('#gif-exercicios')
-
-         if (exercicios.gostaDemais.checked) {
-            mudaGif.src = 'midia/gifs/gosto-muito.gif'
-         }
-
-         else if (exercicios.fazConstantemente.checked) {
-            mudaGif.src = 'midia/gifs/constante.gif'
-         }
-
-         else if (exercicios.maisMenos.checked) {
-            mudaGif.src = 'midia/images/mais-menos.webp'
-         }
-
-         else if (exercicios.bemComFisico.checked) {
-            mudaGif.src = 'midia/gifs/ryan-pizza.gif'
-         }
-
-         else if (exercicios.sedentario.checked) {
-            mudaGif.src = 'midia/images/sedentario.jpg'
-         }
-      })
-   </script>
+   <script src="script/formulario.js"></script>
+   <script src="script/imagens-gifs.js"></script>
 </body>
 </html>

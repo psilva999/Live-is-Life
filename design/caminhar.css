@@ -3,28 +3,29 @@
 #formulario .segunda-parte div {
    display:block;
    margin:auto;
-   margin-bottom:30px;
+   margin-bottom:50px;
    width:300px;
 }
 
 #formulario .segunda-parte h1 {
    display:block;
-   margin-bottom:30px;
+   margin-bottom:10px;
 }
 
 #formulario .segunda-parte input {
-   margin-top:20px;
+   margin-top:1px;
    position:relative;
    right:75px;
 }
 
 #formulario .segunda-parte label {
    position:relative;
-   top:-22px;
+   top:-23px;
    display:block;
    margin:auto;
    text-align:left;
    width:90px;
+   font-size:17px;
 }
 
 .dieta input, .saude input, .vida-sexual input, .sono input, .kids input {
@@ -63,4 +64,67 @@
 
 .dieta input::after, .saude input::after, .vida-sexual input::after, .sono input::after, .kids input::after {
    border-radius:50%;
+}
+
+#formulario .dieta #img-alimentacao {
+   position:relative;
+   width:250px;
+   height:250px;
+   border-radius:10px;
+   opacity:.8;
+   display:block;
+   margin:auto auto 20px auto;
+}
+
+#formulario .dieta .envolve-alm {
+   width:250px;
+   height:70px;
+}
+
+#formulario #saudavel {
+   right:150px;
+}
+
+#formulario #label-saudavel {
+   right:55px;
+}
+
+#formulario #flexivel {
+   top:-47px;
+   right:6px;    
+}
+
+#formulario #label-flex {
+  top:-70.5px;
+  left:90px; 
+}
+
+#formulario #desregrada {
+   top:-55px;
+   right:150px;
+}
+
+#formulario #label-desregrada {
+   top:-79px;
+   right:55px;
+}
+
+@media (max-width:970px) {
+   #formulario #flexivel {
+      top:-47px;  
+   }
+
+   #formulario #label-flex {
+      top:-69px;
+   }
+}
+
+@media (max-width:500px) {
+   #formulario .segunda-parte label {
+      top:-21px;
+   }
+
+   #formulario #label-desregrada {
+      top:-76px;
+   }
 }
