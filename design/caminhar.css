@@ -120,8 +120,25 @@
 }
 
 @media (max-width:500px) {
+   #formulario .segunda-parte .dieta {
+      width:205px;
+   }
+
+   #formulario .dieta #img-alimentacao {
+      width:205px;
+      height:225px;
+   }
+
    #formulario .segunda-parte label {
-      top:-21px;
+      top:-22px;
+   }
+
+   #formulario #flexivel {
+      right:40px; 
+   }
+
+   #formulario #label-flex {
+      left:55px;
    }
 
    #formulario #label-desregrada {
