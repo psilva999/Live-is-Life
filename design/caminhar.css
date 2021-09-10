@@ -129,12 +129,16 @@
       height:225px;
    }
 
+   #formulario .dieta .envolve-alm {
+      width:205px;
+   }
+
    #formulario .segunda-parte label {
       top:-22px;
    }
 
    #formulario #label-saudavel {
-      right:64px;
+      right:42px;
       width:73px;
    }
 
@@ -143,11 +147,11 @@
    }
 
    #formulario #label-flex {
-      left:40px;
+      left:63px;
       width:63px;
    }
 
    #formulario #label-desregrada {
-      top:-76px;
+      right:33px;
    }
 }
