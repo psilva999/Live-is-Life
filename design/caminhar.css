@@ -133,12 +133,18 @@
       top:-22px;
    }
 
+   #formulario #label-saudavel {
+      right:64px;
+      width:73px;
+   }
+
    #formulario #flexivel {
       right:40px; 
    }
 
    #formulario #label-flex {
-      left:55px;
+      left:40px;
+      width:63px;
    }
 
    #formulario #label-desregrada {
