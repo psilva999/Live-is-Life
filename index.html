@@ -129,58 +129,62 @@
                <div class="saude">
                   <h1>Como está sua saúde?</h1>
                   <input type="radio" name="pSaude" id="excelente">
-                  <label for="excelente">Excelênte</label>
+                  <label for="excelente" id="l-excelente">Excelênte</label>
                
                   <input type="radio" name="pSaude" id="se-cuida">
-                  <label for="se-cuida">Sigo me cuidando</label>
+                  <label for="se-cuida" id="l-cuida">Sigo me cuidando</label>
                
                   <input type="radio" name="pSaude" id="nao-sabe">
-                  <label for="nao-sabe">Não sei</label>
+                  <label for="nao-sabe" id="l-nao-sei">Não sei</label>
                
                   <input type="radio" name="pSaude" id="serio">
-                  <label for="serio">Problemas bem sérios</label>
+                  <label for="serio" id="l-serio">Problemas bem sérios</label>
                
-                  <input type="radio" name="pSaude" id="graves">
-                  <label for="graves">Problemas graves</label>
+                  <input type="radio" name="pSaude" id="grave">
+                  <label for="grave" id="l-grave">Problema grave</label>
                </div>
                
-               <div class="vida-sexual"> <h1>Vida Sexual</h1>
+               <div class="vida-sexual"> <h1>Vida íntima</h1>
+                  <img src="midia/images/padrao-sexual.webp" id='imagem-vida-sexual'>
+
                   <input type="radio" name="pSexo" id="nao-informa-vida-sexual">
-                  <label for="nao-informa-vida-sexual">Prefiro não informar</label>
+                  <label for="nao-informa-vida-sexual" id="l-nao-informa">Prefiro não informar</label>
                
                   <input type="radio" name="pSexo" id="baixa">
-                  <label for="baixa">Em baixa</label>
+                  <label for="baixa" id="l-baixa">Em baixa</label>
                
                   <input type="radio" name="pSexo" id="equilibrada">
-                  <label for="equilibrada">Equilibrada</label>
+                  <label for="equilibrada" id="l-equilibrada">Equilibrada</label>
                
                   <input type="radio" name="pSexo" id="ativa">
-                  <label for="ativa">Bem ativa</label>
+                  <label for="ativa" id="l-ativa">Ativa</label>
                </div>
                
                <div class="sono"> <h1>Quantas horas você dorme normalmente?</h1>
+                  <embed src="midia/gifs/padrao-sono.gif" id="gif-horas-sono">
+
                   <input type="radio" name="qSono" id="sono-nulo">
-                  <label for="sono-nulo">Nenhuma</label>
+                  <label for="sono-nulo" id="l-sono-nulo">Nenhuma</label>
                
                   <input type="radio" name="qSono" id="dorme-mal">
-                  <label for="dorme-mal">2 a 4</label>
+                  <label for="dorme-mal" id="l-dorme-mal">2 a 4</label>
                
                   <input type="radio" name="qSono" id="sono-normal">
-                  <label for="sono-normal">5 a 8</label>
+                  <label for="sono-normal" id="l-sono-normal">5 a 8</label>
                
                   <input type="radio" name="qSono" id="dorminhoco">
-                  <label for="dorminhoco">Sou dorminhoco(a)</label>
+                  <label for="dorminhoco" id="l-dorminhoco">Sou dorminhoco(a)</label>
                </div>
                
                <div class="kids"> <h1>Pensa em ter filhos?</h1>
-                  <input type="radio" name="pKids" id="jamais">
-                  <label for="jamais">Não</label>
+                  <input type="radio" name="pKids" id="nao-kids">
+                  <label for="nao-kids" id="l-nao">Não</label>
                
                   <input type="radio" name="pKids" id="talvez">
-                  <label for="talvez">Talvez</label>
+                  <label for="talvez" id="l-talvez">Talvez</label>
                
                   <input type="radio" name="pKids" id="sim-kids">
-                  <label for="sim-kids">Sim/Já tenho</label>
+                  <label for="sim-kids" id="l-sim-kids">Sim/Já tenho</label>
                </div>
 
                <div id="infos-segunda-etapa">
@@ -329,7 +333,7 @@
             stay alive - https://www.youtube.com/watch?v=OgO2U4quFDk&t=35s-->
    <script src="script/inicio-player.js"></script>
    <script src="script/etapas-form.js"></script>
-   
+
    <script src="script/formulario.js"></script>
    <script src="script/imagens-gifs.js"></script>
 </body>

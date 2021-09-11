@@ -2,7 +2,7 @@ var setorPara = {
    saberSeTreinaFisico: document.querySelector('.exercicios'),
    dieta: document.querySelector('.dieta'),
 
-   vidaSexual: document.querySelector('.vida-sexual'),
+   vidaIntima: document.querySelector('.vida-sexual'),
    sono: document.querySelector('.sono')
 } 
 
@@ -60,5 +60,60 @@ setorPara.dieta.addEventListener('click', () => {
 
    else if (alimentacao.desregrada.checked) {
       mudaDieta.src = 'midia/images/alm-gordurosa.jpg'
+   }
+})
+
+setorPara.vidaIntima.addEventListener('click', () => {
+   var intimo = {
+      naoInforma: document.querySelector('#nao-informa-vida-sexual'),
+      baixa: document.querySelector('#baixa'),
+
+      equilibrada: document.querySelector('#equilibrada'),
+      ativa: document.querySelector('#ativa')
+   }
+   var mudaVidaIntima = document.querySelector('#imagem-vida-sexual')
+
+   if (intimo.naoInforma.checked) {
+      mudaVidaIntima.src = 'midia/images/silence.png'
+   }
+
+   else if (intimo.baixa.checked) {
+      mudaVidaIntima.src = 'midia/images/em-baixa.png'
+   }
+
+   else if (intimo.equilibrada.checked) {
+      mudaVidaIntima.src = 'midia/images/equilibrada.png'
+   }
+
+   else if (intimo.ativa.checked) {
+      mudaVidaIntima.src = 'midia/images/camisinha.jpg'
+   }
+})
+
+setorPara.sono.addEventListener('click', () => {
+   var nivelSono = {
+      nulo: document.querySelector('#sono-nulo'),
+      dormeMal: document.querySelector('#dorme-mal'),
+
+      normal: document.querySelector('#sono-normal'),
+      dorminhoco: document.querySelector('#dorminhoco')
+   }
+
+   var mudaGifSono = document.querySelector("#gif-horas-sono")
+
+   if (nivelSono.nulo.checked) {
+      mudaGifSono.src = 'midia/gifs/insonia.gif'
+   }
+
+   else if (nivelSono.dormeMal.checked) {
+      mudaGifSono.src = 'midia/gifs/2-4-horas.gif'
+   }
+
+   else if (nivelSono.normal.checked) {
+      mudaGifSono.src = 'midia/gifs/5-8-horas.gif'
+   }
+
+   else if (nivelSono.dorminhoco.checked) {
+      mudaGifSono.src = 'midia/gifs/dorminhoco.gif'
    }
 })
