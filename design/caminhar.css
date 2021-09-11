@@ -5,6 +5,15 @@
    margin:auto;
    margin-bottom:50px;
    width:300px;
+   background:red;
+}
+
+#formulario .segunda-parte label {
+   background:white;
+}
+
+#formulario .segunda-parte h1 {
+   background:white;
 }
 
 #formulario .segunda-parte h1 {
@@ -180,33 +189,33 @@
 }
 
 #formulario #baixa {
-   top:-73px;
+   top:-97px;
    left:25px;
 }
 
 #formulario #l-baixa {
-   top:-96px;
+   top:-120px;
    left:87px;
    width:75px;
 }
 
 #formulario #equilibrada {
-   top:-50px;
+   top:-70px;
    right:100px;
 }
 
 #formulario #l-equilibrada {
-   top:-73px;
+   top:-93px;
    right:30px;
 }
 
 #formulario #ativa {
-   top:-97px;
+   top:-117px;
    left:40px;
 }
 
 #formulario #l-ativa {
-   top:-120px;
+   top:-140px;
    left:85px;
    width:40px;
 }
@@ -216,7 +225,7 @@
 }
 
 #formulario #sono-normal {
-   top:-48px;
+   top:-47px;
    left:5px;
 }
 
@@ -263,10 +272,54 @@
    #formulario #label-flex {
       top:-69px;
    }
+
+   #formulario .segunda-parte.active .vida-sexual {
+      height:420px;
+   }
+
+   #formulario #nao-informa-vida-sexual {
+      right:120px;
+   }
+
+   #formulario #l-nao-informa {
+      right:45px;
+   }
+
+   #formulario #baixa {
+      top:-73px;
+   }
+
+   #formulario #l-baixa {
+      top:-95px;
+   }
+
+   #formulario #equilibrada {
+      top:-40px;
+      right:120px;
+   }
+
+   #formulario #l-equilibrada {
+      top:-63px;
+      right:50px;
+   }
+
+   #formulario #ativa {
+      top:-87px;
+      left:25px;
+   }
+
+   #formulario #l-ativa {
+      top:-112px;
+      left:70px;
+   }
 }
 
 @media (max-width:500px) {
-   #formulario .segunda-parte .dieta {
+   #formulario .segunda-parte.active label {
+      font-size:13px;
+   }
+
+   #formulario .segunda-parte.active .dieta {
       width:205px;
    }
 
@@ -279,30 +332,35 @@
       width:205px;
    }
 
-   #formulario .segunda-parte label {
-      top:-22px;
-   }
-
    #formulario #label-saudavel {
       right:42px;
       width:73px;
+      top:-18px;
    }
 
    #formulario #flexivel {
       right:40px; 
+      top:-40px;
    }
 
    #formulario #label-flex {
       left:63px;
       width:63px;
+      top:-59px;
+   }
+
+   #formulario #desregrada {
+      top:-50px;
    }
 
    #formulario #label-desregrada {
-      right:33px;
+      right:34px;
+      top:-68px;
    }
 
    #formulario .segunda-parte .saude {
-      width:235px;
+      width:205px;
+      height:200px;
    }
 
    #formulario #excelente {
@@ -310,26 +368,29 @@
    }
 
    #formulario #l-excelente {
-      right:42px;
+      right:27px;
+      top:-19px;
       width:80px;
    }
 
    #formulario #se-cuida {
-      left:-27px;
-      top:-48px;
+      left:-40px;
+      top:-42px;
    }
 
    #formulario #l-cuida {
       width:75px;
       left:68px;
+      top:-61px;
    }
 
    #formulario #nao-sabe {
-      right:72px;
+      right:85px;
    }
 
    #formulario #l-nao-sei {
-      left:17px;
+      left:18px;
+      top:-70px;
       width:65px;
    }
 
@@ -338,34 +399,150 @@
    }
 
    #formulario #l-serio {
-      top:-65px;
-      right:35px;
+      top:-62px;
+      right:20px;
       width:95px;
    }
 
    #formulario #grave {
-      left:-17px;
+      left:-40px;
+      top:-104px;
    }
 
    #formulario #l-grave {
-      top:-138px;
-      left:77px;
+      top:-123px;
+      left:68px;
       width:76px;
    }
 
-   #formulario .vida-sexual {
+   #formulario .segunda-parte.active .vida-sexual {
+      width:220px;
       height:380px;
    }
 
+   #formulario #nao-informa-vida-sexual {
+      right:130px;
+   }
+
+   #formulario #l-nao-informa {
+      right:26px;
+      top:-19px;
+      width:80px;
+   }
+
+   #formulario #baixa {
+      top:-62px;
+      left:-24px;
+   }
+
+   #formulario #l-baixa {
+      top:-81px;
+      left:69px;
+      width:60px;
+   }
+
+   #formulario #equilibrada {
+      top:-40px;
+      right:131px;
+   }
+
+   #formulario #l-equilibrada {
+      top:-60px;
+      right:23px;
+   }
+
    #formulario #ativa {
-      left:30px;
+      top:-83px;
+      left:-20px;
    }
 
    #formulario #l-ativa {
-      left:75px;
+      top:-102px;
+      left:64px;
    }
 
-   #formulario .sono {
-      height:480px;
+   #formulario .segunda-parte.active .sono {
+      height:440px;
+      width:230px;
+   }
+
+   #formulario .segunda-parte.active .kids {
+      width:230px;
+   }
+
+   #formulario #sono-nulo {
+      right:110px;
+   }
+
+   #formulario #l-sono-nulo {
+      right:5px;
+      top:-19px;
+   }
+
+   #formulario #dorme-mal {
+      right:110px;
+   }
+
+   #formulario #l-dorme-mal {
+      right:30px;
+      top:-19px;
+      width:40px;
+   }
+
+   #formulario #sono-normal {
+      top:-41px;
+      left:-20px;
+   }
+
+   #formulario #l-sono-normal {
+      top:-60px;
+      left:55px;
+      width:35px;
+   }
+
+   #formulario #dorminhoco {
+      top:-45px;
+      right:110px;
+   }
+
+   #formulario #l-dorminhoco {
+      top:-64px;
+      right:5px;
+   }
+
+   #formulario .segunda-parte.active .kids {
+      height:120px;
+      width:180px;
+   }
+
+   #formulario #nao-kids {
+      right:140px;
+   }
+
+   #formulario #l-nao-kids {
+      right:42px;
+      top:-19px;
+      width:28px;
+   }
+
+   #formulario #talvez {
+      top:-41px;
+      right:50px;
+   }
+
+   #formulario #l-talvez {
+      top:-60px;
+      left:58px;
+      width:50px;
+   }
+
+   #formulario #sim-kids {
+      top:-40px;
+      right:130px;
+   }
+
+   #formulario #l-sim-kids {
+      top:-59px;
+      right:0px;
    }
 }
