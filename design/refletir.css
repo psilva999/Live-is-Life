@@ -150,12 +150,12 @@
 
 #formulario .terceira-parte.active #limpo-substancias {
    top:-240px;
-   left:130px;
+   right:150px;
 }
 
 #formulario .terceira-parte.active #l-limpo-substancias {
    top:-265px;
-   right:1px;
+   left:1px;
    width:250px;
 }
 
@@ -234,13 +234,13 @@
 
 #formulario #ajuda-depre {
    top:-100px;
-   left:25px;
+   left:-140px;
 }
 
 #formulario #l-ajuda-depre {
    width:160px;
    top:-125px;
-   right:25px;
+   right:0px;
 }
 
 #formulario .terceira-parte.active .suicidio {
@@ -417,12 +417,12 @@
 
    #formulario .terceira-parte.active #limpo-substancias {
       top:-280px;
-      left:80px;
+      right:150px;
    }
 
    #formulario .terceira-parte.active #l-limpo-substancias {
       top:-301px;
-      left:7px;
+      left:-8px;
       width:185px;
    }
 
@@ -504,13 +504,13 @@
 
    #formulario #ajuda-depre {
       top:-120px;
-      left:14px;
+      left:-140px;
    }
 
    #formulario #l-ajuda-depre {
       width:118px;
       top:-142px;
-      right:0px;
+      right:10px;
    }
 
   #formulario .terceira-parte.active .suicidio {
@@ -700,7 +700,7 @@
    #formulario .terceira-parte.active #l-limpo-substancias {
       width:162px;
       top:-288px;
-      left:20px;
+      left:-20px;
    }
 
    #formulario #l-nenhuma-ansiedade {
@@ -749,13 +749,13 @@
 
    #formulario #ajuda-depre {
       top:-110px;
-      left:14px;
+      left:-140px;
    }
 
    #formulario #l-ajuda-depre {
       width:118px;
       top:-132px;
-      left:12px;
+      right:10px;
    }
 
    #formulario .terceira-parte.active .suicidio {

@@ -27,8 +27,8 @@ botaoQue.entregaPrimeiraEtapa.addEventListener('click', () => {
 })
 
 botaoQue.entregaSegundaEtapa.addEventListener('click', () => {
-   formulario.style.backgroundColor = '#a40606'
-   formulario.style.backgroundImage = 'linear-gradient(315deg, #a40606 0%, #d98324 74%)'
+   formulario.style.backgroundColor = '#f5f5f1'
+   formulario.style.backgroundImage = 'linear-gradient(315deg, #f5f5f1 0%, #e50914 74%)'
 
    mudaPara.segundaParteForm.classList.toggle('active')
    mudaPara.terceiraParteForm.classList.add('active')
