@@ -5,7 +5,6 @@
    margin:auto;
    margin-bottom:30px;
    width:300px;
-   background:red;
 }
 
 #formulario .terceira-parte h1 {
@@ -64,10 +63,6 @@
 
 .ansiedade input::after, .depressao input::after, .suicidio input::after, .satisfeito-vida input::after {
    border-radius:50%;
-}
-
-#formulario .terceira-parte.active label {
-   background:white;
 }
 
 #formulario .terceira-parte.active .substancias {
@@ -619,7 +614,6 @@
 
 @media (max-width:500px) {
    #formulario .terceira-parte.active #titulo-terceira-parte {
-      background:white;
       width:255px;
       margin-bottom:15px;
    }
@@ -761,7 +755,7 @@
    #formulario #l-ajuda-depre {
       width:118px;
       top:-132px;
-      right:0px;
+      left:12px;
    }
 
    #formulario .terceira-parte.active .suicidio {
