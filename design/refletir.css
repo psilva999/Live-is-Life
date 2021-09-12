@@ -5,6 +5,7 @@
    margin:auto;
    margin-bottom:30px;
    width:300px;
+   background:red;
 }
 
 #formulario .terceira-parte h1 {
@@ -13,9 +14,7 @@
 }
 
 #formulario .terceira-parte input {
-   margin-top:20px;
    position:relative;
-   right:75px;
 }
 
 #formulario .terceira-parte label {
@@ -53,7 +52,7 @@
 
 .substancias input:checked::before, .ansiedade input:checked::before, .depressao input:checked::before, .suicidio input:checked::before, .satisfeito-vida input:checked::before {
    position:relative;
-   left:3.5px;
+   left:4px;
    content:'✔';
 }
 
@@ -65,4 +64,766 @@
 
 .ansiedade input::after, .depressao input::after, .suicidio input::after, .satisfeito-vida input::after {
    border-radius:50%;
+}
+
+#formulario .terceira-parte.active label {
+   background:white;
+}
+
+#formulario .terceira-parte.active .substancias {
+   height:410px;
+}
+
+#formulario .terceira-parte.active .substancias input {
+   border-radius:5px;
+}
+
+#formulario .terceira-parte.active #alcool {
+   right:150px;
+}
+
+#formulario .terceira-parte.active #l-alcool {
+   right:90px;
+   top:-24px;
+   width:62px;
+}
+
+#formulario .terceira-parte.active #ex-alcoolatra {
+   top:-68px;
+   right:15px;
+}
+
+#formulario .terceira-parte.active #l-ex-alcoolatra {
+   top:-93px;
+   width:137px;
+   left:80px;
+}
+
+#formulario .terceira-parte.active #cigarro {
+   top:-80px;
+   right:150px;
+}
+
+#formulario .terceira-parte.active #l-cigarro {
+   top:-105px;
+   width:75px;
+   right:85px;
+}
+
+#formulario .terceira-parte.active #ex-fumante {
+   top:-150px;
+   right:15px;
+}
+
+#formulario .terceira-parte.active #l-ex-fumante {
+   width:120px;
+   top:-174px;
+   left:73px;
+}
+
+#formulario .terceira-parte.active #entorpecentes {
+   top:-160px;
+   right:150px;
+}
+
+#formulario .terceira-parte.active #l-entorpecentes {
+   top:-184px;
+   width:140px;
+   right:52px;
+}
+
+#formulario .terceira-parte.active #ex-drogado {
+   top:-228px;
+   left:30px;
+}
+
+#formulario .terceira-parte.active #l-ex-drogado {
+   top:-253px;
+   left:100px;
+}
+
+#formulario .terceira-parte.active #reabilitacao {
+   top:-240px;
+   right:150px;
+}
+
+#formulario .terceira-parte.active #l-reabilitacao {
+   top:-264px;
+   right:12px;
+   width:222px;
+}
+
+#formulario .terceira-parte.active #limpo-substancias {
+   top:-240px;
+   left:130px;
+}
+
+#formulario .terceira-parte.active #l-limpo-substancias {
+   top:-265px;
+   right:1px;
+   width:250px;
+}
+
+#formulario .terceira-parte.active .ansiedade {
+   height:220px;
+   width:220px;
+}
+
+#formulario #nenhuma-ansiedade {
+   right:140px;
+}
+
+#formulario #l-nenhuma-ansiedade {
+   right:30px;
+   top:-24px;
+}
+
+#formulario #pouca-ansiedade {
+   right:140px;
+   top:-20px;
+}
+
+#formulario #l-pouca-ansiedade {
+   top:-45px;
+   left:17px;
+   width:185px;
+}
+
+#formulario #bastante-ansioso {
+   left:-140px;
+   top:-40px;
+}
+
+#formulario #l-bastante-ansioso {
+   top:-63px;
+   right:8px;
+   width:135px;
+}
+
+#formulario .terceira-parte.active .depressao {
+   width:230px;
+   height:270px;
+}
+
+#formulario #nenhuma-depre {
+   right:140px;
+}
+
+#formulario #l-nenhuma-depre {
+   top:-24px;
+   right:60px;
+   width:37px;
+}
+
+#formulario #ja-teve-depre {
+   top:-69px;
+   right:50px;
+}
+
+#formulario #l-ja-teve-depre {
+   top:-93px;
+   left:45px;
+   width:67px;
+}
+
+#formulario #tratamento-depre {
+   top:-80px;
+   right:140px;
+}
+
+#formulario #l-tratamento-depre {
+   top:-104px;
+   right:3px;
+   width:152px;
+}
+
+#formulario #ajuda-depre {
+   top:-100px;
+   left:25px;
+}
+
+#formulario #l-ajuda-depre {
+   width:160px;
+   top:-125px;
+   right:25px;
+}
+
+#formulario .terceira-parte.active .suicidio {
+   width:320px;
+   height:180px;
+}
+
+#formulario #n-suicidio {
+   right:120px;
+   top:-10px;
+}
+
+#formulario #l-n-suicidio {
+   top:-34px;
+   width:62px;
+   right:74px;
+}
+
+#formulario #as-vezes-suicidio {
+   top:-80px;
+}
+
+#formulario #l-as-vezes-suicidio {
+   top:-103px;
+   left:56px;
+   width:83px;
+}
+
+#formulario #constante-suicidio {
+   top:-100px;
+   right:120px;
+}
+
+#formulario #l-constante-suicidio {
+   top:-124px;
+   width:233px;
+   left:10px;
+}
+
+#formulario .terceira-parte.active .satisfeito-vida {
+   width:310px;
+}
+
+#formulario #muito-bom {
+   right:145px;
+}
+
+#formulario #l-muito-bom {
+   width:173px;
+   right:35px;
+}
+
+#formulario #bom {
+   left:135px;
+}
+
+#formulario #l-bom {
+   top:-24px;
+   width:237px;
+   left:5px;
+}
+
+#formulario #nao-sei-vida {
+   right:65px;
+}
+
+#formulario #l-nao-sei-vida {
+   top:-23px;
+   width:75px;
+   right:6px;
+}
+
+#formulario #ruim {
+   right:145px;
+}
+
+#formulario #l-ruim {
+   width:222px;
+   top:-22px;
+   right:13px;
+}
+
+#formulario #muito-ruim {
+   left:135px;
+}
+
+#formulario #l-muito-ruim {
+   width:185px;
+   left:31px;
+   top:-23px;
+}
+
+@media (max-width:970px) {
+   #formulario .terceira-parte.active .substancias {
+      width:250px;
+      height:280px;
+   } 
+
+   #formulario .terceira-parte.active #alcool {
+      right:150px;
+      top:-20px;
+   }
+
+   #formulario .terceira-parte.active #l-alcool {
+      right:76px;
+      top:-41px;
+      width:47px;
+   }
+
+   #formulario .terceira-parte.active #ex-alcoolatra {
+      top:-83px;
+      right:35px;
+   }
+
+   #formulario .terceira-parte.active #l-ex-alcoolatra {
+      top:-104px;
+      width:101px;
+      left:65px;
+   }
+
+   #formulario .terceira-parte.active #cigarro {
+      top:-100px;
+      right:150px;
+   }
+
+   #formulario .terceira-parte.active #l-cigarro {
+      top:-121px;
+      width:55px;
+      right:72px;
+   }
+
+   #formulario .terceira-parte.active #ex-fumante {
+      top:-163px;
+      right:35px;
+   }
+
+   #formulario .terceira-parte.active #l-ex-fumante {
+      width:89px;
+      top:-184px;
+      left:59px;
+   }
+
+   #formulario .terceira-parte.active #entorpecentes {
+      top:-180px;
+      right:150px;
+   }
+
+   #formulario .terceira-parte.active #l-entorpecentes {
+      top:-201px;
+      width:100px;
+      right:50px;
+   }
+
+   #formulario .terceira-parte.active #ex-drogado {
+      top:-243px;
+      left:-15px;
+   }
+
+   #formulario .terceira-parte.active #l-ex-drogado {
+      top:-265px;
+      left:79px;
+   }
+
+   #formulario .terceira-parte.active #reabilitacao {
+      top:-260px;
+      right:150px;
+   }
+
+   #formulario .terceira-parte.active #l-reabilitacao {
+      top:-281px;
+      right:18px;
+      width:165px;
+   }
+
+   #formulario .terceira-parte.active #limpo-substancias {
+      top:-280px;
+      left:80px;
+   }
+
+   #formulario .terceira-parte.active #l-limpo-substancias {
+      top:-301px;
+      left:7px;
+      width:185px;
+   }
+
+   #formulario .terceira-parte.active .ansiedade {
+      height:180px;
+      width:200px;
+   }
+
+   #formulario #nenhuma-ansiedade {
+      right:140px;
+      top:-20px;
+   }
+
+   #formulario #l-nenhuma-ansiedade {
+      right:30px;
+      top:-41px;
+      width:70px;
+   }
+
+   #formulario #pouca-ansiedade {
+      right:140px;
+      top:-40px;
+   }
+
+   #formulario #l-pouca-ansiedade {
+      top:-61px;
+      left:3px;
+      width:136px;
+   }
+
+   #formulario #bastante-ansioso {
+      left:-140px;
+      top:-60px;
+   }
+
+   #formulario #l-bastante-ansioso {
+      left:-15px;
+      top:-80px;
+      width:100px;
+   }
+
+   #formulario .terceira-parte.active .depressao {
+      width:205px;
+      height:200px;
+   }
+
+   #formulario #nenhuma-depre {
+      right:140px;
+      top:-15px;
+   }
+
+   #formulario #l-nenhuma-depre {
+      top:-37px;
+      right:55px;
+      width:30px;
+   }
+
+   #formulario #ja-teve-depre {
+      top:-78px;
+      right:60px;
+   }
+
+   #formulario #l-ja-teve-depre {
+      top:-99px;
+      left:35px;
+      width:49px;
+   }
+
+   #formulario #tratamento-depre {
+      top:-100px;
+      right:140px;
+   }
+
+   #formulario #l-tratamento-depre {
+      top:-120px;
+      right:14px;
+      width:112px;
+   }
+
+   #formulario #ajuda-depre {
+      top:-120px;
+      left:14px;
+   }
+
+   #formulario #l-ajuda-depre {
+      width:118px;
+      top:-142px;
+      right:0px;
+   }
+
+  #formulario .terceira-parte.active .suicidio {
+      width:250px;
+      height:160px;
+   }
+
+   #formulario #n-suicidio {
+      right:140px;
+      top:-10px;
+   }
+
+   #formulario #l-n-suicidio {
+      top:-31px;
+      width:45px;
+      right:70px;
+   }
+
+   #formulario #as-vezes-suicidio {
+      top:-73px;
+      right:40px;
+   }
+
+   #formulario #l-as-vezes-suicidio {
+      top:-94px;
+      left:41px;
+      width:64px;
+   }
+
+   #formulario #constante-suicidio {
+      top:-90px;
+      right:140px;
+   }
+
+   #formulario #l-constante-suicidio {
+      top:-111px;
+      width:172px;
+      left:-5px;
+   }
+
+   #formulario .terceira-parte.active .satisfeito-vida {
+      width:255px;
+      height:325px;
+   }
+
+   #formulario #muito-bom {
+      right:145px;
+      top:-12px;
+   }
+
+   #formulario #l-muito-bom {
+      width:129px;
+      right:32px;
+      top:-32px;
+   }
+
+   #formulario #bom {
+      left:80px;
+      top:-31px;
+   }
+
+   #formulario #l-bom {
+      top:-52px;
+      width:139px;
+      left:28px;
+   }
+
+   #formulario #nao-sei-vida {
+      right:145px;
+      top:-50px;
+   }
+
+   #formulario #l-nao-sei-vida {
+      top:-71px;
+      width:55px;
+      right:71px;
+   }
+
+   #formulario #ruim {
+      right:145px;
+      top:-65px;
+   }
+
+   #formulario #l-ruim {
+      width:217px;
+      top:-86px;
+      left:11px;
+   }
+
+   #formulario #muito-ruim {
+      left:80px;
+      top:-80px;
+   }
+
+   #formulario #l-muito-ruim {
+      width:208px;
+      left:-4px;
+      top:-103px;
+   }
+}
+
+@media (max-width:500px) {
+   #formulario .terceira-parte.active #titulo-terceira-parte {
+      background:white;
+      width:255px;
+      margin-bottom:15px;
+   }
+
+   #formulario .terceira-parte.active label {
+      font-size:13px;
+   }
+
+   #formulario .terceira-parte.active .substancias {
+      height:270px;
+   }
+
+   #formulario .terceira-parte.active #alcool {
+      top:-25px;
+   }
+
+   #formulario .terceira-parte.active #l-alcool {
+      top:-44px;
+      width:40px;
+      right:80px;
+   }
+
+   #formulario .terceira-parte.active #ex-alcoolatra {
+      top:-84px;
+   }
+
+   #formulario .terceira-parte.active #l-ex-alcoolatra {
+      width:90px;
+      left:60px;
+      top:-103px;
+   }
+
+   #formulario .terceira-parte.active #l-cigarro {
+      top:-120px;
+      width:48px;
+      right:77px;
+   }
+
+   #formulario .terceira-parte.active #ex-fumante {
+      top:-160px;
+   }
+
+   #formulario .terceira-parte.active #l-ex-fumante {
+      top:-180px;
+      left:54px;
+      width:78px;
+   }
+
+   #formulario .terceira-parte.active #entorpecentes {
+      top:-175px;
+   }
+
+   #formulario .terceira-parte.active #l-entorpecentes {
+      width:89px;
+      top:-195px;
+      right:57px;
+   }
+
+   #formulario .terceira-parte.active #ex-drogado {
+      top:-235px;
+      left:-20px;
+   }
+
+   #formulario .terceira-parte.active #l-ex-drogado {
+      width:78px;
+      top:-255px;
+      left:68px;
+   }
+
+   #formulario .terceira-parte.active #reabilitacao {
+      top:-250px;
+   }
+
+   #formulario .terceira-parte.active #l-reabilitacao {
+      width:145px;
+      top:-270px;
+      right:29px;
+   }
+
+   #formulario .terceira-parte.active #limpo-substancias {
+      top:-268px;
+   }
+
+   #formulario .terceira-parte.active #l-limpo-substancias {
+      width:162px;
+      top:-288px;
+      left:20px;
+   }
+
+   #formulario #l-nenhuma-ansiedade {
+      top:-40px;
+   }
+
+   #formulario #l-pouca-ansiedade {
+      top:-59px;
+   }
+
+   #formulario #l-bastante-ansioso {
+      top:-78px;
+   }
+
+   #formulario .terceira-parte.active .depressao {
+      width:205px;
+      height:200px;
+   }
+
+   #formulario #l-nenhuma-depre {
+      top:-34px;
+      right:55px;
+      width:27px;
+   }
+
+   #formulario #ja-teve-depre {
+      top:-75px;
+   }
+
+   #formulario #l-ja-teve-depre {
+      top:-94px;
+      left:33px;
+      width:45px;
+   }
+
+   #formulario #tratamento-depre {
+      top:-90px;
+      right:140px;
+   }
+
+   #formulario #l-tratamento-depre {
+      top:-110px;
+      right:14px;
+      width:112px;
+   }
+
+   #formulario #ajuda-depre {
+      top:-110px;
+      left:14px;
+   }
+
+   #formulario #l-ajuda-depre {
+      width:118px;
+      top:-132px;
+      right:0px;
+   }
+
+   #formulario .terceira-parte.active .suicidio {
+      width:250px;
+      height:140px;
+   }
+
+   #formulario #n-suicidio {
+      right:140px;
+      top:-10px;
+   }
+
+   #formulario #l-n-suicidio {
+      top:-29px;
+      width:40px;
+   }
+
+   #formulario #as-vezes-suicidio {
+      top:-70px;
+   }
+
+   #formulario #l-as-vezes-suicidio {
+      top:-89px;
+      left:38px;
+      width:56px;
+   }
+
+   #formulario #l-constante-suicidio {
+      top:-109px;
+      width:151px;
+      left:-15px;
+   }
+
+   #formulario .terceira-parte.active .satisfeito-vida {
+      height:305px;
+   }
+
+   #formulario #l-muito-bom {
+      width:115px;
+      right:40px;
+   }
+
+   #formulario #l-bom {
+      width:122px;
+      left:37px;
+   }
+
+   #formulario #l-nao-sei-vida {
+      top:-69px;
+      width:49px;
+      right:73px;
+   }
+
+   #formulario #l-ruim {
+      width:192px;
+      top:-85px;
+      left:-2px;
+   }
+
+   #formulario #l-muito-ruim {
+      width:183px;
+      left:6px;
+      top:-103px;
+   }
 }

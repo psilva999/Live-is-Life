@@ -52,7 +52,7 @@
 
 .dieta input:checked::before, .saude input:checked::before, .vida-sexual input:checked::before, .sono input:checked::before, .kids input:checked::before {
    position:relative;
-   left:3.5px;
+   left:4px;
    content:'✔';
 }
 
@@ -312,6 +312,8 @@
 
    #formulario .segunda-parte.active .dieta {
       width:205px;
+      height:340px;
+      margin-bottom:35px;
    }
 
    #formulario .dieta #img-alimentacao, .vida-sexual #imagem-vida-sexual, .sono #gif-horas-sono {
@@ -529,11 +531,11 @@
 
    #formulario #sim-kids {
       top:-40px;
-      right:130px;
+      right:140px;
    }
 
    #formulario #l-sim-kids {
       top:-59px;
-      right:0px;
+      right:11px;
    }
 }

@@ -76,7 +76,7 @@
 
 .sexo input:checked::before, .exercicios input:checked::before {
    position:relative;
-   left:3.5px;
+   left:4px;
    content: '✔';
 }
 

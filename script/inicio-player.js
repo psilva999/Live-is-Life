@@ -134,7 +134,7 @@ clicaNoBotao.aceitaSom.addEventListener('click', () => {
    altera.nomeMusica.classList.add('active')
 
    altera.nomeMusica.href = 'https://www.youtube.com/watch?v=_HWRGKfSq3A'
-   altera.nomeMusica.innerHTML = "<ul class='stay-alive'><li>Stay</li><li>Alive -</li><li> José</li><li>Gonzalez</li><img src='midia/svg/external-link.svg'></ul>"
+   altera.nomeMusica.innerHTML = "<ul class='stay-alive'><li>Stay</li><li>Alive -</li><li> José</li><li>González</li><img src='midia/svg/external-link.svg'></ul>"
 
    altera.tempoDaMusica.classList.add('active')
    altera.player.classList.add('active')
@@ -193,7 +193,7 @@ mexeNo.voltaMusica.addEventListener('click', () => {
       mexeNo.audio.src = 'midia/audios/stay-alive-jose-gonzalez.mp3'
 
       altera.nomeMusica.href = 'https://www.youtube.com/watch?v=_HWRGKfSq3A'
-      altera.nomeMusica.innerHTML = "<ul class='stay-alive'><li>Stay</li><li>Alive -</li><li> José</li><li>Gonzalez</li><img src='midia/svg/external-link.svg'></ul>"
+      altera.nomeMusica.innerHTML = "<ul class='stay-alive'><li>Stay</li><li>Alive -</li><li> José</li><li>González</li><img src='midia/svg/external-link.svg'></ul>"
 
       mexeNo.desabilitaTrocaMusica.style.display = 'none'
       mexeNo.trocaMusica.style.display = 'block'

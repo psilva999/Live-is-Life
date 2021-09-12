@@ -66,9 +66,9 @@
    animation:mostra .2s;
 }
 
-#formulario #volta-primeira-etapa, #volta-segunda-etapa {
+#formulario .segunda-parte.active #volta-primeira-etapa, .terceira-parte.active #volta-segunda-etapa {
    position:absolute;
-   top:85px;
+   top:82px;
    left:3px;
 }
 
@@ -124,13 +124,13 @@
       padding-bottom:20px;
    }
 
-   #formulario #volta-primeira-etapa, #volta-segunda-etapa {
+   #formulario .segunda-parte.active #volta-primeira-etapa, .terceira-parte.active #volta-segunda-etapa {
       position:absolute;
       top:75px;
       left:2px;
    }
 
-   #formulario #volta-primeira-etapa img, #volta-segunda-etapa img {
+   #formulario .segunda-parte.active #volta-primeira-etapa img, .terceira-parte.active #volta-segunda-etapa img {
       width:16px;
       height:16px;
    }
