@@ -38,6 +38,28 @@ body {
    }
 }
 
+@keyframes borradoDasFases {
+   0% {
+      filter:blur(2px);
+   }
+
+   25% {
+      filter:blur(3px);
+   }
+
+   50% {
+      filter:blur(7px)
+   }
+
+   75% {
+      filter:blur(11px);
+   }
+
+   100% {
+      filter:blur(15px);
+   }
+}
+
 section {
    position:absolute;
    display:flex;

@@ -24,9 +24,7 @@
    scrollbar-width:thin;
    scrollbar-color:#7c6a6a;
    font-family: 'Baloo Thambi 2', cursive;
-   background-color:#f9484a;
-   background-image:linear-gradient(315deg, #f9484a 0%, #fbd72b 74%);
-
+   background:transparent;
 }
 
 #formulario::-webkit-scrollbar {
@@ -52,6 +50,10 @@
    padding-bottom:60px;
    font-size:30px;
    letter-spacing:6px;
+   color:#F2F2F2;
+   border:none;
+   background:none;
+   text-transform:uppercase;
 }
 
 .primeira-parte, .segunda-parte, .terceira-parte {
@@ -66,6 +68,20 @@
    animation:mostra .2s;
 }
 
+@keyframes mostra {
+   0% {
+      opacity:0;
+   }
+
+   50% {
+      opacity:0;
+   }
+
+   100% {
+      opacity:1;
+   }
+}
+
 #formulario .segunda-parte.active #volta-primeira-etapa, .terceira-parte.active #volta-segunda-etapa {
    position:absolute;
    top:82px;
@@ -73,8 +89,8 @@
 }
 
 #formulario span img {
-   width:20px;
-   height:20px;
+   width:25px;
+   height:25px;
    opacity:.8;
 }
 
@@ -117,6 +133,23 @@
    margin:10px;
 }
 
+#formulario .primeira-parte.active div h1, .segunda-parte.active div h1, .terceira-parte.active div h1 {
+   border-radius:10px;
+   background:ORANGE;
+   font-size:22px;
+   color:rgb(37, 26, 26);
+   opacity:.8;
+   margin:auto;
+}
+
+#formulario .primeira-parte.active label, .segunda-parte.active label, .terceira-parte.active label {
+   font-family:cursive;
+   color:rgb(245, 243, 239);
+   font-size:19px;
+   letter-spacing:2px;
+   opacity:.8;
+}
+
 @media (max-width:970px) {
    #formulario .fases {
       font-size:18px;
@@ -144,6 +177,18 @@
       margin-left:0px;
       padding:7px 6px 3px 6px;
       font-size:13px;
+   }
+
+   #formulario .primeira-parte.active div h1 {
+      font-size:19px;
+   }
+
+   #formulario .primeira-parte.active label, .segunda-parte.active label, .terceira-parte.active label {
+      font-size:16px;
+   }
+
+   #formulario .primeira-parte.active input, .segunda-parte.active input, .terceira-parte.active input {
+      font-size:14px;
    }
 }
 
@@ -177,18 +222,16 @@
    #formulario .sexo input {
       margin-left:3px;
    }
-}
 
-@keyframes mostra {
-   0% {
-      opacity:0;
+   #formulario .primeira-parte.active div h1, .segunda-parte.active div h1, .terceira-parte.active div h1 {
+      font-size:17px;
    }
 
-   50% {
-      opacity:0;
+   #formulario .primeira-parte.active label, .segunda-parte.active label, .terceira-parte.active label {
+      font-size:14px;
    }
 
-   100% {
-      opacity:1;
+   #formulario .primeira-parte.active input, .segunda-parte.active input, .terceira-parte.active input {
+      font-size:12px;
    }
 }

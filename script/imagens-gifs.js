@@ -15,7 +15,7 @@ setorPara.saberSeTreinaFisico.addEventListener('click', () => {
       maisMenos: document.querySelector('#mais-menos'),
 
       bemComFisico: document.querySelector('#ryan'),
-      sedentario: document.querySelector('#simpson')
+      sedentario: document.querySelector('#pessoa-sedentaria')
    }
 
    var mudaGif = document.querySelector('#gif-exercicios')

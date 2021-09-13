@@ -1,18 +1,5 @@
 @charset 'UTF-8';
 
-#formulario h1, label {
-   opacity:.7;
-}
-
-#formulario h1 {
-   font-size:22px;
-}
-
-#formulario label {
-   font-size:19px;
-   letter-spacing:2px;
-}
-
 #formulario input {
    font-family:'Baloo Thambi 2', cursive;
    opacity:.8;
@@ -32,7 +19,6 @@
    border-radius:10px;
    padding:10px 15px 10px 15px;
    border:1px solid rgba(0,0,0,.2);
-   font-size:17px;
 }
 
 .nascimento {
@@ -47,16 +33,24 @@
    font-size:17px;
 }
 
+.primeira-parte.active .sexo {
+   margin-top:70px;
+}
+
+.primeira-parte.active .sexo h1 {
+   width:100px;
+}
+
 .sexo label {
-   width:220px;
+   width:121px;
    text-align:left;
    display:block;
-   margin:-25px 0px 0px 190px;
+   margin:-24px 0px 0px 205px;
 }
 
 .sexo input {
    display:block;
-   margin:20px 0px 0px 150px;
+   margin:20px 0px 0px 180px;
    appearance:none;
    height:20px;
    width:20px;
@@ -94,13 +88,14 @@
   border-radius:50%;
 }
 
-.exercicios {
+.primeira-parte.active .exercicios {
    padding:10px;
    margin:40px;
 }
 
 .exercicios h1 {
-   padding-bottom:30px;
+   margin-bottom:30px;
+   width:235px;
 }
 
 .exercicios input {
@@ -120,12 +115,12 @@
    display:block;
    margin-top:-24px;
    margin-left:25px;
-   width:156px;
+   width:200px;
    text-align:left;
 }
 
 #formulario .exercicios #bem-corpo {
-   width:130px;
+   width:110px;
 }
 
 .exercicios #bem-corpo {
@@ -139,11 +134,10 @@
 .exercicios embed {
    border-radius:3px;
    width:350px;
-   height:245px;
-   margin-top:-230px;
-   margin-left:200px;
+   height:233px;
+   margin-top:-233px;
+   margin-left:240px;
    display:block;
-   opacity:1;
 }
 
 .altura-do-usuario {
@@ -162,28 +156,13 @@
 }
 
 @media (max-width:970px) {
-   #formulario .configura-nome label, input {
+   #formulario .configura-nome label, input, .nascimento label, input {
       display:block;  
    }
 
-   #formulario .configura-nome input {
+   #formulario .configura-nome input, .nascimento input {
       margin:auto;
-      font-size:16px;
       padding:5px;
-   }
-
-   #formulario .nascimento label, input {
-      display:block;
-   }
-
-   #formulario .nascimento input {
-      margin:auto;
-      font-size:16px;
-      padding:5px;
-   }
-
-   #formulario h1 {
-      font-size:18px;
    }
 
    #formulario label {
@@ -191,11 +170,19 @@
       letter-spacing:1px;
    }
 
+   .primeira-parte.active .sexo {
+      margin-top:50px;
+   }
+
+   .primeira-parte.active .sexo h1 {
+      width:70px;
+   }
+
    .sexo label {
-      width:158px;
+      width:106px;
       text-align:left;
       display:block;
-      margin:-21px 0px 0px 100px;
+      margin:-21px 0px 0px 95px;
    }
 
    .sexo input {
@@ -203,13 +190,18 @@
    }
 
    .exercicios {
-      height:400px;
+      height:490px;
    }
 
-   .opcoes {
+   .exercicios h1 {
       position:relative;
-      top:195px;
-      height:110px;
+      top:-10px;
+   }
+
+   .primeira-parte.active .opcoes {
+      position:relative;
+      top:215px;
+      height:200px;
    }
 
    .opcoes label, input {
@@ -217,55 +209,58 @@
    }
 
    .opcoes label {
-      top:2px;
+      top:3px;
+      font-size:12px;
    }
 
    #formulario .opcoes label {
       width:130px;
    }
 
-   #exercicios-constantes, #treino-regular {
-      top:-35px;
-      left:130px;
+   #exercicios-constantes {
+      top:20px;
+      right:0px;
    }
 
-   #treino-regular {
-      top:-32px;
+   #formulario #treino-regular {
+      width:173px;
+      top:22px;
    }
 
-   #mais-menos, #varia {
-      top:-25px;
+   #formulario #mais-menos {
+      top:-68px;
+      left:170px;
    }
 
-   #varia {
-      top:-23px;
+   .primeira-parte.active #varia {
+      top:-65px;
+      left:170px;
+      width:71px;
    }
 
-   #ryan, #bem-corpo {
-      top:-60px;
-      left:130px;
+   .primeira-parte.active #ryan {
+      top:-19px;
+      right:0px;
    }
 
    #formulario .opcoes #bem-corpo {
-      width:110px;
+      width:136px;
+      top:-17px;
    }
 
-   #bem-corpo {
-      top:-57px;
+   #pessoa-sedentaria, #sedentario {
+      top:-10px;
    }
 
-   #simpson, #sedentario {
-      top:-70px;
-   }
-
-   #sedentario {
-      top:-68px;
+   .primeira-parte.active #sedentario {
+      top:-7px;
+      width:166px;
    }
 
    .exercicios embed {
       width:285px;
       height:225px;
-      margin-top:-155px;
+      margin-top:-225px;
       margin-left:0px;
    }
 
@@ -280,77 +275,40 @@
 }
 
 @media (max-width:500px) {
+   #formulario .sexo {
+      margin-top:40px;
+   }
+
+   #formulario .primeira-parte.active .sexo label {
+      margin-top:-19px;
+   }
+
+   #formulario .exercicios h1 {
+      width:180px;
+      top:0px;
+   }
+
    #formulario .exercicios {
       display:block;
       margin-left:auto;
       margin-right:auto;
       width:225px;
-      height:370px;
+      height:460px;
       padding:0px;
    }
 
-   .exercicios h1 {
-      padding-bottom:0px;
-      margin-bottom:50px;
-   }
-
-   .exercicios .opcoes {
-      top:180px;
-   }
-
-   #formulario .opcoes #gosta-demais {
-      width:75px;
-      font-size:13px;
-   }
-
-   #formulario #gosta-demais {
-      top:5px;
-   }
-
-   #formulario .opcoes #exercicios-constantes {
-      top:-31px;
-   }
-
-   #formulario .opcoes #treino-regular {
-      width:90px;
-      font-size:13px;
-      top:-27px;
-   }
-
-   #formulario .opcoes #mais-menos, #varia {
-      top:-45px;
-   }
-
-   #formulario .opcoes #varia {
-      top:-40px;
-      font-size:13px;
-   }
-
-   #formulario .opcoes #bem-corpo {
-      width:70px;
-      font-size:13px;
-      top:-55px;
-   }
-
-   #formulario .opcoes #varia {
-      width:85px;
-   }
-
-   #formulario .opcoes #simpson, #sedentario {
-      top:-105px;
-   }
-
-   #formulario .opcoes #sedentario {
-      width:90px;
-      top:-100px;
-      font-size:13px;
-   }
-
-   .exercicios #gif-exercicios {
-      background:yellow;
+   #formulario .exercicios embed {
       width:225px;
-      height:205px;
-      margin-top:-155px auto;
+      height:195px;
+      position:relative;
+      top:-205px;
+      margin-top:auto;
+   }
+
+   .primeira-parte.active .opcoes {
+      position:relative;
+      top:205px;
+      height:203px;
    }
 
    .altura-do-usuario {
@@ -358,4 +316,59 @@
       display:block;
       margin:auto auto 30px auto;
    }
+
+   .opcoes label {
+      top:3px;
+   }
+
+   #formulario .opcoes label {
+      width:130px;
+   }
+
+   #formulario .opcoes #gosta-demais {
+      width:109px;
+   }
+
+   #formulario #gosta-demais {
+      top:5px;
+   }
+
+   #formulario #exercicios-constantes {
+      top:10px;
+   }
+
+   #formulario #treino-regular {
+      width:156px;
+      top:14px;
+   }
+
+   #formulario .opcoes #mais-menos {
+      top:22px;
+      left:0px;
+   }
+
+   #formulario .opcoes #varia {
+      top:27px;
+      left:0px;
+      width:120px;
+   }
+
+   .primeira-parte.active #ryan {
+      top:35px;
+      right:0px;
+   }
+
+   #formulario .opcoes #bem-corpo {
+      width:122px;
+      top:39px;
+   }
+
+   #pessoa-sedentaria, #sedentario {
+      top:41px;
+   }
+
+   .primeira-parte.active #sedentario {
+      top:46px;
+      width:150px;
+   } 
 }

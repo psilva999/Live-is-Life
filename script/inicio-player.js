@@ -1,5 +1,6 @@
 var altera = {
    cabecalho: document.querySelector('.convite'),
+   imagemBackground: document.querySelector('.background-image'),
    optarMusica: document.querySelector('#optar-musica'),
 
    nomeMusica: document.querySelector('.nome-musica'),
@@ -48,6 +49,9 @@ clicaNoBotao.inicial.addEventListener('click', () => {
 clicaNoBotao.recusaSom.addEventListener('click', () => {
    altera.optarMusica.classList.remove('active')
    altera.jornada.classList.add('active')
+
+   altera.imagemBackground.style.animation = 'borradoDasFases 3s'
+   altera.imagemBackground.style.animationFillMode = 'forwards'
 })
 
 function retiraActivePlayPause() {
@@ -130,6 +134,9 @@ function pulaQuinzePraFrente() { mexeNo.audio.currentTime += Number(this.dataset
 mexeNo.avancaQuinzeSeg.addEventListener('click', pulaQuinzePraFrente, noFinal)
 
 clicaNoBotao.aceitaSom.addEventListener('click', () => {
+   altera.imagemBackground.style.animation = 'borradoDasFases 3s'
+   altera.imagemBackground.style.animationFillMode = 'forwards'
+
    altera.optarMusica.classList.toggle('active')
    altera.nomeMusica.classList.add('active')
 
