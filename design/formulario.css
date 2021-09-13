@@ -198,6 +198,11 @@
 }
 
 @media (max-width:500px) {
+   #formulario input:checked::before, .exercicios input:checked::before {
+      left:5px;
+      top:1px;
+   }
+
    #formulario .configura-nome, .nascimento, .sexo, .peso-usuario, #infos-primeira-etapa, #infos-segunda-etapa, #entregar-formulario {
       width:180px;
       display:block;
