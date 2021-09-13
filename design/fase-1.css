@@ -128,14 +128,14 @@
 }
 
 .exercicios .opcoes {
-   margin-top:20px;
+   margin-top:30px;
 }
 
 .exercicios embed {
    border-radius:3px;
    width:350px;
-   height:233px;
-   margin-top:-233px;
+   height:253px;
+   margin-top:-250px;
    margin-left:240px;
    display:block;
 }

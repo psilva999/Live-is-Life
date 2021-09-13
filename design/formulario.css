@@ -143,7 +143,6 @@
 }
 
 #formulario .primeira-parte.active label, .segunda-parte.active label, .terceira-parte.active label {
-   font-family:cursive;
    color:rgb(245, 243, 239);
    font-size:19px;
    letter-spacing:2px;
