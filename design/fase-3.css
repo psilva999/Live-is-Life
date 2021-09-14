@@ -28,41 +28,6 @@
 .substancias input, .ansiedade input, .depressao input, .suicidio input, .satisfeito-vida input {
    display:block;
    margin:20px 0px 0px 150px;
-   appearance:none;
-   height:20px;
-   width:20px;
-   transition:all 0.15s ease-out 0s;
-   background:white;
-   border:none;
-   color:#fff;
-}
-
-.ansiedade input, .depressao input, .suicidio input, .satisfeito-vida input {
-   border-radius:50%;
-}
-
-.substancias input:hover, .ansiedade input:hover, .depressao input:hover, .suicidio input:hover, .satisfeito-vida input:hover {
-   background:#bfc7d1;
-}
-
-.substancias input:checked, .ansiedade input:checked, .depressao input:checked, .suicidio input:checked, .satisfeito-vida input:checked {
-   background:#40e0d0;
-}
-
-.substancias input:checked::before, .ansiedade input:checked::before, .depressao input:checked::before, .suicidio input:checked::before, .satisfeito-vida input:checked::before {
-   position:relative;
-   left:4px;
-   content:'✔';
-}
-
-.substancias input:checked::after, .ansiedade input:checked::after, .depressao input:checked::after, .suicidio input:checked::after, .satisfeito-vida input:checked::after {
-   background:#40e0d0;
-   content:'';
-   display:block;
-}
-
-.ansiedade input::after, .depressao input::after, .suicidio input::after, .satisfeito-vida input::after {
-   border-radius:50%;
 }
 
 #formulario .terceira-parte.active .substancias {

@@ -135,7 +135,7 @@
 
 #formulario .primeira-parte.active div h1, .segunda-parte.active div h1, .terceira-parte.active div h1 {
    border-radius:10px;
-   background:ORANGE;
+   background:orange;
    font-size:22px;
    color:rgb(37, 26, 26);
    opacity:.8;
@@ -147,6 +147,49 @@
    font-size:19px;
    letter-spacing:2px;
    opacity:.8;
+   cursor:pointer;
+}
+
+#formulario input {
+   cursor:pointer;
+}
+
+#formulario .sexo input, .exercicios input, .dieta input, .saude input, .vida-sexual input, .sono input, .kids input, .dieta input, .saude input, .vida-sexual input, .sono input, .kids input, .substancias input, .ansiedade input, .depressao input, .suicidio input, .satisfeito-vida input {
+   appearance:none;
+   height:20px;
+   width:20px;
+   transition:all 0.15s ease-out 0s;
+   background:white;
+   border:none;
+   color:#fff;
+}
+
+#formulario .sexo input, .exercicios input, .dieta input, .saude input, .vida-sexual input, .sono input, .kids input, .dieta input, .saude input, .vida-sexual input, .sono input, .kids input, .ansiedade input, .depressao input, .suicidio input, .satisfeito-vida input {
+   border-radius:50%;
+}
+
+#formulario .sexo input:hover, .exercicios input:hover, .dieta input:hover, .saude input:hover, .vida-sexual input:hover, .sono input:hover, .kids input:hover, .substancias input:hover, .ansiedade input:hover, .depressao input:hover, .suicidio input:hover, .satisfeito-vida input:hover {
+  background:#B59047;
+}
+
+#formulario .sexo input:checked, .exercicios input:checked, .dieta input:checked, .saude input:checked, .vida-sexual input:checked, .sono input:checked, .kids input:checked, .substancias input:checked, .ansiedade input:checked, .depressao input:checked, .suicidio input:checked, .satisfeito-vida input:checked {
+  background:#B59047;
+}
+
+#formulario .sexo input:checked::before, .exercicios input:checked::before, .dieta input:checked::before, .saude input:checked::before, .vida-sexual input:checked::before, .sono input:checked::before, .kids input:checked::before, .substancias input:checked::before, .ansiedade input:checked::before, .depressao input:checked::before, .suicidio input:checked::before, .satisfeito-vida input:checked::before {
+   position:relative;
+   left:5px;
+   content: '✔';
+}
+
+#formulario .sexo input:checked::after, .exercicios input:checked::after, .dieta input:checked::after, .saude input:checked::after, .vida-sexual input:checked::after, .sono input:checked::after, .kids input:checked::after, .substancias input:checked::after, .ansiedade input:checked::after, .depressao input:checked::after, .suicidio input:checked::after, .satisfeito-vida input:checked::after {
+  background:#B59047;
+  content: '';
+  display: block;
+}
+
+#formulario .sexo input::after, .exercicios input::after, .dieta input::after, .saude input::after, .vida-sexual input::after, .sono input::after, .kids input::after, .ansiedade input::after, .depressao input::after, .suicidio input::after, .satisfeito-vida input::after  {
+  border-radius:50%;
 }
 
 @media (max-width:970px) {
@@ -178,7 +221,7 @@
       font-size:13px;
    }
 
-   #formulario .primeira-parte.active div h1 {
+   #formulario .primeira-parte.active div h1, .segunda-parte.active div h1 {
       font-size:19px;
    }
 
@@ -198,8 +241,8 @@
 }
 
 @media (max-width:500px) {
-   #formulario input:checked::before, .exercicios input:checked::before {
-      left:5px;
+   #formulario input:checked::before {
+      left:4.5px;
       top:1px;
    }
 
@@ -232,7 +275,7 @@
    }
 
    #formulario .primeira-parte.active label, .segunda-parte.active label, .terceira-parte.active label {
-      font-size:14px;
+      font-size:13px;
    }
 
    #formulario .primeira-parte.active input, .segunda-parte.active input, .terceira-parte.active input {
