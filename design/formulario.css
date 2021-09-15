@@ -147,11 +147,6 @@
    font-size:19px;
    letter-spacing:2px;
    opacity:.8;
-   cursor:pointer;
-}
-
-#formulario input {
-   cursor:pointer;
 }
 
 #formulario .sexo input, .exercicios input, .dieta input, .saude input, .vida-sexual input, .sono input, .kids input, .dieta input, .saude input, .vida-sexual input, .sono input, .kids input, .substancias input, .ansiedade input, .depressao input, .suicidio input, .satisfeito-vida input {

@@ -110,6 +110,7 @@
 
 #peso-user {
    margin-left:15px;
+   margin-bottom:50px;
 }
 
 @media (max-width:970px) {
@@ -328,4 +329,8 @@
       top:46px;
       width:150px;
    } 
+
+   #peso-user {
+      margin-bottom:60px;
+   }
 }

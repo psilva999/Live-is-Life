@@ -74,7 +74,7 @@ setorPara.vidaIntima.addEventListener('click', () => {
    var mudaVidaIntima = document.querySelector('#imagem-vida-sexual')
 
    if (intimo.naoInforma.checked) {
-      mudaVidaIntima.src = 'midia/images/silence.png'
+      mudaVidaIntima.src = 'midia/images/silence.jpg'
    }
 
    else if (intimo.baixa.checked) {
