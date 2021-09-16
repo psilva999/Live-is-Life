@@ -1,8 +1,10 @@
 @charset 'UTF-8';
 
-#formulario input {
+#formulario .primeira-parte.active input {
    opacity:.8;
    letter-spacing:2px;
+   font-family:'Baloo Thambi 2', cursive;
+   font-size:16px;
 }
 
 #formulario input:focus {
@@ -52,9 +54,12 @@
    margin:20px 0px 0px 180px;  
 }
 
-.primeira-parte.active .exercicios {
+#formulario .primeira-parte.active .exercicios {
    padding:10px;
-   margin:40px;
+   margin-left:40px;
+   margin-right:40px;
+   margin-bottom:40px;
+   margin-top:60px;
 }
 
 .exercicios h1 {
@@ -97,8 +102,18 @@
    display:block;
 }
 
+.altura-do-usuario, .peso-usuario {
+   margin-left:0px;
+   margin-right:0px;
+}
+
 .altura-do-usuario {
-   margin:30px 0px 30px 0px;
+   margin-top:90px;
+}
+
+.peso-usuario {
+   margin-top:50px;
+   margin-bottom:70px;
 }
 
 #altura-user, #peso-user {
@@ -106,14 +121,23 @@
    padding:10px 15px 10px 15px;
    border:1px solid rgba(0,0,0,.2);
    font-size:17px;
+   font-family:'Baloo Thambi 2', cursive;
 }
 
 #peso-user {
    margin-left:15px;
-   margin-bottom:50px;
 }
 
 @media (max-width:970px) {
+   #formulario .primeira-parte.active .configura-nome {
+      margin-top:25px;
+      margin-bottom:0px;
+   }
+
+   #formulario .primeira-parte.active .nascimento {
+      margin-top:10px;
+   }
+
    #formulario .configura-nome label, input, .nascimento label, input {
       display:block;  
    }
@@ -129,7 +153,7 @@
    }
 
    .primeira-parte.active .sexo {
-      margin-top:50px;
+      margin-top:60px;
    }
 
    .primeira-parte.active .sexo h1 {
@@ -222,37 +246,47 @@
       margin-left:0px;
    }
 
-   .altura-do-usuario {
-      margin:15px 0px 15px 0px;
-   }
-
-   #altura-user, #peso-user {
+   #formulario .primeira-parte.active #altura-user, #peso-user {
       margin:auto;
       padding:5px;
+   }
+
+   #formulario .primeira-parte.active .altura-do-usuario {
+      margin-top:65px;
+      margin-bottom:0px;
+   }
+
+   #formulario .primeira-parte.active .peso-usuario {
+      margin-top:40px;
+      margin-bottom:70px;
    }
 }
 
 @media (max-width:500px) {
-   #formulario .sexo {
-      margin-top:40px;
+   #formulario .primeira-parte.active input {
+      font-size:13px;
+   }
+
+   .primeira-parte.active #formulario .sexo, .exercicios {
+      margin-top:60px;
    }
 
    #formulario .primeira-parte.active .sexo label {
       margin-top:-19px;
    }
 
-   #formulario .exercicios h1 {
-      width:180px;
-      top:0px;
-   }
-
-   #formulario .exercicios {
-      display:block;
+   #formulario .primeira-parte.active .exercicios {
+      display:block; 
       margin-left:auto;
       margin-right:auto;
       width:225px;
       height:460px;
       padding:0px;
+   }
+
+   #formulario .primeira-parte.active .exercicios h1 {
+      width:180px;
+      top:0px;
    }
 
    #formulario .exercicios embed {
@@ -330,7 +364,11 @@
       width:150px;
    } 
 
-   #peso-user {
-      margin-bottom:60px;
+   #formulario .primeira-parte.active .altura-do-usuario {
+      margin-top:40px;
+   }
+
+   #formulario .primeira-parte.active .peso-usuario {
+      margin:25px auto 60px auto;
    }
 }
