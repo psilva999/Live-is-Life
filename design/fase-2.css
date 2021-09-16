@@ -502,14 +502,6 @@
 }
 
 @media (max-width:500px) {
-   #formulario .segunda-parte.active div {
-      background:red;
-   }
-
-   #formulario .segunda-parte.active label {
-      background:green;
-   }
-
    #formulario .segunda-parte.active #titulo-segunda-parte {
       width:202px;
    }
