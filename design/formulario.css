@@ -244,9 +244,12 @@
    }
 
    #formulario .configura-nome, .nascimento, .sexo, .peso-usuario, #infos-primeira-etapa, #infos-segunda-etapa, #entregar-formulario {
-      width:180px;
       display:block;
       margin:auto;
+   }
+
+   #formulario .segunda-parte.active #infos-segunda-etapa {
+      width:90px;
    }
 
    #formulario .fases {

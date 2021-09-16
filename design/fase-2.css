@@ -502,6 +502,14 @@
 }
 
 @media (max-width:500px) {
+   #formulario .segunda-parte.active div {
+      background:red;
+   }
+
+   #formulario .segunda-parte.active label {
+      background:green;
+   }
+
    #formulario .segunda-parte.active #titulo-segunda-parte {
       width:202px;
    }
@@ -637,7 +645,8 @@
 
    #formulario .vida-sexual #l-nao-informa {
       top:-19px;
-      right:22px;
+      right:37px;
+      width:75px;
    }
 
    #formulario .segunda-parte.segunda-parte.active #baixa {
@@ -656,6 +665,8 @@
 
    #formulario .vida-sexual #l-equilibrada {
       top:-121px;
+      width:75px;
+      left:65px;
    }
 
    #formulario .vida-sexual #ativa {
