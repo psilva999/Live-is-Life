@@ -227,7 +227,7 @@
 }
 
 #formulario .sono h1 {
-   width:410px;
+   width:280px;
 } 
 
 #formulario .sono embed {
@@ -282,7 +282,7 @@
 }
 
 #formulario .segunda-parte.active .kids h1 {
-   width:220px;
+   width:210px;
    margin-bottom:20px;
 }
 
@@ -315,6 +315,7 @@
    #formulario .segunda-parte.active .dieta {
       width:280px;
       height:393px;
+      margin-top:40px;
    }
 
    #formulario .segunda-parte.active .dieta h1 {
@@ -362,7 +363,7 @@
    }
 
    #formulario .segunda-parte.active .saude {
-      margin-top:-20px;
+      margin-top:60px;
    }
 
    #formulario .segunda-parte.active .saude h1 {
@@ -373,7 +374,7 @@
    #formulario .segunda-parte.active .vida-sexual {
       height:410px;
       width:300px;
-      margin-top:40px;
+      margin-top:60px;
    }
 
    #formulario .segunda-parte.active .vida-sexual img {
@@ -459,40 +460,40 @@
    }
 
    #formulario .segunda-parte.active #dorme-mal {
-      right:9px;
-      top:-32px;
+      right:125px;
+      top:15px;
    }
 
    #formulario .segunda-parte.active #l-dorme-mal {
-      left:60px;
-      top:-55px;
+      right:56px;
+      top:-8px;
       width:40px;
    }
 
    #formulario .segunda-parte.active #sono-normal {
-      top:-31px;
-      right:126px;
+      top:-33px;
+      right:25px;
    }
 
    #formulario .segunda-parte.active #l-sono-normal {
-      top:-54px;
-      right:57px;
+      top:-55px;
+      left:44px;
       width:40px;
    }
 
    #formulario .segunda-parte.active #dorminhoco {
-      top:-78px;
-      right:9px;
+      top:-30px;
+      right:125px;
    }
 
    #formulario .segunda-parte.active #l-dorminhoco {
-      top:-101px;
-      left:68px;
-      width:60px;
+      top:-52px;
+      left:3px;
+      width:160px;
    }
 
    #formulario .segunda-parte.active .kids {
-      margin-top:30px;
+      margin-top:50px;
    }
 
    #formulario .segunda-parte.active .kids h1 {
@@ -515,7 +516,7 @@
       margin-bottom:35px;
    }
 
-   #formulario .segunda-parte.active .dieta #img-alimentacao, .vida-sexual #imagem-vida-sexual, .sono #gif-horas-sono {
+   #formulario .segunda-parte.active .dieta #img-alimentacao, .sono #gif-horas-sono {
       width:205px;
       height:225px;
       margin-top:10px;
@@ -615,93 +616,119 @@
       width:76px;
    }
 
+   #formulario .segunda-parte.active .vida-sexual {
+      width:205px;
+      height:360px;
+   }
+
    #formulario .vida-sexual h1 {
       width:100px;
    }
 
+   #formulario .segunda-parte.active .vida-sexual img {
+      width:205px;
+      height:225px;
+      margin-top:10px;
+   }
+
+   #formulario .segunda-parte.active .vida-sexual  #nao-informa-vida-sexual {
+      right:145px;
+   }
+
    #formulario .vida-sexual #l-nao-informa {
       top:-19px;
+      right:22px;
+   }
+
+   #formulario .segunda-parte.segunda-parte.active #baixa {
+      right:145px;
    }
 
    #formulario .vida-sexual #l-baixa {
       top:-27px;
+      right:33px;
    }
 
    #formulario .vida-sexual #equilibrada {
-      top:-100px;
+      top:-102px;
+      left:-42px;
    }
 
    #formulario .vida-sexual #l-equilibrada {
-      top:-120px;
+      top:-121px;
    }
 
    #formulario .vida-sexual #ativa {
-      top:-89px;
+      top:-91px;
+      left:-42px;
    }
 
    #formulario .vida-sexual #l-ativa {
-      top:-109px;
+      top:-110px;
    }
 
    #formulario .segunda-parte.active .sono {
       height:410px;
       width:230px; 
+      margin-top:70px;
    }
 
    #formulario .segunda-parte.active .sono h1 {
-      width:230px;
+      width:220px;
    }
 
    #formulario .segunda-parte.active #sono-nulo {
-      right:110px;
+      right:125px;
+      top:15px;
    }
 
    #formulario .segunda-parte.active #l-sono-nulo {
-      right:5px;
-      top:-5px;
+      right:37px;
+      top:-4px;
+      width:60px;
    }
 
    #formulario .segunda-parte.active #dorme-mal {
-      right:15px;
-      top:-26px;
+      right:125px;
+      top:15px;
    }
 
    #formulario .segunda-parte.active #l-dorme-mal {
-      left:64px;
-      top:-45px;
-      width:40px;
+      right:50px;
+      top:-4px;
+      width:31px;
    }
 
    #formulario .segunda-parte.active #sono-normal {
-      top:-27px;
-      right:110px;
+      top:-26px;
+      right:35px;
    }
 
    #formulario .segunda-parte.active #l-sono-normal {
-      top:-46px;
-      right:32px;
-      width:35px;
+      top:-45px;
+      left:40px;
+      width:32px;
    }
 
    #formulario .segunda-parte.active #dorminhoco {
-      top:-68px;
-      right:16px;
+      top:-24px;
+      right:125px;
    }
 
    #formulario .segunda-parte.active #l-dorminhoco {
-      top:-87px;
-      left:67px;
-      width:49px;
+      top:-44px;
+      left:-28px;
+      width:78px;
    }
 
    #formulario .segunda-parte.active .kids {
       height:120px;
       width:180px;
-      margin-top:0px;
+      margin-top:20px;
    }
 
    #formulario .segunda-parte.active .kids h1 {
-      width:170px;
+      width:160px;
       margin-bottom:15px;
    }
 
