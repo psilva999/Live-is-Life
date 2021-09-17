@@ -1,7 +1,6 @@
 @charset 'UTF-8';
 
 #formulario .terceira-parte.active div {
-   background:red;
    display:block;
    margin:auto;
    margin-bottom:30px;
@@ -17,7 +16,6 @@
 }
 
 #formulario .terceira-parte.active label {
-   background:green;
    position:relative;
    top:-22px;
    display:block;
@@ -621,7 +619,6 @@
 @media (max-width:500px) {
    #formulario .terceira-parte.active #titulo-terceira-parte {
       width:265px;
-      background:red;
       margin-bottom:15px;
    }
 
@@ -634,12 +631,12 @@
    }
 
    #formulario .terceira-parte.active .substancias {
-      height:245px;
-      width:270px;
+      height:275px;
+      width:260px;
    }
 
    #formulario .terceira-parte.active .substancias h1 {
-      width:270px;
+      width:170px;
    }
 
    #formulario .terceira-parte.active .substancias #alcool {
@@ -648,7 +645,7 @@
    }
 
    #formulario .terceira-parte.active .substancias #l-alcool {
-      right:82px;
+      right:77px;
       top:-33px;
       width:40px;
    }
@@ -661,7 +658,7 @@
    #formulario .terceira-parte.active .substancias #l-ex-alcoolatra {
       top:-93px;
       width:89px;
-      left:68px;
+      left:73px;
    }
 
    #formulario .terceira-parte.active .substancias #cigarro {
@@ -672,7 +669,7 @@
    #formulario .terceira-parte.active .substancias #l-cigarro {
       top:-110px;
       width:48px;
-      right:78px;
+      right:73px;
    }
 
    #formulario .terceira-parte.active .substancias #ex-fumante {
@@ -683,7 +680,7 @@
    #formulario .terceira-parte.active .substancias #l-ex-fumante {
       width:77px;
       top:-170px;
-      left:62px;
+      left:67px;
    }
 
    #formulario .terceira-parte.active .substancias #entorpecentes {
@@ -694,7 +691,7 @@
    #formulario .terceira-parte.active .substancias #l-entorpecentes {
       top:-187px;
       width:95px;
-      right:54px;
+      right:49px;
    }
 
    #formulario .terceira-parte.active .substancias #ex-dependente {
@@ -704,7 +701,7 @@
 
    #formulario .terceira-parte.active .substancias #l-ex-dependente {
       top:-248px;
-      left:73px;
+      left:78px;
       width:100px;
    }
 
@@ -715,7 +712,7 @@
 
    #formulario .terceira-parte.active #l-reabilitacao {
       top:-262px;
-      right:26px;
+      right:21px;
       width:144px;
    }
 
@@ -726,7 +723,7 @@
 
    #formulario .terceira-parte.active #l-limpo-substancias {
       top:-280px;
-      right:34px;
+      right:29px;
       width:161px;
    }
 
