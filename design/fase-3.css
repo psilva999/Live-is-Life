@@ -1,22 +1,23 @@
 @charset 'UTF-8';
 
-#formulario .terceira-parte div {
+#formulario .terceira-parte.active div {
+   background:red;
    display:block;
    margin:auto;
    margin-bottom:30px;
-   width:300px;
 }
 
-#formulario .terceira-parte h1 {
+#formulario .terceira-parte.active h1 {
    display:block;
    margin-bottom:30px;
 }
 
-#formulario .terceira-parte input {
+#formulario .terceira-parte.active input {
    position:relative;
 }
 
-#formulario .terceira-parte label {
+#formulario .terceira-parte.active label {
+   background:green;
    position:relative;
    top:-22px;
    display:block;
@@ -31,7 +32,13 @@
 }
 
 #formulario .terceira-parte.active .substancias {
-   height:410px;
+   height:320px;
+   width:400px;
+   margin-top:-20px;
+}
+
+#formulario .terceira-parte.active .substancias h1 {
+   width:360px;
 }
 
 #formulario .terceira-parte.active .substancias input {
@@ -39,94 +46,96 @@
 }
 
 #formulario .terceira-parte.active #alcool {
-   right:150px;
+   right:120px;
 }
 
 #formulario .terceira-parte.active #l-alcool {
-   right:90px;
+   right:115px;
    top:-24px;
    width:62px;
 }
 
 #formulario .terceira-parte.active #ex-alcoolatra {
    top:-68px;
-   right:15px;
+   left:60px;
 }
 
 #formulario .terceira-parte.active #l-ex-alcoolatra {
    top:-93px;
    width:137px;
-   left:80px;
+   left:103px;
 }
 
 #formulario .terceira-parte.active #cigarro {
    top:-80px;
-   right:150px;
+   right:120px;
 }
 
 #formulario .terceira-parte.active #l-cigarro {
    top:-105px;
    width:75px;
-   right:85px;
+   right:107px;
 }
 
 #formulario .terceira-parte.active #ex-fumante {
    top:-150px;
-   right:15px;
+   left:60px;
 }
 
 #formulario .terceira-parte.active #l-ex-fumante {
-   width:120px;
+   width:119px;
    top:-174px;
-   left:73px;
+   left:94px;
 }
 
 #formulario .terceira-parte.active #entorpecentes {
    top:-160px;
-   right:150px;
+   right:120px;
 }
 
 #formulario .terceira-parte.active #l-entorpecentes {
    top:-184px;
-   width:140px;
-   right:52px;
+   width:145px;
+   right:72px;
 }
 
-#formulario .terceira-parte.active #ex-drogado {
+#formulario .terceira-parte.active #ex-dependente {
    top:-228px;
-   left:30px;
+   left:60px;
 }
 
-#formulario .terceira-parte.active #l-ex-drogado {
+#formulario .terceira-parte.active #l-ex-dependente {
    top:-253px;
-   left:100px;
+   left:112px;
+   width:153px;
 }
 
 #formulario .terceira-parte.active #reabilitacao {
    top:-240px;
-   right:150px;
+   left:150px;
 }
 
 #formulario .terceira-parte.active #l-reabilitacao {
    top:-264px;
-   right:12px;
-   width:222px;
+   right:14px;
+   width:221px;
 }
 
 #formulario .terceira-parte.active #limpo-substancias {
-   top:-240px;
-   right:150px;
+   top:-260px;
+   left:150px;
 }
 
 #formulario .terceira-parte.active #l-limpo-substancias {
-   top:-265px;
-   left:1px;
-   width:250px;
+   top:-285px;
+   right:27px;
+   width:247px;
 }
 
 #formulario .terceira-parte.active .ansiedade {
    height:220px;
    width:220px;
+   margin-top:80px;
 }
 
 #formulario #nenhuma-ansiedade {
@@ -163,6 +172,7 @@
 #formulario .terceira-parte.active .depressao {
    width:230px;
    height:270px;
+   margin-top:80px;
 }
 
 #formulario #nenhuma-depre {
@@ -211,6 +221,7 @@
 #formulario .terceira-parte.active .suicidio {
    width:320px;
    height:180px;
+   margin-top:80px;
 }
 
 #formulario #n-suicidio {
@@ -246,7 +257,10 @@
 }
 
 #formulario .terceira-parte.active .satisfeito-vida {
-   width:310px;
+   width:320px;
+   height:465px;
+   margin-top:80px;
+   margin-bottom:100px;
 }
 
 #formulario #muito-bom {
@@ -255,140 +269,160 @@
 
 #formulario #l-muito-bom {
    width:173px;
-   right:35px;
+   right:45px;
+   top:-25px;
 }
 
 #formulario #bom {
-   left:135px;
+   right:145px;
+   top:-10px;
 }
 
 #formulario #l-bom {
-   top:-24px;
+   top:-34px;
    width:237px;
-   left:5px;
+   right:14px;
 }
 
 #formulario #nao-sei-vida {
    right:65px;
+   top:-15px;
 }
 
 #formulario #l-nao-sei-vida {
-   top:-23px;
+   top:-39px;
    width:75px;
-   right:6px;
+   right:15px;
 }
 
 #formulario #ruim {
-   right:145px;
+   left:145px;
+   top:-20px;
 }
 
 #formulario #l-ruim {
-   width:222px;
-   top:-22px;
-   right:13px;
+   width:156px;
+   top:-44px;
+   left:52px;
 }
 
 #formulario #muito-ruim {
-   left:135px;
+   left:145px;
+   top:-25px;
 }
 
 #formulario #l-muito-ruim {
    width:185px;
-   left:31px;
-   top:-23px;
+   left:38px;
+   top:-47px;
 }
 
 @media (max-width:970px) {
+   #formulario .terceira-parte.active div h1 {
+      font-size:19px;
+   }
+   
    #formulario .terceira-parte.active .substancias {
-      width:250px;
+      width:340px;
       height:280px;
+      margin-top:40px;
    } 
 
-   #formulario .terceira-parte.active #alcool {
-      right:150px;
-      top:-20px;
+   #formulario .terceira-parte.active .substancias h1 {
+      width:310px;
    }
 
-   #formulario .terceira-parte.active #l-alcool {
-      right:76px;
-      top:-41px;
-      width:47px;
+   #formulario .terceira-parte.active .substancias #alcool {
+      right:120px;
    }
 
-   #formulario .terceira-parte.active #ex-alcoolatra {
-      top:-83px;
-      right:35px;
+   #formulario .terceira-parte.active .substancias #l-alcool {
+      right:92px;
+      margin-top:3px;
+      width:46px;
    }
 
-   #formulario .terceira-parte.active #l-ex-alcoolatra {
-      top:-104px;
+   #formulario .terceira-parte.active .substancias #ex-alcoolatra {
+      top:-66px;
+      left:20px;
+   }
+
+   #formulario .terceira-parte.active .substancias #l-ex-alcoolatra {
+      top:-87px;
       width:101px;
-      left:65px;
+      left:75px;
    }
 
-   #formulario .terceira-parte.active #cigarro {
-      top:-100px;
-      right:150px;
+   #formulario .terceira-parte.active .substancias #cigarro {
+      top:-80px;
+      right:120px;
    }
 
-   #formulario .terceira-parte.active #l-cigarro {
-      top:-121px;
+   #formulario .terceira-parte.active .substancias #l-cigarro {
+      top:-102px;
       width:55px;
-      right:72px;
+      right:88px;
    }
 
-   #formulario .terceira-parte.active #ex-fumante {
-      top:-163px;
-      right:35px;
+   #formulario .terceira-parte.active .substancias #ex-fumante {
+      top:-143px;
+      left:20px;
    }
 
-   #formulario .terceira-parte.active #l-ex-fumante {
-      width:89px;
-      top:-184px;
-      left:59px;
+   #formulario .terceira-parte.active .substancias #l-ex-fumante {
+      width:88px;
+      top:-165px;
+      left:68px;
    }
 
-   #formulario .terceira-parte.active #entorpecentes {
-      top:-180px;
-      right:150px;
+   #formulario .terceira-parte.active .substancias #entorpecentes {
+      top:-157px;
+      right:120px;
    }
 
-   #formulario .terceira-parte.active #l-entorpecentes {
-      top:-201px;
-      width:100px;
-      right:50px;
+   #formulario .terceira-parte.active .substancias #l-entorpecentes {
+      top:-179px;
+      width:107px;
+      right:62px;
    }
 
-   #formulario .terceira-parte.active #ex-drogado {
-      top:-243px;
-      left:-15px;
+   #formulario .terceira-parte.active .substancias #ex-dependente {
+      top:-220px;
+      left:20px;
    }
 
-   #formulario .terceira-parte.active #l-ex-drogado {
-      top:-265px;
-      left:79px;
+   #formulario .terceira-parte.active .substancias #l-ex-dependente {
+      top:-242px;
+      left:81px;
+      width:114px;
    }
 
    #formulario .terceira-parte.active #reabilitacao {
-      top:-260px;
-      right:150px;
+      top:-233px;
+      left:80px;
    }
 
    #formulario .terceira-parte.active #l-reabilitacao {
-      top:-281px;
-      right:18px;
-      width:165px;
+      top:-255px;
+      right:26px;
+      width:163px;
    }
 
    #formulario .terceira-parte.active #limpo-substancias {
-      top:-280px;
-      right:150px;
+      top:-250px;
+      left:80px;
    }
 
    #formulario .terceira-parte.active #l-limpo-substancias {
-      top:-301px;
-      left:-8px;
-      width:185px;
+      top:-272px;
+      right:37px;
+      width:183px;
+   }
+
+   #formulario .terceira-parte.active .ansiedade {
+      height:220px;
+      width:220px;
+      margin-top:70px;
    }
 
    #formulario .terceira-parte.active .ansiedade {
@@ -432,6 +466,7 @@
    #formulario .terceira-parte.active .depressao {
       width:205px;
       height:200px;
+      margin-top:70px;
    }
 
    #formulario #nenhuma-depre {
@@ -479,108 +514,118 @@
    }
 
   #formulario .terceira-parte.active .suicidio {
-      width:250px;
-      height:160px;
+      width:280px;
+      height:150px;
+      margin-top:70px;
+   }
+
+   #formulario .terceira-parte.active .suicidio h1 {
+      width:280px;
    }
 
    #formulario #n-suicidio {
-      right:140px;
+      right:120px;
       top:-10px;
    }
 
    #formulario #l-n-suicidio {
       top:-31px;
       width:45px;
-      right:70px;
+      right:65px;
    }
 
    #formulario #as-vezes-suicidio {
       top:-73px;
-      right:40px;
+      right:30px;
    }
 
    #formulario #l-as-vezes-suicidio {
       top:-94px;
-      left:41px;
+      left:36px;
       width:64px;
    }
 
    #formulario #constante-suicidio {
       top:-90px;
-      right:140px;
+      right:120px;
    }
 
    #formulario #l-constante-suicidio {
       top:-111px;
       width:172px;
-      left:-5px;
+      left:-1px;
    }
 
    #formulario .terceira-parte.active .satisfeito-vida {
-      width:255px;
-      height:325px;
+      width:280px;
+      height:385px;
+      margin-top:70px;
+      margin-bottom:70px;
    }
 
    #formulario #muito-bom {
       right:145px;
-      top:-12px;
    }
 
    #formulario #l-muito-bom {
-      width:129px;
-      right:32px;
-      top:-32px;
+      width:133px;
+      right:45px;
+      top:-22px;
    }
 
    #formulario #bom {
-      left:80px;
-      top:-31px;
+      right:145px;
+      top:-13px;
    }
 
    #formulario #l-bom {
-      top:-52px;
-      width:139px;
-      left:28px;
+      top:-34px;
+      width:138px;
+      right:43px;
    }
 
    #formulario #nao-sei-vida {
-      right:145px;
-      top:-50px;
+      right:65px;
+      top:-23px;
    }
 
    #formulario #l-nao-sei-vida {
-      top:-71px;
+      top:-45px;
       width:55px;
-      right:71px;
+      right:5px;
    }
 
    #formulario #ruim {
-      right:145px;
-      top:-65px;
+      left:105px;
+      top:-35px;
    }
 
    #formulario #l-ruim {
-      width:217px;
-      top:-86px;
-      left:11px;
+      width:115px;
+      top:-57px;
+      left:53px;
    }
 
    #formulario #muito-ruim {
-      left:80px;
-      top:-80px;
+      left:105px;
+      top:-46px;
    }
 
    #formulario #l-muito-ruim {
-      width:208px;
-      left:-4px;
-      top:-103px;
+      width:135px;
+      left:43px;
+      top:-68px;
    }
 }
 
 @media (max-width:500px) {
    #formulario .terceira-parte.active #titulo-terceira-parte {
-      width:255px;
+      width:265px;
       margin-bottom:15px;
+   }
+
+   #formulario .terceira-parte.active div h1 {
+      font-size:17px;
    }
 
    #formulario .terceira-parte.active label {
@@ -588,101 +633,142 @@
    }
 
    #formulario .terceira-parte.active .substancias {
-      height:270px;
+      height:245px;
+      width:270px;
    }
 
-   #formulario .terceira-parte.active #alcool {
-      top:-25px;
+   #formulario .terceira-parte.active .substancias h1 {
+      width:270px;
    }
 
-   #formulario .terceira-parte.active #l-alcool {
-      top:-44px;
+   #formulario .terceira-parte.active .substancias #alcool {
+      right:140px;
+      top:-10px;
+   }
+
+   #formulario .terceira-parte.active .substancias #l-alcool {
+      right:82px;
+      top:-33px;
       width:40px;
-      right:80px;
    }
 
-   #formulario .terceira-parte.active #ex-alcoolatra {
-      top:-84px;
+   #formulario .terceira-parte.active .substancias #ex-alcoolatra {
+      top:-73px;
+      left:-15px;
    }
 
-   #formulario .terceira-parte.active #l-ex-alcoolatra {
-      width:90px;
-      left:60px;
-      top:-103px;
-   }
-
-   #formulario .terceira-parte.active #l-cigarro {
-      top:-120px;
-      width:48px;
-      right:77px;
-   }
-
-   #formulario .terceira-parte.active #ex-fumante {
-      top:-160px;
-   }
-
-   #formulario .terceira-parte.active #l-ex-fumante {
-      top:-180px;
-      left:54px;
-      width:78px;
-   }
-
-   #formulario .terceira-parte.active #entorpecentes {
-      top:-175px;
-   }
-
-   #formulario .terceira-parte.active #l-entorpecentes {
+   #formulario .terceira-parte.active .substancias #l-ex-alcoolatra {
+      top:-93px;
       width:89px;
-      top:-195px;
-      right:57px;
-   }
-
-   #formulario .terceira-parte.active #ex-drogado {
-      top:-235px;
-      left:-20px;
-   }
-
-   #formulario .terceira-parte.active #l-ex-drogado {
-      width:78px;
-      top:-255px;
       left:68px;
    }
 
+   #formulario .terceira-parte.active .substancias #cigarro {
+      top:-90px;
+      right:140px;
+   }
+
+   #formulario .terceira-parte.active .substancias #l-cigarro {
+      top:-110px;
+      width:48px;
+      right:78px;
+   }
+
+   #formulario .terceira-parte.active .substancias #ex-fumante {
+      top:-150px;
+      left:-15px;
+   }
+
+   #formulario .terceira-parte.active .substancias #l-ex-fumante {
+      width:77px;
+      top:-170px;
+      left:62px;
+   }
+
+   #formulario .terceira-parte.active .substancias #entorpecentes {
+      top:-167px;
+      right:140px;
+   }
+
+   #formulario .terceira-parte.active .substancias #l-entorpecentes {
+      top:-187px;
+      width:95px;
+      right:54px;
+   }
+
+   #formulario .terceira-parte.active .substancias #ex-dependente {
+      top:-228px;
+      left:-15px;
+   }
+
+   #formulario .terceira-parte.active .substancias #l-ex-dependente {
+      top:-248px;
+      left:73px;
+      width:100px;
+   }
+
    #formulario .terceira-parte.active #reabilitacao {
-      top:-250px;
+      top:-242px;
+      left:35px;
    }
 
    #formulario .terceira-parte.active #l-reabilitacao {
-      width:145px;
-      top:-270px;
-      right:29px;
+      top:-262px;
+      right:26px;
+      width:144px;
    }
 
    #formulario .terceira-parte.active #limpo-substancias {
-      top:-268px;
+      top:-260px;
+      left:35px;
    }
 
    #formulario .terceira-parte.active #l-limpo-substancias {
-      width:162px;
-      top:-288px;
-      left:-20px;
+      top:-280px;
+      right:34px;
+      width:161px;
+   }
+
+   #formulario .terceira-parte.active .ansiedade {
+      height:165px;
+   }
+
+   #formulario .terceira-parte.active .ansiedade h1 {
+      width:170px;
+   }
+
+   #formulario #nenhuma-ansiedade {
+      top:-15px;
    }
 
    #formulario #l-nenhuma-ansiedade {
-      top:-40px;
+      top:-35px;
+   }
+
+   #formulario #pouca-ansiedade {
+      top:-35px;
    }
 
    #formulario #l-pouca-ansiedade {
-      top:-59px;
+      top:-55px;
+   }
+
+   #formulario #bastante-ansioso {
+      top:-55px;
    }
 
    #formulario #l-bastante-ansioso {
-      top:-78px;
+      top:-75px;
    }
 
    #formulario .terceira-parte.active .depressao {
       width:205px;
       height:200px;
+   }
+
+   #formulario .terceira-parte.active .depressao h1 {
+      width:175px;
+      
    }
 
    #formulario #l-nenhuma-depre {
@@ -719,7 +805,7 @@
 
    #formulario #l-ajuda-depre {
       width:118px;
-      top:-132px;
+      top:-129px;
       right:10px;
    }
 
@@ -728,61 +814,99 @@
       height:140px;
    }
 
+   #formulario .terceira-parte.active .suicidio h1 {
+      width:250px;
+   }
+
    #formulario #n-suicidio {
-      right:140px;
+      right:130px;
       top:-10px;
    }
 
    #formulario #l-n-suicidio {
       top:-29px;
+      right:63px;
       width:40px;
    }
 
    #formulario #as-vezes-suicidio {
       top:-70px;
+      left:-40px;
    }
 
    #formulario #l-as-vezes-suicidio {
       top:-89px;
-      left:38px;
+      left:36px;
       width:56px;
+   }
+
+   #formulario #constante-suicidio {
+      right:130px;
    }
 
    #formulario #l-constante-suicidio {
       top:-109px;
       width:151px;
-      left:-15px;
+      left:-8px;
    }
 
    #formulario .terceira-parte.active .satisfeito-vida {
-      height:305px;
+      height:340px;
+      width:260px;
+   }
+
+   #formulario #muito-bom {
+      right:145px;
+      top:-10px;
    }
 
    #formulario #l-muito-bom {
-      width:115px;
-      right:40px;
+      width:113px;
+      right:45px;
+      top:-29px;
+   }
+
+   #formulario #bom {
+      right:145px;
+      top:-25px;
    }
 
    #formulario #l-bom {
+      top:-44px;
       width:122px;
-      left:37px;
+      right:41px;
+   }
+
+   #formulario #nao-sei-vida {
+      right:73px;
+      top:-38px;
    }
 
    #formulario #l-nao-sei-vida {
-      top:-69px;
+      top:-58px;
       width:49px;
-      right:73px;
+      right:5px;
+   }
+
+   #formulario #ruim {
+      left:87px;
+      top:-52px;
    }
 
    #formulario #l-ruim {
-      width:192px;
-      top:-85px;
-      left:-2px;
+      width:102px;
+      top:-72px;
+      left:53px;
+   }
+
+   #formulario #muito-ruim {
+      left:87px;
+      top:-65px;
    }
 
    #formulario #l-muito-ruim {
-      width:183px;
-      left:6px;
-      top:-103px;
+      width:120px;
+      left:44px;
+      top:-85px;
    }
 }
