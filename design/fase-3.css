@@ -621,6 +621,7 @@
 @media (max-width:500px) {
    #formulario .terceira-parte.active #titulo-terceira-parte {
       width:265px;
+      background:red;
       margin-bottom:15px;
    }
 
@@ -908,5 +909,11 @@
       width:120px;
       left:44px;
       top:-85px;
+   }
+}
+
+@media (max-width:320px) {
+   #formulario .terceira-parte.active #titulo-terceira-parte {
+      width:185px;
    }
 }
