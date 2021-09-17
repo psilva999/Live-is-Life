@@ -175,7 +175,9 @@
 
 #formulario .sexo input:checked::before, .exercicios input:checked::before, .dieta input:checked::before, .saude input:checked::before, .vida-sexual input:checked::before, .sono input:checked::before, .kids input:checked::before, .substancias input:checked::before, .ansiedade input:checked::before, .depressao input:checked::before, .suicidio input:checked::before, .satisfeito-vida input:checked::before {
    position:relative;
-   left:5px;
+   left:4px;
+   top:-1px;
+   font-size:15px;
    content: '✔';
 }
 
@@ -240,6 +242,7 @@
 @media (max-width:500px) {
    #formulario input:checked::before {
       left:4.5px;
+      font-size:14px;
       top:1px;
    }
 
