@@ -111,6 +111,7 @@ section {
    padding-top:0px;
    display:block;
    margin-top:300px;
+   margin-right:12px;
    font-size:15px;
    user-select:none;
    cursor:pointer;
@@ -229,7 +230,7 @@ section {
 
    .convite.active .rotacionar {
       font-size:30px;
-      margin-left:27px;
+      margin-left:25px;
    }
 
    #optar-musica.active {

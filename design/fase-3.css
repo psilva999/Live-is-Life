@@ -268,45 +268,34 @@
 
 .aviso-pergunta-sensivel.active .simples-mensagem {
    text-align:center;
-   width:300px;
-   height:280px;
+   width:250px;
+   height:150px;
    margin-right:20px;
    border-radius:13px;
    padding:30px;
    color:#fff;
    background:#B59047;
    font-size:18px;
-   text-align:justify;
+   text-align:left;
    font-family:'Baloo Thambi 2', cursive;
 }
 
 .aviso-pergunta-sensivel.active .fechar-aviso-por-x {
    font-size:30px;
-   top:-120px;
+   top:-62px;
    color:#fff;
    opacity:.8;
    position:relative;
-   left:290px;
+   left:245px;
    cursor:pointer;
-}
-
-.aviso-pergunta-sensivel.active .aparece-dispositivos-pequenos {
-   display:none;
 }
 
 .aviso-pergunta-sensivel.active .fechar-aviso-por-x:hover {
    opacity:1;
 }
 
-.aviso-pergunta-sensivel.active .simples-mensagem h1, p {
-   opacity:.8;
-}
-
-.aviso-pergunta-sensivel.active .simples-mensagem h1 {
-   font-size:25px;
-   text-align:center;
-   margin-bottom:10px;
-   letter-spacing:5px;
+.aviso-pergunta-sensivel.active .simples-mensagem p {
+   opacity:.7;
 }
 
 .aviso-pergunta-sensivel.active .simples-mensagem span {
@@ -334,11 +323,11 @@
 
 .aviso-pergunta-sensivel.active .simples-mensagem .abrir-pergunta-sensivel {
    top:20px;
-   left:10px;
+   left:-15px;
 }
 
 .aviso-pergunta-sensivel.active .simples-mensagem .deixar-pergunta-sensivel-fechada {
-   left:130px;
+   left:100px;
    top:-12px;
 }
 
@@ -968,25 +957,19 @@
       letter-spacing:3px;
    }
 
-  #formulario .terceira-parte.active .suicidio {
+   #formulario .terceira-parte.active .suicidio {
       margin-top:-210px;
    }
 
    .aviso-pergunta-sensivel.active .simples-mensagem {
-      width:280px;
-      height:250px;
       font-size:16px;
+      width:230px;
+      height:140px;
    }
 
    .aviso-pergunta-sensivel.active .fechar-aviso-por-x {
-      font-size:30px;
-      top:-105px;
-      left:270px;
-   }
-
-   .aviso-pergunta-sensivel.active .simples-mensagem h1 {
-      font-size:20px;
-      margin-bottom:10px;
+      top:-57px;
+      left:225px;
    }
 
    .aviso-pergunta-sensivel.active .simples-mensagem span {
@@ -995,12 +978,12 @@
    }
 
    .aviso-pergunta-sensivel.active .simples-mensagem .abrir-pergunta-sensivel {
-      top:20px;
+      top:15px;
    }
 
    .aviso-pergunta-sensivel.active .simples-mensagem .deixar-pergunta-sensivel-fechada {
-      left:120px;
-      top:-9px;
+      left:85px;
+      top:-14px;
    }
 
    #formulario .terceira-parte.active .suicidio {
@@ -1108,46 +1091,5 @@
 @media (max-width:320px) {
    #formulario .terceira-parte.active #titulo-terceira-parte {
       width:185px;
-   }
-}
-
-@media (max-height:280px) {
-   .aviso-pergunta-sensivel.active .simples-mensagem {
-      width:220px;
-      height:120px;
-      border-radius:5px;
-   }
-
-   .aviso-pergunta-sensivel.active .fechar-aviso-por-x {
-      font-size:30px;
-      top:-47px;
-      left:215px;
-   }
-
-   .aviso-pergunta-sensivel.active .aparece-dispositivos-pequenos {
-      display:block;
-      font-size:14px;
-      width:150px;
-      left:6px;
-      top:-10px;
-      position:relative;
-   }
-
-   .aviso-pergunta-sensivel.active .simples-mensagem h1, p {
-      display:none;
-   }
-
-   .aviso-pergunta-sensivel.active .simples-mensagem span {
-      width:93px;
-   }
-
-   .aviso-pergunta-sensivel.active .simples-mensagem .abrir-pergunta-sensivel {
-      top:5px;
-      left:-20px;
-   }
-
-   .aviso-pergunta-sensivel.active .simples-mensagem .deixar-pergunta-sensivel-fechada {
-      left:90px;
-      top:-24px;
    }
 }
