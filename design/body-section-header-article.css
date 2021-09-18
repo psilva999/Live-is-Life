@@ -110,21 +110,24 @@ section {
    padding-bottom:60px;
    padding-top:0px;
    display:block;
-   cursor:pointer;
    margin-top:300px;
    font-size:15px;
    user-select:none;
+   cursor:pointer;
    animation:mostra 4.5s;
+   animation-fill-mode:forwards;
 }
 
 .convite.active .rotacionar {
    border-radius:50px;
    position:absolute;
    display:flex;
+   width:20px;
+   height:30px;
    justify-content:center;
    align-items:center;
-   margin-top:-2px;
-   margin-left:27px;
+   margin-top:10px;
+   margin-left:29px;
    font-size:35px;
    transform:rotate(90deg);
    animation:light 1.5s infinite;
@@ -226,6 +229,7 @@ section {
 
    .convite.active .rotacionar {
       font-size:30px;
+      margin-left:27px;
    }
 
    #optar-musica.active {
@@ -308,12 +312,11 @@ section {
    }
 }
 
-@media (max-height:400px) {
-
+@media (max-height:280px) {
    .convite.active {
       position:absolute;
-      margin-top:20px;
-      top:0;
+      margin-top:0px;
+      top:30px;
    }
 
    .convite.active span {
@@ -327,7 +330,13 @@ section {
    }
 
    .convite.active .rotacionar {
-      margin-left:-45px;
+      margin-left:25px;
+   }
+}
+
+@media (max-height:200px) {
+   .convite.active {
+      top:0px;
    }
 }
 

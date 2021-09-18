@@ -165,11 +165,11 @@
    border-radius:50%;
 }
 
-#formulario .sexo input:hover, .exercicios input:hover, .dieta input:hover, .saude input:hover, .vida-sexual input:hover, .sono input:hover, .kids input:hover, .substancias input:hover, .ansiedade input:hover, .depressao input:hover, .suicidio input:hover, .satisfeito-vida input:hover {
+#formulario .sexo input:hover, .exercicios input:hover, .dieta input:hover, .saude input:hover, .vida-sexual input:hover, .sono input:hover, .kids input:hover, .substancias input:hover, .ansiedade input:hover, .depressao input:hover, .suicidio.background input:hover, .satisfeito-vida input:hover {
   background:#B59047;
 }
 
-#formulario .sexo input:checked, .exercicios input:checked, .dieta input:checked, .saude input:checked, .vida-sexual input:checked, .sono input:checked, .kids input:checked, .substancias input:checked, .ansiedade input:checked, .depressao input:checked, .suicidio input:checked, .satisfeito-vida input:checked {
+#formulario .sexo input:checked, .exercicios input:checked, .dieta input:checked, .saude input:checked, .vida-sexual input:checked, .sono input:checked, .kids input:checked, .substancias input:checked, .ansiedade input:checked, .depressao input:checked, .suicidio.background input:checked, .satisfeito-vida input:checked {
   background:#B59047;
 }
 
@@ -182,7 +182,7 @@
 }
 
 #formulario .sexo input:checked::after, .exercicios input:checked::after, .dieta input:checked::after, .saude input:checked::after, .vida-sexual input:checked::after, .sono input:checked::after, .kids input:checked::after, .substancias input:checked::after, .ansiedade input:checked::after, .depressao input:checked::after, .suicidio input:checked::after, .satisfeito-vida input:checked::after {
-  background:#B59047;
+  background:white;
   content: '';
   display: block;
 }
