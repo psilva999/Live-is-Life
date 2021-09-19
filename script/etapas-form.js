@@ -21,6 +21,7 @@ var mudaPara = {
 
    containerPerguntaSensivel: document.querySelector('.pergunta-sensivel'),
    avisoPerguntaSensivel: document.querySelector('.aviso-pergunta-sensivel'),
+   simplesMensagem: document.querySelector('.simples-mensagem'),
 
    fechaPorXoAvisoDePerguntaSensivel: document.querySelector('.fechar-aviso-por-x'),
 
@@ -34,10 +35,14 @@ var retiraDesfocoPerguntaSensivel = document.querySelector('.suicidio')
 
 function retiraAvisoPerguntaSensivel() {
    mudaPara.avisoPerguntaSensivel.classList.remove('active')
+
+   mudaPara.simplesMensagem.classList.remove('active')
 }
 
 botaoQue.indicaPerguntaSensivel.addEventListener('click', () => {
    mudaPara.avisoPerguntaSensivel.classList.add('active')
+
+   mudaPara.simplesMensagem.classList.add('active')
 })
 
 mudaPara.avisoPerguntaSensivel.addEventListener('click', retiraAvisoPerguntaSensivel)
@@ -45,7 +50,7 @@ mudaPara.fechaPorXoAvisoDePerguntaSensivel.addEventListener('click', retiraAviso
 mudaPara.botaoQueDeixaFechadoPerguntaSensivel.addEventListener('click', retiraAvisoPerguntaSensivel)
 
 mudaPara.botaoQueAbrePerguntaSensivel.addEventListener('click', () => {
-   retiraAvisoPerguntaSensivel
+   retiraAvisoPerguntaSensivel()
    mudaPara.containerPerguntaSensivel.classList.remove('active')
 
    retiraDesfocoPerguntaSensivel.style.filter = 'none'

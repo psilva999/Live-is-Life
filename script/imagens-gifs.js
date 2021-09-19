@@ -3,9 +3,10 @@ var setorPara = {
    dieta: document.querySelector('.dieta'),
 
    vidaIntima: document.querySelector('.vida-sexual'),
-   sono: document.querySelector('.sono')
-} 
+   sono: document.querySelector('.sono'),
 
+   satisfeitoVida: document.querySelector('.satisfeito-vida')
+} 
 
 setorPara.saberSeTreinaFisico.addEventListener('click', () => {
    var exercicios = {
@@ -115,5 +116,77 @@ setorPara.sono.addEventListener('click', () => {
 
    else if (nivelSono.dorminhoco.checked) {
       mudaGifSono.src = 'midia/gifs/dorminhoco.gif'
+   }
+})
+
+setorPara.satisfeitoVida.addEventListener('click', () => {
+   var vida = {
+      muitoBoa: document.querySelector('#muito-bom'),
+      boa: document.querySelector('#bom'),
+
+      naoSabe: document.querySelector('#nao-sei-vida'),
+
+      ruim: document.querySelector('#ruim'),
+      muitoRuim: document.querySelector('#muito-ruim')
+   }
+
+   var gif = {
+      smile: document.querySelector('#emoji-smile'),
+      fight: document.querySelector('#emoji-fight'),
+
+      doubt: document.querySelector('#emoji-doubt'),
+
+      time: document.querySelector('#emoji-time'),
+      sad: document.querySelector('#emoji-sad')
+   }
+
+   if (vida.muitoBoa.checked) {
+      gif.smile.src = 'midia/gifs/emoji-smile.gif'
+      gif.smile.style.display = 'block'
+   }
+
+   else if (vida.muitoBoa.checked == false) {
+      gif.smile.src = ''
+      gif.smile.style.display = 'none'
+   }
+
+   if (vida.boa.checked) {
+      gif.fight.src = 'midia/gifs/emoji-fight.gif'
+      gif.fight.style.display = 'block'
+   }
+
+   else if (vida.boa.checked == false) {
+      gif.fight.src = ''
+      gif.fight.style.display = 'none'
+   }
+
+   if (vida.naoSabe.checked) {
+      gif.doubt.src = 'midia/gifs/emoji-doubt.gif'
+      gif.doubt.style.display = 'block'
+   }
+
+   else if (vida.naoSabe.checked == false) {
+      gif.doubt.src = ''
+      gif.doubt.style.display = 'none'
+   }
+
+   if (vida.ruim.checked) {
+      gif.time.src = 'midia/gifs/time.gif'
+      gif.time.style.display = 'block'
+   }
+
+   else if (vida.ruim.checked == false) {
+      gif.time.src = ''
+      gif.time.style.display = 'none'
+   }
+
+   if (vida.muitoRuim.checked) {
+      gif.sad.src = 'midia/gifs/emoji-sad.gif'
+      gif.sad.style.display = 'block'
+   }
+
+   else if (vida.muitoRuim.checked == false) {
+      gif.sad.src = ''
+      gif.sad.style.display = 'none'
    }
 })

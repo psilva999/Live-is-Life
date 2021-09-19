@@ -261,44 +261,50 @@
    position:fixed;
    width:100vw;
    height:100vh;
-   display:flex;
-   justify-content:center;
-   align-items:center;
 }
 
-.aviso-pergunta-sensivel.active .simples-mensagem {
+.simples-mensagem {
+   display:none;
+}
+
+.simples-mensagem.active {
+   display:block;
    text-align:center;
-   width:250px;
+   width:350px;
    height:150px;
-   margin-right:20px;
+   position:absolute;
    border-radius:13px;
    padding:30px;
    color:#fff;
    background:#B59047;
    font-size:18px;
-   text-align:left;
    font-family:'Baloo Thambi 2', cursive;
 }
 
-.aviso-pergunta-sensivel.active .fechar-aviso-por-x {
+.simples-mensagem.active .fechar-aviso-por-x {
    font-size:30px;
-   top:-62px;
+   top:-35px;
+   text-align:center;
    color:#fff;
    opacity:.8;
    position:relative;
-   left:245px;
+   left:300px;
    cursor:pointer;
+   width:0px;
+   height:0px;
 }
 
-.aviso-pergunta-sensivel.active .fechar-aviso-por-x:hover {
+.simples-mensagem.active .fechar-aviso-por-x:hover {
    opacity:1;
 }
 
-.aviso-pergunta-sensivel.active .simples-mensagem p {
+.simples-mensagem.active p {
    opacity:.7;
+   position:relative;
+   top:0px;
 }
 
-.aviso-pergunta-sensivel.active .simples-mensagem span {
+.simples-mensagem.active span {
    font-family:'Baloo Thambi 2', cursive;
    font-size:14px;
    color:black;
@@ -317,18 +323,18 @@
    width:103px;
 }
 
-.aviso-pergunta-sensivel.active .simples-mensagem span:hover {
+.simples-mensagem.active span:hover {
    opacity:1;
 }
 
-.aviso-pergunta-sensivel.active .simples-mensagem .abrir-pergunta-sensivel {
-   top:20px;
-   left:-15px;
+.simples-mensagem.active .abrir-pergunta-sensivel {
+   top:10px;
+   left:15px;
 }
 
-.aviso-pergunta-sensivel.active .simples-mensagem .deixar-pergunta-sensivel-fechada {
-   left:100px;
-   top:-12px;
+.simples-mensagem.active .deixar-pergunta-sensivel-fechada {
+   left:170px;
+   top:-22px;
 }
 
 #formulario .terceira-parte.active .suicidio {
@@ -375,8 +381,43 @@
 #formulario .terceira-parte.active .satisfeito-vida {
    width:320px;
    height:465px;
-   margin-top:80px;
+   margin-top:60px;
    margin-bottom:100px;
+}
+
+#formulario .terceira-parte.active .satisfeito-vida embed {
+   display:none;
+   position:absolute;
+   width:30px;
+   height:30px;
+   border-radius:10px;
+}
+
+#formulario .terceira-parte.active .satisfeito-vida #emoji-smile {
+   margin-top:-73px;
+   margin-left:210px;
+}
+
+#formulario .terceira-parte.active .satisfeito-vida #emoji-fight {
+   margin-top:-85px;
+   margin-left:215px;
+   width:40px;
+   height:40px;
+}
+
+#formulario .terceira-parte.active .satisfeito-vida #emoji-doubt {
+   margin-top:-70px;
+   margin-left:187px;
+}
+
+#formulario .terceira-parte.active .satisfeito-vida #emoji-time {
+   margin-top:-90px;
+   margin-left:95px;
+}
+
+#formulario .terceira-parte.active .satisfeito-vida #emoji-sad {
+   margin-top:-95px;
+   margin-left:67px;  
 }
 
 #formulario #muito-bom {
@@ -396,8 +437,8 @@
 
 #formulario #l-bom {
    top:-34px;
-   width:237px;
-   right:14px;
+   width:188px;
+   right:38px;
 }
 
 #formulario #nao-sei-vida {
@@ -692,8 +733,38 @@
    #formulario .terceira-parte.active .satisfeito-vida {
       width:280px;
       height:385px;
-      margin-top:70px;
+      margin-top:60px;
       margin-bottom:70px;
+   }
+
+   #formulario .terceira-parte.active .satisfeito-vida embed {
+      width:25px;
+      height:25px;
+   }
+
+   #formulario .terceira-parte.active .satisfeito-vida #emoji-smile {
+      margin-top:-60px;
+      margin-left:165px;
+   }
+
+   #formulario .terceira-parte.active .satisfeito-vida #emoji-fight {
+      margin-top:-75px;
+      margin-left:170px;
+   }
+
+   #formulario .terceira-parte.active .satisfeito-vida #emoji-doubt {
+      margin-top:-70px;
+      margin-left:170px;
+   }
+
+   #formulario .terceira-parte.active .satisfeito-vida #emoji-time {
+      margin-top:-93px;
+      margin-left:100px;
+   }
+
+   #formulario .terceira-parte.active .satisfeito-vida #emoji-sad {
+      margin-top:-102px;
+      margin-left:83px;  
    }
 
    #formulario #muito-bom {
@@ -961,29 +1032,36 @@
       margin-top:-210px;
    }
 
-   .aviso-pergunta-sensivel.active .simples-mensagem {
+   .simples-mensagem.active {
       font-size:16px;
       width:230px;
       height:140px;
    }
 
-   .aviso-pergunta-sensivel.active .fechar-aviso-por-x {
-      top:-57px;
-      left:225px;
+   .simples-mensagem.active .fechar-aviso-por-x {
+      top:-37px;
+      left:178px;
    }
 
-   .aviso-pergunta-sensivel.active .simples-mensagem span {
+   .simples-mensagem.active p {
+      top:-5px;
+   }
+
+   .simples-mensagem.active span {
       font-size:12px;
-      width:93px;
+      width:83px;
    }
 
-   .aviso-pergunta-sensivel.active .simples-mensagem .abrir-pergunta-sensivel {
-      top:15px;
+   .simples-mensagem.active .abrir-pergunta-sensivel {
+      top:10px;
+      left:-10px;
    }
 
-   .aviso-pergunta-sensivel.active .simples-mensagem .deixar-pergunta-sensivel-fechada {
-      left:85px;
-      top:-14px;
+   .simples-mensagem.active .deixar-pergunta-sensivel-fechada {
+      left:98px;
+      top:-19px;
+      padding-top:5px;
+      padding-bottom:5px;
    }
 
    #formulario .terceira-parte.active .suicidio {
@@ -1030,6 +1108,31 @@
    #formulario .terceira-parte.active .satisfeito-vida {
       height:340px;
       width:260px;
+   }
+
+   #formulario .terceira-parte.active .satisfeito-vida #emoji-smile {
+      margin-top:-62px;
+      margin-left:150px;
+   }
+
+   #formulario .terceira-parte.active .satisfeito-vida #emoji-fight {
+      margin-top:-83px;
+      margin-left:150px;
+   }
+
+   #formulario .terceira-parte.active .satisfeito-vida #emoji-doubt {
+      margin-top:-80px;
+      margin-left:155px;
+   }
+
+   #formulario .terceira-parte.active .satisfeito-vida #emoji-time {
+      margin-top:-105px;
+      margin-left:100px;
+   }
+
+   #formulario .terceira-parte.active .satisfeito-vida #emoji-sad {
+      margin-top:-120px;
+      margin-left:83px;  
    }
 
    #formulario #muito-bom {
@@ -1091,5 +1194,15 @@
 @media (max-width:320px) {
    #formulario .terceira-parte.active #titulo-terceira-parte {
       width:185px;
+   }
+}
+
+@media (max-height:140px) {
+   .simples-mensagem.active {
+      height:80px;
+   }
+
+   .simples-mensagem.active p {
+      display:none;
    }
 }
