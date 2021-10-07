@@ -98,6 +98,15 @@
    opacity:1;
 }
 
+#formulario .primeira-parte.active .altera-aparencia::-webkit-outer-spin-button, .primeira-parte.active .altera-aparencia::-webkit-inner-spin-button {
+   appearance:none;
+   margin:0;
+}
+
+#formulario .primeira-parte.active #nome-user, #nasce-user, #altura-user, #peso-user {
+   border-radius:1rem 3rem 2rem 1.5rem;
+}
+
 #formulario .primeira-parte.active #infos-primeira-etapa, .segunda-parte.active #infos-segunda-etapa, .terceira-parte.active #entregar-formulario {
    font-size:19px;
    display:block;
