@@ -113,16 +113,16 @@
 }
 
 #formulario .primeira-parte.active #infos-primeira-etapa #proxima-pagina, .segunda-parte.active #infos-segunda-etapa #proxima-pagina, .terceira-parte.active #entregar-formulario #proxima-pagina {
-   border-radius:10px;
    position:relative;
    left:0px;
    color:black;
    text-decoration:none;
    text-transform:uppercase;
    opacity:.8;
-   padding:7px 6px 3px 6px;
-   background:#F2F2F2;
+   padding:7px 11px 3px 11px;
+   background:orange;
    border-bottom:2px solid rgba(0,0,0,.7);
+   animation:altera-bordas 9.5s infinite;
 }
 
 #formulario .primeira-parte.active #infos-primeira-etapa #proxima-pagina:hover, .segunda-parte.active #infos-segunda-etapa #proxima-pagina:hover, .terceira-parte.active #entregar-formulario #proxima-pagina:hover {
@@ -136,7 +136,7 @@
 }
 
 #formulario .primeira-parte.active div h1, .segunda-parte.active div h1, .terceira-parte.active div h1 {
-   border-radius:10px;
+   border-radius:1rem 0rem 1rem 1rem;
    background:orange;
    font-size:22px;
    color:rgb(37, 26, 26);
@@ -283,5 +283,27 @@
 
    #formulario .primeira-parte.active input, .segunda-parte.active input, .terceira-parte.active input {
       font-size:12px;
+   }
+}
+
+@keyframes altera-bordas {
+   0% {
+      border-radius:.5rem 1rem 1rem .75rem;
+   }
+
+   25% {
+      border-radius:1rem .75rem .5rem 1rem;
+   }
+
+   50% {
+      border-radius:.75rem .5rem 1rem 1rem;
+   }
+
+   75% {
+      border-radius:1rem 1rem .75rem .5rem;
+   }
+
+   100% {
+      border-radius:.5rem 1rem 1rem .75rem; 
    }
 }
