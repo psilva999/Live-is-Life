@@ -17,7 +17,6 @@
 }
 
 .configura-nome input {
-   padding:10px 15px 10px 15px;
    border:1px solid rgba(0,0,0,.2);
 }
 
@@ -27,7 +26,6 @@
 }
 
 .nascimento input {
-   padding:10px 15px 10px 15px;
    border:1px solid rgba(0,0,0,.2);
    font-size:17px;
 }
@@ -115,7 +113,6 @@
 }
 
 #altura-user, #peso-user {
-   padding:10px 15px 10px 15px;
    border:1px solid rgba(0,0,0,.2);
    font-size:17px;
    font-family:'Baloo Thambi 2', cursive;
