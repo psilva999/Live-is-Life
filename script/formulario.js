@@ -26,6 +26,22 @@ input.nascimento.onkeypress = function(insereNascimento) {
    }
 }
 
+input.altura.onkeypress = function(insereAltura) {
+   var inputAltura = document.querySelector('#altura-user') 
+
+   if ((insereAltura.key == '-' || insereAltura.key == '+' || insereAltura.key == '/' || insereAltura.key == '*' || insereAltura.key == '!' || insereAltura.key == '%' || insereAltura.key == '(' || insereAltura.key == ')' || insereAltura.key == ':' || insereAltura.key == ',' || insereAltura.key == '.') || inputAltura.value.length >= 3) {
+      insereAltura.preventDefault()
+   }
+}
+
+input.peso.onkeypress = function(inserePeso) {
+   var inputPeso = document.querySelector('#peso-user')
+
+   if ((inserePeso.key == '-' || inserePeso.key == '+' || inserePeso.key == '/' || inserePeso.key == '*' || inserePeso.key == '!' || inserePeso.key == '%' || inserePeso.key == '(' || inserePeso.key == ')' || inserePeso.key == ':' || inserePeso.key == ',' || inserePeso.key == '.') || inputPeso.value.length >= 3) {
+      inserePeso.preventDefault()
+   }
+}
+
 input.nome.onpaste = function semColar(desabilitaColar) { desabilitaColar.preventDefault() }
 input.nascimento.onpaste = function semColar(desabilitaColar) { desabilitaColar.preventDefault() }
 
