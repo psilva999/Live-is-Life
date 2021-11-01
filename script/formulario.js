@@ -6,8 +6,14 @@ var input = {
    peso: document.querySelector('#peso-user')
 }
 
-input.nome.value.addEventListener('keypress', () => {
-   if (!/^[a-zA-Z]*$/g.test(input.nome.value)) {
+input.nome.addEventListener("keypress", () => {
+   var inputNome = document.querySelector('#nome-user')
+
+   if (inputNome.value.length >= 15) {
+      insereTecla.preventDefault()
+   }
+
+   if (!/^[a-zA-Z]*$/g.test(inputNome)) {
       alert("poio")
    }
 })

@@ -85,7 +85,7 @@ section {
 }
 
 .convite.active h1 {
-   font-size:60px;
+   font-size:80px;
    text-transform:uppercase;
    animation:mostra 1.5s;
 }
@@ -93,7 +93,7 @@ section {
 .convite.active span { 
    position:absolute;
    display:block;
-   margin-left:260px;
+   margin-left:350px;
    margin-top:80px;
    font-size:17px;
    transform:rotate(-6deg);
@@ -180,13 +180,13 @@ section {
 
 @media (max-width:768px) {
    .convite.active h1 {
-      font-size:50px;
+      font-size:60px;
    }
 
    .convite.active span {
       font-size:15px;
-      margin-left:225px;
-      margin-top:60px;
+      margin-left:265px;
+      margin-top:70px;
    }
 
    #optar-musica.active {
@@ -212,12 +212,12 @@ section {
 
 @media (max-width:500px) {
    .convite.active h1 {
-      font-size:40px;
+      font-size:50px;
    }
 
    .convite.active span {
-      margin-left:170px;
-      margin-top:55px;
+      margin-left:210px;
+      margin-top:60px;
       font-size:14px;
    }
 
@@ -253,7 +253,7 @@ section {
    }
 }
 
-@media (max-width:410px) {
+@media (max-width:450px) {
    .convite.active h1 {
       font-size:35px;
    }

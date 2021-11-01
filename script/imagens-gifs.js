@@ -30,7 +30,7 @@ setorPara.saberSeTreinaFisico.addEventListener('click', () => {
    }
 
    else if (exercicios.maisMenos.checked) {
-      mudaGif.src = 'midia/images/mais-menos.webp'
+      mudaGif.src = 'https://i.ibb.co/QmWDyJq/mais-menos.jpg'
    }
 
    else if (exercicios.bemComFisico.checked) {
@@ -87,7 +87,7 @@ setorPara.vidaIntima.addEventListener('click', () => {
    }
 
    else if (intimo.ativa.checked) {
-      mudaVidaIntima.src = 'midia/images/camisinha.jpg'
+      mudaVidaIntima.src = 'https://i.ibb.co/7jRK69c/free-woman.jpg'
    }
 })
 

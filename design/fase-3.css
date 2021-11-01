@@ -257,7 +257,7 @@
 
 .aviso-pergunta-sensivel.active {
    display:block;
-   background:rgba(0,0,0,.4);
+   background:rgba(0,0,0,.6);
    position:fixed;
    width:100vw;
    height:100vh;
