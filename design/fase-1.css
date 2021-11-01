@@ -11,6 +11,19 @@
    outline:0;   
 }
 
+#formulario input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+   appearance:none;
+   margin:0;
+}
+
+#formulario input[type=number] {
+   -moz-appearance:textfield;
+}
+
+.primeira-parte.active #nome-user:focus ~  {
+   background:red;
+}
+
 .configura-nome, .nascimento {
    display:block;
    margin-bottom:30px;

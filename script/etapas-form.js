@@ -60,10 +60,15 @@ mudaPara.botaoQueAbrePerguntaSensivel.addEventListener('click', () => {
    retiraDesfocoPerguntaSensivel.style.marginBottom = '0px'
 })
 
+var input_nome = document.querySelector('#nome-user')
+var nome_user = document.querySelector("#nome-do-usuario")
+
 botaoQue.entregaPrimeiraEtapa.addEventListener('click', () => {
 
    mudaPara.primeiraParteForm.classList.toggle('active')
    mudaPara.segundaParteForm.classList.add('active')
+
+   nome_user.innerHTML = `Oi ${input_nome.value}, prazer te conhecer <embed src='https://i.giphy.com/media/Lqx1czoPLTQg3I68d1/giphy.webp'>`
 })
 
 botaoQue.entregaSegundaEtapa.addEventListener('click', () => {

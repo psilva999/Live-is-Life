@@ -12,6 +12,24 @@
    margin-bottom:10px;
 }
 
+#formulario .segunda-parte.active #nome-do-usuario {
+   width:260px;
+   text-align:center;
+   font-size:15px;
+   display:block;
+   margin-top:-50px;
+   color:#F2F2F2;
+   opacity:.8;
+   font-family:'Kalam', cursive;
+   letter-spacing:1px;
+}
+
+#formulario .segunda-parte.active #nome-do-usuario embed {
+   width:25px;
+   height:25px;
+   position:absolute;
+}
+
 #formulario .segunda-parte.active input {
    margin-top:1px;
    position:relative;
@@ -319,6 +337,12 @@
    }
 
    #formulario .segunda-parte.active .dieta h1 {
+      width:220px;
+   }
+
+   #formulario .segunda-parte.active #nome-do-usuario {
+      margin-top:-10px;
+      font-size:12px;
       width:220px;
    }
 
