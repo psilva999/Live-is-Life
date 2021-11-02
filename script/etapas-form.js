@@ -17,7 +17,7 @@ var mudaPara = {
    segundaParteForm: document.querySelector('.segunda-parte'),
 
    terceiraParteForm: document.querySelector('.terceira-parte'),
-   resultado: document.querySelector('#essencia'),
+   resultado: document.querySelector('.essencia'),
 
    containerPerguntaSensivel: document.querySelector('.pergunta-sensivel'),
    avisoPerguntaSensivel: document.querySelector('.aviso-pergunta-sensivel'),

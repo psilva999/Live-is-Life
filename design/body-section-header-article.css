@@ -11,6 +11,7 @@
 
 body {
    background:#5A5A52;
+   overflow:hidden;
 }
 
 .background-image {
@@ -137,7 +138,7 @@ section {
 }
 
 #optar-musica.active {
-   font-family: 'Kalam', cursive;
+   font-family:'Kalam', cursive;
    color:#dac8c8;
    display:flex;
    justify-content:center;

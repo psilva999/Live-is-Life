@@ -20,10 +20,6 @@
    -moz-appearance:textfield;
 }
 
-.primeira-parte.active #nome-user:focus ~  {
-   background:red;
-}
-
 .configura-nome, .nascimento {
    display:block;
    margin-bottom:30px;
@@ -128,6 +124,7 @@
 #altura-user, #peso-user {
    border:1px solid rgba(0,0,0,.2);
    font-size:17px;
+   text-align:center;
    font-family:'Baloo Thambi 2', cursive;
 }
 

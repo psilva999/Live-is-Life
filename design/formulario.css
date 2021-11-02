@@ -142,7 +142,7 @@
 }
 
 #formulario .primeira-parte.active div h1, .segunda-parte.active div h1, .terceira-parte.active div h1 {
-   border-radius:1rem 0rem 1rem 1rem;
+   border-radius:1rem 3px 1rem 1rem;
    background:orange;
    font-size:22px;
    color:rgb(37, 26, 26);
