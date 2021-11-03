@@ -28,13 +28,9 @@ body {
 }
 
 @keyframes borrado {
-   0% {
-      filter:blur(0px);
-   }
+   0% { filter:blur(0px); }
 
-   100% {
-      filter:blur(2px);
-   }
+   100% { filter:blur(2px); }
 }
 
 @keyframes borradoDasFases {
@@ -163,6 +159,7 @@ section {
    border-radius:20px;
    padding:13px 30px 9px 30px;
    opacity:.8;
+   transition:.3s;
 }
 
 #optar-musica.active .sim {
@@ -177,6 +174,7 @@ section {
 
 #optar-musica.active .sim:hover, .no:hover {
    opacity:1;
+   transition:.3s;
 }
 
 @media (max-width:768px) {

@@ -8,8 +8,10 @@ var botaoQue = {
    voltaSegundaEtapa: document.querySelector('#volta-segunda-etapa'),
 
    indicaPerguntaSensivel: document.querySelector('.botao-mostra-aviso-pergunta-sensivel'),
+   compartilhaSite: document.querySelector("#share"),
 
-   finalizaEtapas: document.querySelector('#entregar-formulario')
+   finalizaEtapas: document.querySelector('#entregar-formulario'),
+   copiaLink: document.querySelector('.copiar-link')
 }
 
 var mudaPara = {
@@ -28,7 +30,14 @@ var mudaPara = {
    botaoQueAbrePerguntaSensivel: document.querySelector('.abrir-pergunta-sensivel'),
    botaoQueDeixaFechadoPerguntaSensivel: document.querySelector('.deixar-pergunta-sensivel-fechada'),
 
-   backgroundPerguntaSensivelQuandoFocado: document.querySelector('.background-quando-focado')
+   backgroundPerguntaSensivelQuandoFocado: document.querySelector('.background-quando-focado'),
+
+   fecharSharePorFora: document.querySelector(".cobre-tela"),
+   fecharSharePorX: document.querySelector('#fecha-share-por-x'),
+   abaDeCompartilhar: document.querySelector(".share-site"),
+
+   linkCopiado: document.querySelector("#link"),
+   indicaCopy: document.querySelector("#indica-copy")
 }
 
 var retiraDesfocoPerguntaSensivel = document.querySelector('.suicidio')
@@ -94,3 +103,43 @@ botaoQue.voltaSegundaEtapa.addEventListener('click', () => {
    mudaPara.terceiraParteForm.classList.toggle('active')
    mudaPara.segundaParteForm.classList.add('active')
 })
+
+botaoQue.compartilhaSite.onclick = () => {
+   mudaPara.fecharSharePorFora.style.display = 'block'
+   mudaPara.abaDeCompartilhar.style.display = 'block'
+
+   mudaPara.fecharSharePorFora.style.animation = 'mostra .1s linear forwards'
+   mudaPara.abaDeCompartilhar.style.animation = 'mostra .2s linear forwards'
+}
+
+mudaPara.fecharSharePorX.onclick = () => { fechaAbaDeCompartilhar() }
+mudaPara.fecharSharePorFora.onclick = () => { fechaAbaDeCompartilhar() }
+
+function fechaAbaDeCompartilhar() {
+   mudaPara.indicaCopy.src = 'https://i.ibb.co/tYyJGvy/copy.png'
+
+   mudaPara.fecharSharePorFora.style.display = 'none'
+   mudaPara.abaDeCompartilhar.style.display = 'none'
+}
+
+botaoQue.copiaLink.onclick = function copiarLinkDoSite(modo) {
+   modo.preventDefault()
+
+   mudaPara.linkCopiado.select()
+   mudaPara.linkCopiado.setSelectionRange(0, 9999)
+   document.execCommand('copy')
+
+   mudaPara.indicaCopy.src = 'https://i.ibb.co/TkmqZZr/check.png'
+
+   var time = 1 * 60
+   setInterval(function apagaIndicadoDeCopy() {
+      var segundos = time % 60
+
+      time--
+      if (segundos >= 59) {
+         mudaPara.indicaCopy.src = 'https://i.ibb.co/tYyJGvy/copy.png'
+      }
+
+      setTimeout()
+   }, 1000)
+}

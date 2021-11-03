@@ -37,7 +37,7 @@
 }
 
 .essencia.active #passa-titulo-essencia {
-   padding-top:110px;
+   padding-top:90px;
 }
 
 .essencia.active h1 {
@@ -63,7 +63,8 @@
 
 .essencia.active article h1 {
    font-family:'Baloo Thambi 2', cursive;
-   border-radius:3rem 10px 3rem 2rem;
+   padding-top:3px;
+   border-radius:2rem 1rem 3rem 2rem;
    font-size:25px;
    font-weight:300;
    background:orangered;
@@ -101,12 +102,69 @@
    margin-top:10px;
 }
 
+.essencia.active #blocos-anos div {
+   background:orange;
+   width:30px;
+   height:30px;
+   margin:auto;
+   transform:rotate(50deg);
+   border-radius:10px;
+}
+
 .essencia.active #texto-do-resultado {
    margin:auto;
    width:500px;
    margin-top:80px;
    text-align:left;
    font-size:27px;
+}
+
+.essencia.active #refazer-share {
+   display:flex;
+   justify-content:space-between;
+   align-items:center;
+   width:180px;
+   margin:80px auto;
+}
+
+.essencia.active #refazer-share a {
+   border:2px solid orangered;
+   border-radius:10px 10px 10px 2px;
+   text-align:center;
+   padding:8px 10px 5px 10px;
+   letter-spacing:2px;
+   text-decoration:none;
+   transition:.7s;
+   font-size:12px;
+   text-transform:uppercase;
+   font-family:'Kalam', cursive;
+   opacity:.7;
+   animation:muda-ponta 9s linear infinite;
+}
+
+.essencia.active #refazer-share a:hover {
+   letter-spacing:5px;
+   text-decoration:none;
+   transition:.7s;
+}
+
+.essencia.active #refazer-share img {
+   cursor:pointer;
+   opacity:.7;
+   transition:.3s;
+}
+
+.essencia.active #refazer-share img:hover {
+   opacity:1;
+   transition:.3s;
+}
+
+@keyframes muda-ponta {
+   0% { border-radius:10px 10px 10px 2px; }
+
+   50% { border-radius:10px 2px 10px 10px; }
+
+   100% { border-radius:10px 10px 10px 2px; }
 }
 
 .essencia.active a {
@@ -117,13 +175,90 @@
    text-decoration:none;
 }
 
+.cobre-tela {
+   position:fixed;
+   display:none;
+   top:0;
+   left:0;
+   width:100vw;
+   height:100vh;
+   background:rgba(0,0,0,.6);
+}
+
+.share-site {
+   display:none;
+   position:absolute;
+}
+
+.share-site img:nth-child(1) {
+   width:260px;
+   height:260px;
+   opacity:.8;
+   border-radius:4rem 10px 4rem 10px;
+}
+
+.share-site .copiar-link {
+   display:flex;
+   margin:10px auto;
+   justify-content:space-between;
+   opacity:.8;
+   cursor:pointer;
+   transition:.6s;
+   width:260px;
+   border:1px solid #F2F2F2;
+   padding:5px;
+   border-radius:3px 1rem 3px 3px;
+}
+
+.share-site .copiar-link:hover {
+   transition:.6s;
+   opacity:1;
+}
+
+.share-site #fecha-share-por-x, .copiar-link input {
+   font-family:'Baloo Thambi 2', cursive;
+}
+
+.copiar-link input {
+   transition:.6s;
+   cursor:pointer;
+   width:225px;
+   background:none;
+   color:#F2F2F2;
+   font-size:13px;
+}
+
+.copiar-link input:focus {
+   outline:none;
+}
+
+.share-site .copiar-link img {
+   width:20px;
+   height:20px;
+}
+
+.share-site #fecha-share-por-x {
+   position:fixed;
+   right:15px;
+   top:15px;
+   color:#F2F2F2;
+   width:25px;
+   height:25px;
+   opacity:.8;
+   cursor:pointer;
+}
+
+.share-site #fecha-share-por-x:hover {
+   opacity:1;
+}
+
 @media (max-width:1050px) {
    .essencia.active {
       width:95vw;
    }
 
    .essencia.active #passa-titulo-essencia {
-      padding-top:100px;
+      padding-top:80px;
    }
 
    .essencia.active h1 {
@@ -191,14 +326,31 @@
    }
 
    .essencia.active #texto-do-resultado {
-      width:290px;
+      width:280px;
       margin-top:60px;
       font-size:15px;
    }
+
+   .essencia.active #refazer-share {
+      margin:50px auto;
+   }
+
+   .essencia.active #refazer-share a {
+      padding:5px 3px 3px 5px;
+      font-size:11px;
+   }
+
+   .essencia.active #refazer-share img {
+      cursor:pointer;
+      opacity:.7;
+      transition:.3s;
+      width:20px;
+      height:20px;
+   }
 }
 
-@media (max-width:400px) {
+@media (max-width:420px) {
    .essencia.active h1 {
-      width:290px;
+      width:280px;
    }
 }
