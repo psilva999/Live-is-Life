@@ -175,6 +175,117 @@
    text-decoration:none;
 }
 
+.essencia.active .about-me, .nome-redes #network, .passo-a-passo .codigo, #copiar-link, .obg {
+  display:flex;
+  justify-content:center;
+  align-items:center; 
+} 
+
+.essencia.active #about {
+   margin:80px auto;
+   width:270px;
+}
+
+.essencia.active .about-me {
+   margin:auto;
+}
+
+.essencia.active .about-me #me {
+   width:60px;
+   height:60px;
+   border-radius:2rem 10px 10px 2rem;
+   opacity:.8;
+}
+
+.essencia.active .about-me .nome-redes {
+   margin-left:20px;
+   height:50px;
+   text-align:center;
+   width:180px;
+}
+
+.essencia.active .about-me h1 {
+   font-size:15px;
+   width:180px;
+   letter-spacing:2px;
+}
+
+.essencia.active .nome-redes #network {
+   justify-content:space-between;
+   padding-top:3px;
+   margin:12px auto;
+   width:120px;
+}
+
+.essencia.active #network a {
+   transition:.6s;
+}
+
+.essencia.active #network a:hover, .share:hover {
+   transform:scale(0.9);
+   transition:.6s;
+}
+
+.essencia.active #network .linkedin, .essencia.active #network .linkedin:hover {
+   top:-2px;
+   position:relative;
+}
+
+.essencia.active #network .linkedin img {
+   width:17px;
+   height:16px;
+   border-radius:2px;
+}
+
+.essencia.active #network img {
+   width:18px;
+   height:18px;
+}
+
+.essencia.active #about p {
+   margin-top:30px;
+   text-align:justify;
+   font-size:15px;
+   display:block;
+}
+
+.essencia.active #essencial {
+   display:flex;
+   justify-content:space-between;
+   align-items:center;
+   width:270px;
+   margin:80px auto 120px auto;
+}
+
+.essencia.active #essencial embed {
+   width:80px;
+   height:80px;
+   border-radius:5rem 3rem 4rem 2rem;
+   opacity:.8;
+}
+
+.essencia.active #essencial q {
+   font-size:11px;
+   letter-spacing:2px;
+   text-align:center;
+   width:180px;
+   opacity:.8;
+   font-family:'Kalam', cursive;
+}
+
+.essencia.active #essencial #detalhe {
+   position:absolute;
+   border:2px solid #F2F2F2;
+   border-radius:10rem;
+   border-top:transparent;
+   border-left:transparent;
+   margin-left:225px;
+   margin-top:30px;
+   opacity:.3;
+   width:30px;
+   height:30px;
+}
+
 .cobre-tela {
    position:fixed;
    display:none;
