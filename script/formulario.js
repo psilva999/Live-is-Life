@@ -3,7 +3,19 @@ var input = {
    nascimento: document.querySelector('#nasce-user'),
 
    altura: document.querySelector('#altura-user'),
-   peso: document.querySelector('#peso-user')
+   peso: document.querySelector('#peso-user'),
+
+   alcool: document.querySelector("#alcool"),
+   ex_alcoolatra: document.querySelector("#ex-alcoolatra"),
+
+   cigarro: document.querySelector("#cigarro"),
+   ex_fumante: document.querySelector("#ex-fumante"),
+
+   entorpecentes: document.querySelector("#entorpecentes"),
+   ex_dependente: document.querySelector("#ex-dependente"),
+
+   reabilitacao: document.querySelector("#reabilitacao"),
+   limpo_de_substancias: document.querySelector("#limpo-substancias")
 }
 
 input.nome.onkeypress = function(insereNome) {
@@ -14,22 +26,10 @@ input.nome.onkeypress = function(insereNome) {
    }
 }
 
-input.nascimento.onkeypress = function(insereNascimento) {
-   var inputNascimento = document.querySelector('#nasce-user')
-
-   if ((insereNascimento.key != '0' && insereNascimento.key != '1' && insereNascimento.key != '2' && insereNascimento.key != '3' && insereNascimento.key != '4' && insereNascimento.key != '5' && insereNascimento.key != '6' && insereNascimento.key != '7' && insereNascimento.key != '8' && insereNascimento.key != '9' && insereNascimento.key !== 'Backspace') || inputNascimento.value.length >= 10) {
-      insereNascimento.preventDefault()
-   }
-
-   if (inputNascimento.value.length == 2 || inputNascimento.value.length == 5) {
-      inputNascimento.value += '/'
-   }
-}
-
 input.altura.onkeypress = function(insereAltura) {
    var inputAltura = document.querySelector('#altura-user') 
 
-   if ((insereAltura.key == '-' || insereAltura.key == '+' || insereAltura.key == '/' || insereAltura.key == '*' || insereAltura.key == '!' || insereAltura.key == '%' || insereAltura.key == '(' || insereAltura.key == ')' || insereAltura.key == ':' || insereAltura.key == ',' || insereAltura.key == '.') || inputAltura.value.length >= 3) {
+   if ((insereAltura.key == '-' || insereAltura.key == '+' || insereAltura.key == '/' || insereAltura.key == '*' || insereAltura.key == '!' || insereAltura.key == '%' || insereAltura.key == '(' || insereAltura.key == ')' || insereAltura.key == ':' || insereAltura.key == ',') || inputAltura.value.length >= 4) {
       insereAltura.preventDefault()
    }
 }
@@ -37,13 +37,12 @@ input.altura.onkeypress = function(insereAltura) {
 input.peso.onkeypress = function(inserePeso) {
    var inputPeso = document.querySelector('#peso-user')
 
-   if ((inserePeso.key == '-' || inserePeso.key == '+' || inserePeso.key == '/' || inserePeso.key == '*' || inserePeso.key == '!' || inserePeso.key == '%' || inserePeso.key == '(' || inserePeso.key == ')' || inserePeso.key == ':' || inserePeso.key == ',' || inserePeso.key == '.') || inputPeso.value.length >= 3) {
+   if ((inserePeso.key == '-' || inserePeso.key == '+' || inserePeso.key == '/' || inserePeso.key == '*' || inserePeso.key == '!' || inserePeso.key == '%' || inserePeso.key == '(' || inserePeso.key == ')' || inserePeso.key == ':' || inserePeso.key == ',') || inputPeso.value.length >= 3) {
       inserePeso.preventDefault()
    }
 }
 
 input.nome.onpaste = function semColar(desabilitaColar) { desabilitaColar.preventDefault() }
-input.nascimento.onpaste = function semColar(desabilitaColar) { desabilitaColar.preventDefault() }
 
 input.altura.onpaste = function semColar(desabilitaColar) { desabilitaColar.preventDefault() }
 input.peso.onpaste = function semColar(desabilitaColar) { desabilitaColar.preventDefault() }

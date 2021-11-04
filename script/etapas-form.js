@@ -69,16 +69,47 @@ mudaPara.botaoQueAbrePerguntaSensivel.addEventListener('click', () => {
    retiraDesfocoPerguntaSensivel.style.marginBottom = '0px'
 })
 
-var input_nome = document.querySelector('#nome-user')
-var nome_user = document.querySelector("#nome-do-usuario")
+var mensagem_erro = document.querySelector(".mensagem-erro")
 
 botaoQue.entregaPrimeiraEtapa.addEventListener('click', () => {
+   // var input_nome = document.querySelector('#nome-user')
+   // var nome_user = document.querySelector("#nome-do-usuario")
 
-   mudaPara.primeiraParteForm.classList.toggle('active')
-   mudaPara.segundaParteForm.classList.add('active')
+   // var altura_user = document.querySelector('#altura-user')
+   // var peso_user = document.querySelector('#peso-user')
 
-   nome_user.innerHTML = `Oi ${input_nome.value}, prazer te conhecer <embed src='https://i.giphy.com/media/Lqx1czoPLTQg3I68d1/giphy.webp'>`
+   // if (input_nome.value <= 0 || altura_user.value >= 2.20 || altura_user.value <= .7 || peso_user.value >= 150 || peso_user.value <= 30) {
+   //    mensagem_erro.innerHTML = 'Insira seus dados corretamente'
+   //    mensagem_erro.style.display = 'block'
+
+   //    if (window.innerWidth <= 800) { mensagem_erro.style.animation = 'vem-da-direita-1000 .3s linear forwards' }
+   //    else { mensagem_erro.style.animation = 'vem-da-direita .3s linear forwards' }
+      
+   //    apagaIndicadorDeErro()
+   // }
+
+   // else {
+      mudaPara.primeiraParteForm.classList.toggle('active')
+      mudaPara.segundaParteForm.classList.add('active')
+
+      nome_user.innerHTML = `Oi ${input_nome.value}, prazer te conhecer <embed src='https://i.giphy.com/media/Lqx1czoPLTQg3I68d1/giphy.webp'>`
+   //}
 })
+
+function apagaIndicadorDeErro() {
+   var tempoDoIndicadorDeErro = 1 * 60
+   var teste = setInterval(contadorDoErro, 1000)
+
+   function contadorDoErro() {
+      tempoDoIndicadorDeErro--
+
+      if (tempoDoIndicadorDeErro <= 56) {
+         mensagem_erro.style.display = 'none'
+
+         clearInterval(teste)
+      }
+   }
+}  
 
 botaoQue.entregaSegundaEtapa.addEventListener('click', () => {
 
@@ -143,3 +174,11 @@ botaoQue.copiaLink.onclick = function copiarLinkDoSite(modo) {
       setTimeout()
    }, 1000)
 }
+
+// const
+   //    data = /([0-9]{4})-([0-9]{2})-([0-9]{2})/,
+   //    pegarData = data.exec(document.querySelector('#nasce-user').value),
+
+   //    day = pegarData[3],
+   //    month = pegarData[2],
+   //    year = pegarData[1]

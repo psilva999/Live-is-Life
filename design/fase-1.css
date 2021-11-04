@@ -132,6 +132,26 @@
    margin-left:15px;
 }
 
+.primeira-parte.active .mensagem-erro {
+   position:fixed;
+   width:150px;
+   top:40px;
+   background:#c733ae;
+   border-radius:10px 0rem 0rem 2rem;
+   font-size:15px;
+   display:none;
+   opacity:.8;
+   transition:.3s;
+   box-shadow:2px 2px 2px rgba(0,0,0,.6);
+   animation:vem-da-direita .3s linear forwards;
+}
+
+@keyframes vem-da-direita {
+   0% { right:-160px; }
+
+   100% { right:5px; }
+}
+
 @media (max-width:970px) {
    #formulario .primeira-parte.active .configura-nome {
       margin-top:25px;
@@ -263,6 +283,21 @@
    #formulario .primeira-parte.active .peso-usuario {
       margin-top:40px;
       margin-bottom:70px;
+   }
+}
+
+@media (max-width:800px) {
+   .primeira-parte.active .mensagem-erro {
+      border-radius:10px 1rem 1rem 2rem;
+      animation:vem-da-direita-1000 .3s linear forwards;
+      font-size:12px;
+      width:120px;
+   }
+
+   @keyframes vem-da-direita-1000 {
+      0% { right:-120px; }
+
+      100% { right:21px; }
    }
 }
 

@@ -44,15 +44,16 @@
          <form id="formulario" method="post">
 
             <div class="primeira-parte active"> <h1 class="fases" id="titulo-primeira-fase">Começo - Fase 1/3</h1>
+
                <div class="configura-nome">
-                  <label for="nome-user">Nome</label>
+                  <label for="nome-user">Nome*</label>
                   <input type="text" id="nome-user" placeholder="Pode ser apelido">
                </div>
             
                <div class="nascimento">
-                  <label for="nasce-user">Data de nascimento</label>
+                  <label for="nasce-user">Data de nascimento*</label>
 
-                  <input type="text" id="nasce-user" placeholder='dd/mm/aaaa'>
+                  <input type="date" id="nasce-user" min='1921/12/31' max='2017/12/31'>
                </div>
                
                <div class="sexo"> <h1>Sexo</h1>
@@ -91,18 +92,20 @@
                </div>
                
                <div class="altura-do-usuario">
-                  <label for="altura-user">Altura</label>
-                  <input type="number" name="pAltura" id="altura-user" class='altera-aparencia' placeholder='170cm'>
+                  <label for="altura-user">Altura*</label>
+                  <input type="number" name="pAltura" id="altura-user" class='altera-aparencia' placeholder='1.70m'>
                </div>
             
                <div class="peso-usuario">
-                  <label for="peso-user">Peso</label>
-                  <input type="number" name="sPeso" id="peso-user" class='altera-aparencia' placeholder='62kg'>
+                  <label for="peso-user">Peso*</label>
+                  <input type="number" name="sPeso" id="peso-user" class='altera-aparencia' placeholder='62.2kg'>
                </div>
 
                <div id="infos-primeira-etapa">
                   <a href="#titulo-segunda-parte" id="proxima-pagina">Levantar</a>
                </div>
+
+               <div class='mensagem-erro'></div>
 
                <div id='gambiarra'></div>
             </div>
@@ -209,28 +212,28 @@
 
                <div class="substancias">
                   <h1>Utiliza alguma dessas substâncias?</h1>
-                  <input type="checkbox" name="pSubstancias" id="alcool">
+                  <input type="checkbox" id="alcool">
                   <label for="alcool" id="l-alcool">Álcool</label>
 
-                  <input type="checkbox" name="pSubstancias" id="ex-alcoolatra">
+                  <input type="checkbox" id="ex-alcoolatra">
                   <label for="ex-alcoolatra" id="l-ex-alcoolatra">Ex-alcoólatra</label>
                
-                  <input type="checkbox" name="pSubstancias" id="cigarro">
+                  <input type="checkbox" id="cigarro">
                   <label for="cigarro" id="l-cigarro">Cigarro</label>
 
-                  <input type="checkbox" name="pSubstancias" id="ex-fumante">
+                  <input type="checkbox" id="ex-fumante">
                   <label for="ex-fumante" id="l-ex-fumante">Ex-fumante</label>
                
-                  <input type="checkbox" name="pSubstancias" id="entorpecentes">
+                  <input type="checkbox" id="entorpecentes">
                   <label for="entorpecentes" id="l-entorpecentes">Entorpecentes</label>
                
-                  <input type="checkbox" name="pSubstancias" id="ex-dependente">
+                  <input type="checkbox" id="ex-dependente">
                   <label for="ex-dependente" id="l-ex-dependente">Ex-dependente</label>
 
-                  <input type="checkbox" name="pSubstancias" id="reabilitacao">
+                  <input type="checkbox" id="reabilitacao">
                   <label for="reabilitacao" id="l-reabilitacao">Estou em reabilitação</label>
                
-                  <input type="checkbox" name="pSubstancias" id="limpo-substancias">
+                  <input type="checkbox" id="limpo-substancias">
                   <label for="limpo-substancias" id="l-limpo-substancias">Nenhuma das anteriores</label>
                </div>
                
