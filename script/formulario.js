@@ -46,3 +46,31 @@ input.nome.onpaste = function semColar(desabilitaColar) { desabilitaColar.preven
 
 input.altura.onpaste = function semColar(desabilitaColar) { desabilitaColar.preventDefault() }
 input.peso.onpaste = function semColar(desabilitaColar) { desabilitaColar.preventDefault() }
+
+input.alcool.onclick = () => { desativa_inputs_de_reabilitacao_e_limpo() }
+input.ex_alcoolatra.onclick = () => { desativa_inputs_de_reabilitacao_e_limpo() }
+
+input.cigarro.onclick = () => { desativa_inputs_de_reabilitacao_e_limpo() }
+input.ex_fumante.onclick = () => { desativa_inputs_de_reabilitacao_e_limpo() }
+
+input.entorpecentes.onclick = () => { desativa_inputs_de_reabilitacao_e_limpo() }
+input.ex_dependente.onclick = () => { desativa_inputs_de_reabilitacao_e_limpo() }
+
+function desativa_inputs_de_reabilitacao_e_limpo() {
+   input.reabilitacao.checked = false
+   input.limpo_de_substancias.checked = false
+}
+
+input.reabilitacao.onclick = () => { desativaInputs() }
+input.limpo_de_substancias.onclick = () => { desativaInputs() }
+
+function desativaInputs() {
+   input.alcool.checked = false
+   input.ex_alcoolatra.checked = false
+
+   input.cigarro.checked = false
+   input.ex_fumante.checked = false
+
+   input.entorpecentes.checked = false
+   input.ex_dependente.checked = false
+}

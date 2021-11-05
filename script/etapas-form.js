@@ -72,28 +72,28 @@ mudaPara.botaoQueAbrePerguntaSensivel.addEventListener('click', () => {
 var mensagem_erro = document.querySelector(".mensagem-erro")
 
 botaoQue.entregaPrimeiraEtapa.addEventListener('click', () => {
-   var input_nome = document.querySelector('#nome-user')
-   var nome_user = document.querySelector("#nome-do-usuario")
+   // var input_nome = document.querySelector('#nome-user')
+   // var nome_user = document.querySelector("#nome-do-usuario")
 
-   var altura_user = document.querySelector('#altura-user')
-   var peso_user = document.querySelector('#peso-user')
+   // var altura_user = document.querySelector('#altura-user')
+   // var peso_user = document.querySelector('#peso-user')
 
-   if (input_nome.value <= 0 || altura_user.value >= 2.20 || altura_user.value <= .7 || peso_user.value >= 150 || peso_user.value <= 30) {
-      mensagem_erro.innerHTML = 'Insira seus dados corretamente'
-      mensagem_erro.style.display = 'block'
+   // if (input_nome.value <= 0 || altura_user.value >= 2.20 || altura_user.value <= .7 || peso_user.value >= 150 || peso_user.value <= 30) {
+   //    mensagem_erro.innerHTML = 'Insira seus dados corretamente'
+   //    mensagem_erro.style.display = 'block'
 
-      if (window.innerWidth <= 800) { mensagem_erro.style.animation = 'vem-da-direita-1000 .3s linear forwards' }
-      else { mensagem_erro.style.animation = 'vem-da-direita .3s linear forwards' }
+   //    if (window.innerWidth <= 800) { mensagem_erro.style.animation = 'vem-da-direita-1000 .3s linear forwards' }
+   //    else { mensagem_erro.style.animation = 'vem-da-direita .3s linear forwards' }
       
-      apagaIndicadorDeErro()
-   }
+   //    apagaIndicadorDeErro()
+   // }
 
-   else {
+   // else {
       mudaPara.primeiraParteForm.classList.toggle('active')
       mudaPara.segundaParteForm.classList.add('active')
 
       nome_user.innerHTML = `Oi ${input_nome.value}, prazer te conhecer <embed src='https://i.giphy.com/media/Lqx1czoPLTQg3I68d1/giphy.webp'>`
-   }
+   //}
 })
 
 function apagaIndicadorDeErro() {
