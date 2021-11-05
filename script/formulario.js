@@ -41,18 +41,14 @@ input.peso.onkeypress = function(inserePeso) {
       inserePeso.preventDefault()
    }
 }
-
 input.nome.onpaste = function semColar(desabilitaColar) { desabilitaColar.preventDefault() }
-
 input.altura.onpaste = function semColar(desabilitaColar) { desabilitaColar.preventDefault() }
 input.peso.onpaste = function semColar(desabilitaColar) { desabilitaColar.preventDefault() }
 
 input.alcool.onclick = () => { desativa_inputs_de_reabilitacao_e_limpo() }
 input.ex_alcoolatra.onclick = () => { desativa_inputs_de_reabilitacao_e_limpo() }
-
 input.cigarro.onclick = () => { desativa_inputs_de_reabilitacao_e_limpo() }
 input.ex_fumante.onclick = () => { desativa_inputs_de_reabilitacao_e_limpo() }
-
 input.entorpecentes.onclick = () => { desativa_inputs_de_reabilitacao_e_limpo() }
 input.ex_dependente.onclick = () => { desativa_inputs_de_reabilitacao_e_limpo() }
 
