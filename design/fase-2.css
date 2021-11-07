@@ -123,7 +123,7 @@
 #formulario .segunda-parte.active .saude {
    height:235px;
    display:block;
-   margin-top:190px;
+   margin-top:220px;
 }
 
 #formulario .segunda-parte.active .saude h1 {
@@ -582,6 +582,7 @@
    #formulario .segunda-parte.active .saude {
       width:205px;
       height:200px;
+      margin-top:50px;
    }
 
    #formulario .segunda-parte.active .saude h1 {

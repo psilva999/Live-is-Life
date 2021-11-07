@@ -27,6 +27,7 @@
 
 .configura-nome input {
    border:1px solid rgba(0,0,0,.2);
+   width:170px;
 }
 
 .nascimento {
@@ -37,6 +38,7 @@
 .nascimento input {
    border:1px solid rgba(0,0,0,.2);
    font-size:17px;
+   width:170px;
 }
 
 .primeira-parte.active .sexo {
@@ -126,6 +128,7 @@
    font-size:17px;
    text-align:center;
    font-family:'Baloo Thambi 2', cursive;
+   width:170px;
 }
 
 #peso-user {
