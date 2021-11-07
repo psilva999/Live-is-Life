@@ -325,8 +325,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 13 && aparece.mudaSegundos <= 16) {
          legendaStayAlive.innerHTML = 'Há um ritmo de pressa nos dias de hoje'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos > 16 && aparece.mudaSegundos < 19) {
@@ -337,8 +337,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 19 && aparece.mudaSegundos <= 22) {
          legendaStayAlive.innerHTML = 'Onde as luzes não se movem e as cores não desaparecem'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 23 && aparece.mudaSegundos <= 25) {
@@ -349,8 +349,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 26 && aparece.mudaSegundos <= 28) {
          legendaStayAlive.innerHTML = 'Te deixa vazio, com nada além de sonhos'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 29 && aparece.mudaSegundos <= 31) {
@@ -361,8 +361,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 32 && aparece.mudaSegundos <= 35) {
          legendaStayAlive.innerHTML = 'Em um mundo que se tornou superficial. Em um mundo que se tornou pobre'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 36 && aparece.mudaSegundos <= 38) {
@@ -373,8 +373,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 39 && aparece.mudaSegundos <= 41) {
          legendaStayAlive.innerHTML = 'Às vezes há coisas que um homem não pode saber'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 42 && aparece.mudaSegundos <= 44) {
@@ -385,8 +385,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 45 && aparece.mudaSegundos <= 48) {
          legendaStayAlive.innerHTML = 'Engrenagens não ligam e as folhas não crescem'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 49 && aparece.mudaSegundos <= 51) {
@@ -397,8 +397,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 52 && aparece.mudaSegundos <= 54) {
          legendaStayAlive.innerHTML = 'Não há lugar para correr e não há gasolina'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 55 && aparece.mudaSegundos <= 57) {
@@ -409,8 +409,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 58 || aparece.mudaMinutos == 1 && aparece.mudaSegundos <= 1) {
          legendaStayAlive.innerHTML = 'O motor não liga e o trem não parte'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 2 && aparece.mudaSegundos <= 4) {
@@ -421,8 +421,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 5 && aparece.mudaSegundos <= 7) {
          legendaStayAlive.innerHTML = 'Motores não ligam e o trem não parte'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 8 && aparece.mudaSegundos <= 10) {
@@ -433,8 +433,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 11 && aparece.mudaSegundos <= 13) {
          legendaStayAlive.innerHTML = 'Eu vou ficar com você esta noite'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 14 && aparece.mudaSegundos <= 17) {
@@ -445,8 +445,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 18 && aparece.mudaSegundos <= 20) {
          legendaStayAlive.innerHTML = 'Te abraçar até a luz da manhã'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 21 && aparece.mudaSegundos <= 23) {
@@ -457,8 +457,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 24 && aparece.mudaSegundos <= 27) {
          legendaStayAlive.innerHTML = 'De manhã assistir um novo dia nascer'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 28 && aparece.mudaSegundos <= 30) {
@@ -469,8 +469,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 31 && aparece.mudaSegundos <= 33) {
          legendaStayAlive.innerHTML = 'Nós vamos fazer o que for apenas para permanecermos vivos'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 34 && aparece.mudaSegundos <= 36) {
@@ -481,8 +481,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 37 && aparece.mudaSegundos <= 39) {
          legendaStayAlive.innerHTML = 'Nós vamos fazer o que for apenas para permanecermos vivos'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 40 && aparece.mudaSegundos <= 43) {
@@ -493,8 +493,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 44 && aparece.mudaSegundos <= 46) {
          legendaStayAlive.innerHTML = 'Bem o que eu sinto é a maneira que eu escrevo'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 47 && aparece.mudaSegundos <= 48) {
@@ -505,8 +505,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 49 && aparece.mudaSegundos <= 51) {
          legendaStayAlive.innerHTML = 'Não é como os pensamentos do homem que mente'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 52 && aparece.mudaSegundos <= 54) {
@@ -517,8 +517,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 55 && aparece.mudaSegundos <= 57) {
          legendaStayAlive.innerHTML = 'Há uma verdade e ela está do nosso lado'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 58 && aparece.mudaSegundos <= 59) {
@@ -529,8 +529,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 00 && aparece.mudaSegundos <= 2) {
          legendaStayAlive.innerHTML = 'O amanhecer está chegando, abra seus olhos'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 3 && aparece.mudaSegundos <= 5) {
@@ -541,8 +541,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 6 && aparece.mudaSegundos <= 8) {
          legendaStayAlive.innerHTML = 'Olhe para o sol conforme os novos dias amanhecem'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 9 && aparece.mudaSegundos <= 10) {
@@ -553,8 +553,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 11 && aparece.mudaSegundos <= 13) {
          legendaStayAlive.innerHTML = 'Eu vou esperar por você hoje à noite'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 14 && aparece.mudaSegundos <= 16) {
@@ -565,8 +565,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 17 && aparece.mudaSegundos <= 19) {
          legendaStayAlive.innerHTML = 'Você está aqui para sempre e você está ao meu lado'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 20 && aparece.mudaSegundos <= 21) {
@@ -577,8 +577,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 22 && aparece.mudaSegundos <= 24) {
          legendaStayAlive.innerHTML = 'Eu estive esperando por toda minha vida'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 25 && aparece.mudaSegundos <= 27) {
@@ -589,8 +589,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 28 && aparece.mudaSegundos <= 30) {
          legendaStayAlive.innerHTML = 'Para sentir o seu coração como se estivesse marcando o tempo'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 31 && aparece.mudaSegundos <= 32) {
@@ -601,8 +601,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 33 && aparece.mudaSegundos <= 36) {
          legendaStayAlive.innerHTML = 'Nós vamos fazer o que for apenas para permanecermos vivos'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 36 && aparece.mudaSegundos <= 54) {
@@ -613,8 +613,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 55 && aparece.mudaSegundos <= 57) {
          legendaStayAlive.innerHTML = 'O amanhecer está chegando, abra seus olhos'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 58 && aparece.mudaSegundos <= 59 || aparece.mudaMinutos == 3 && aparece.mudaSegundos >= 00 && aparece.mudaSegundos <= 01) {
@@ -625,8 +625,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 3 && aparece.mudaSegundos >= 2 && aparece.mudaSegundos <= 5) {
          legendaStayAlive.innerHTML = 'O amanhecer está chegando, abra seus olhos'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 3 && aparece.mudaSegundos >= 6 && aparece.mudaSegundos <= 8) {
@@ -637,8 +637,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 3 && aparece.mudaSegundos >= 9 && aparece.mudaSegundos <= 11) {
          legendaStayAlive.innerHTML = 'O amanhecer está chegando, abra seus olhos'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 3 && aparece.mudaSegundos >= 12 && aparece.mudaSegundos <= 16) {
@@ -649,8 +649,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 3 && aparece.mudaSegundos >= 17 && aparece.mudaSegundos <= 19) {
          legendaStayAlive.innerHTML = 'O amanhecer está chegando, abra seus olhos'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 3 && aparece.mudaSegundos >= 20 && aparece.mudaSegundos <= 30) {
@@ -661,8 +661,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 3 && aparece.mudaSegundos >= 31 && aparece.mudaSegundos <= 35) {
          legendaStayAlive.innerHTML = 'Olhe para o sol conforme os dias nascem'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 3 && aparece.mudaSegundos >= 36 && aparece.mudaSegundos <= 40) {
@@ -673,8 +673,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 3 && aparece.mudaSegundos >= 41 && aparece.mudaSegundos <= 43) {
          legendaStayAlive.innerHTML = 'Há um ritmo de pressa nos dias de hoje'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 3 && aparece.mudaSegundos >= 44 && aparece.mudaSegundos <= 46) {
@@ -685,8 +685,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 3 && aparece.mudaSegundos >= 47 && aparece.mudaSegundos <= 49) {
          legendaStayAlive.innerHTML = 'Onde as luzes não se movem e as cores não desaparecem'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 3 && aparece.mudaSegundos >= 50 && aparece.mudaSegundos <= 53) {
@@ -697,8 +697,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 3 && aparece.mudaSegundos >= 54 && aparece.mudaSegundos <= 56) {
          legendaStayAlive.innerHTML = 'Te deixa vazio, com nada além de sonhos'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 3 && aparece.mudaSegundos >= 57 && aparece.mudaSegundos <= 59) {
@@ -709,8 +709,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 4 && aparece.mudaSegundos >= 0 && aparece.mudaSegundos <= 2) {
          legendaStayAlive.innerHTML = 'Em um mundo que se tornou superficial. Em um mundo que se tornou pobre.'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 4 && aparece.mudaSegundos >= 3 && aparece.mudaSegundos <= 5) {
@@ -721,8 +721,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 4 && aparece.mudaSegundos >= 6 && aparece.mudaSegundos <= 9) {
          legendaStayAlive.innerHTML = 'Mas há uma verdade e ela está do nosso lado'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 4 && aparece.mudaSegundos >= 10 && aparece.mudaSegundos <= 12) {
@@ -733,8 +733,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 4 && aparece.mudaSegundos >= 13 && aparece.mudaSegundos <= 15) {
          legendaStayAlive.innerHTML = 'O amanhecer está chegando abra seus olhos'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 4 && aparece.mudaSegundos >= 16 && aparece.mudaSegundos <= 18) {
@@ -745,8 +745,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 4 && aparece.mudaSegundos >= 19 && aparece.mudaSegundos <= 23) {
          legendaStayAlive.innerHTML = 'Olhe para o sol conforme um novo dia nasce'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 4 && aparece.mudaSegundos >= 24) {
@@ -766,8 +766,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 17 && aparece.mudaSegundos <= 19) {
          legendaDirtyPaws.innerHTML = 'Pulando para cima e para baixo'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
       
       else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 20 && aparece.mudaSegundos <= 21) {
@@ -778,8 +778,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 22 && aparece.mudaSegundos <= 24) {
          legendaDirtyPaws.innerHTML = 'Minha cabeça é um animal'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos == 25) {
@@ -790,8 +790,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 26 && aparece.mudaSegundos <= 28) {
          legendaDirtyPaws.innerHTML = 'E uma vez havia um animal'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos == 29) {
@@ -802,8 +802,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 30 && aparece.mudaSegundos <= 32) {
          legendaDirtyPaws.innerHTML = 'Ele tinha um filho que cortava a grama'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 33 && aparece.mudaSegundos <= 34) {
@@ -814,8 +814,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 35 && aparece.mudaSegundos <= 37) {
          legendaDirtyPaws.innerHTML = 'O filho era um garoto legal'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos == 38) {
@@ -826,8 +826,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 39 && aparece.mudaSegundos <= 41) {
          legendaDirtyPaws.innerHTML = 'Eles tinham uma libélula de estimação'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos == 42) {
@@ -838,8 +838,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 43 && aparece.mudaSegundos <= 45) {
          legendaDirtyPaws.innerHTML = 'A libélula um dia fugiu'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos == 46) {
@@ -850,8 +850,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 47 && aparece.mudaSegundos <= 50) {
          legendaDirtyPaws.innerHTML = 'Mas voltou com uma história para contar'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 0 && aparece.mudaSegundos >= 51 || aparece.mudaMinutos == 1 && aparece.mudaSegundos <= 11) {
@@ -862,15 +862,15 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 12 && aparece.mudaSegundos <= 14) {
          legendaDirtyPaws.innerHTML = 'Suas patas sujas e casaco peludo'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 15 && aparece.mudaSegundos <= 17) {
          legendaDirtyPaws.innerHTML = 'Ela fugiu para a encosta da floresta'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 18 && aparece.mudaSegundos <= 19) {
@@ -881,8 +881,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 20 && aparece.mudaSegundos <= 22) {
          legendaDirtyPaws.innerHTML = 'A floresta de árvores falantes'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos == 23) {
@@ -893,8 +893,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 24 && aparece.mudaSegundos <= 26) {
          legendaDirtyPaws.innerHTML = 'Elas cantavam sobre os pássaros e as abelhas'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 27 && aparece.mudaSegundos <= 28) {
@@ -905,15 +905,15 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 29 && aparece.mudaSegundos <= 31) {
          legendaDirtyPaws.innerHTML = 'As abelhas tinham declarado uma guerra'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 32 && aparece.mudaSegundos <= 35) {
          legendaDirtyPaws.innerHTML = 'O céu não era grande o suficiente para todos eles'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos == 36) {
@@ -924,8 +924,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 37 && aparece.mudaSegundos <= 39) {
          legendaDirtyPaws.innerHTML = 'Os pássaros receberam ajuda debaixo'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 39 && aparece.mudaSegundos <= 40) {
@@ -936,8 +936,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 41 && aparece.mudaSegundos <= 44) {
          legendaDirtyPaws.innerHTML = 'De patas sujas e das criaturas da neve'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 1 && aparece.mudaSegundos >= 45 && aparece.mudaSegundos <= 59 || aparece.mudaSegundos == 2 && aparece.mudaSegundos <= 23) {
@@ -948,8 +948,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 23 && aparece.mudaSegundos <= 25) {
          legendaDirtyPaws.innerHTML = 'E por um tempo as coisas ficaram frias'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos == 26) {
@@ -960,8 +960,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 27 && aparece.mudaSegundos <= 29) {
          legendaDirtyPaws.innerHTML = 'Elas se esconderam, assustadas, em seus buracos'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 30 && aparece.mudaSegundos <= 31) {
@@ -972,8 +972,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 32 && aparece.mudaSegundos <= 33) {
          legendaDirtyPaws.innerHTML = 'A floresta que um dia era verde'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 34 && aparece.mudaSegundos <= 35) {
@@ -984,8 +984,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 36 && aparece.mudaSegundos <= 38) {
          legendaDirtyPaws.innerHTML = 'Foi pintada de preto por aquelas máquinas assassinas'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos == 39) {
@@ -996,8 +996,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 40 && aparece.mudaSegundos <= 42) {
          legendaDirtyPaws.innerHTML = 'Mas ela e seus amigos peludos'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos == 43) {
@@ -1008,8 +1008,8 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 44 && aparece.mudaSegundos <= 46) {
          legendaDirtyPaws.innerHTML = 'Derrubaram a abelha rainha e os seus homens'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 47 && aparece.mudaSegundos <= 48) {
@@ -1020,15 +1020,15 @@ function mudaMinutosSegundos() {
       else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 49 && aparece.mudaSegundos <= 51) {
          legendaDirtyPaws.innerHTML = 'E é assim que a história acaba'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 52 && aparece.mudaSegundos <= 55) {
          legendaDirtyPaws.innerHTML = 'A história da fera com aquelas quatro patas sujas'
 
-         legendaStayAlive.style.backgroundColor = '#772f1a' 
-         legendaStayAlive.style.backgroundImage = 'linear-gradient(315deg, #c98d7a 0%, #f2a65a 74%)'
+         legendaStayAlive.style.backgroundColor = 'rgb(230,127,9)' 
+         legendaStayAlive.style.backgroundImage = 'radial-gradient(circle, rgba(230,127,9,1) 27%, rgba(254,105,10,1) 59%)'
       }
 
       else if (aparece.mudaMinutos == 2 && aparece.mudaSegundos >= 56 && aparece.mudaSegundos <= 59 || aparece.mudaMinutos == 3 && aparece.mudaSegundos >= 0 && aparece.mudaSegundos <= 59 || aparece.mudaMinutos == 4 && aparece.mudaSegundos >= 0 && aparece.mudaSegundos <= 19) {
