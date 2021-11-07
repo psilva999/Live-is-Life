@@ -21,7 +21,7 @@ var input = {
 input.nome.onkeypress = function(insereNome) {
    var inputNome = document.querySelector('#nome-user')
 
-   if (inputNome.value.length >= 11) {
+   if (inputNome.value.length >= 9) {
       insereNome.preventDefault()
    }
 }
