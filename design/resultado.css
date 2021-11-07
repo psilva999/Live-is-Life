@@ -106,8 +106,7 @@
 }
 
 .essencia.active .blocos-anos, .blocos-meses {
-   width:400px;
-   max-height:325px;
+   width:380px;
    border-top:1px solid transparent;
    border-left:.5px solid rgba(0,0,0,.1);
    border-radius:2rem 6rem 3rem 4rem;
@@ -115,6 +114,31 @@
    overflow-y:auto;
    box-shadow:2px 2px 3px rgba(0,0,0,.3);
    padding-bottom:30px;
+   scrollbar-width:thin;
+   scrollbar-color:#7c6a6a;
+}
+
+.essencia.active .blocos-anos::-webkit-scrollbar, .blocos-meses::-webkit-scrollbar {
+   width:7px;
+}
+
+.essencia.active .blocos-anos::-webkit-scrollbar-track, .blocos-meses::-webkit-scrollbar-track {
+   background:#7c6a6a;
+   border-radius:5px;
+}
+
+.essencia.active .blocos-anos::-webkit-scrollbar-thumb, .blocos-meses::-webkit-scrollbar-thumb {
+   background-color:#E67F09;
+   border-radius:5px;
+   border:3px solid #E67F09;
+}
+
+.essencia.active .blocos-anos {
+   max-height:325px;
+}
+
+.essencia.active .blocos-meses {
+   height:325px;
 }
 
 .essencia.active .blocos-anos { margin-top:25px; }
@@ -135,10 +159,9 @@
 
 .essencia.active .container-dos-blocos {
    display:flex;
-   justify-content:space-between;
    flex-wrap:wrap;
    margin:auto;
-   width:85%;
+   width:315px;
 }
 
 .essencia.active #ano-que-passou, #ano-atual, #ano-futuro, #meses-que-passaram, #mes-atual, #meses-futuros {
@@ -175,16 +198,16 @@
    width:20px;
    height:20px;
    cursor:pointer;
-   transition:.3s;
+   transition:.6s;
    opacity:.8;
    position:absolute;
-   margin-left:-185px;
-   margin-top:-310px;
+   margin-left:150px;
+   margin-top:-43px;
 }
 
 .essencia.active #amplia-blocos-anos:hover, #amplia-blocos-meses:hover {
    opacity:1;
-   transition:.3s;
+   transition:.6s;
    transform:scale(1.1);
 }
 
@@ -480,10 +503,11 @@
       font-size:18px;
    }
 
-   .essencia.active .blocos-anos, .blocos-meses {
+   .essencia.active .blocos-anos, .essencia.active .blocos-meses {
       width:270px;
       height:230px;
       border-radius:2rem 6rem 3rem 3rem;
+      padding-bottom:20px;
    }
 
    .essencia.active .blocos-anos h1, .essencia.active .blocos-meses h1 {

@@ -130,10 +130,32 @@ botaoQue.voltaSegundaEtapa.addEventListener('click', () => {
 })
 
 botaoQue.finalizaEtapas.addEventListener('click', () => {
-   mudaPara.terceiraParteForm.classList.toggle('active')
-   mudaPara.resultado.classList.add('active')
+   document.querySelector("#loading").style.display = 'block'
 
-   resultado_da_essencia()
+   if (window.innerWidth > 800) {
+      document.querySelector("#loading").style.animation = 'aparece-loading .3s linear forwards'
+   }
+
+   else {
+      document.querySelector("#loading").style.animation = 'aparece-loading-800 .3s linear forwards'
+   }
+
+   var tempoParaOResultado = 1 * 60
+   var mostraResultado = setInterval(resultado, 1000)
+
+   function resultado() {
+      tempoParaOResultado--
+
+      if (tempoParaOResultado <= 59) {
+         mudaPara.terceiraParteForm.classList.toggle('active')
+         mudaPara.resultado.classList.add('active')
+
+         resultado_da_essencia()
+
+         clearInterval(mostraResultado)
+      }
+   }
+
 })
 
 function resultado_da_essencia() {
@@ -157,6 +179,8 @@ function resultado_da_essencia() {
       semanas: anosFinais * 52,
       horas: (anosFinais * 365) * 24
    }
+
+   var mesesVividos = ((idade * 12) + (mesAtual - 1))
 
    if (idade <= 15) {
       document.querySelector('#passa-titulo-essencia').innerHTML = `Muito cedo pro teste 😅`
@@ -191,17 +215,17 @@ function resultado_da_essencia() {
          document.querySelector('.container-dos-blocos.anos').innerHTML += "<div id='ano-futuro'></div>"
       }
 
-      for (var p = 0; p < ((idade * 12) + (mesAtual - 1)); p++) {
+      for (var p = 0; p < ((mesesVividos * .15).toFixed(0)); p++) {
          document.querySelector(".container-dos-blocos.meses").innerHTML += "<div id='meses-que-passaram'></div>"
       }
+      document.querySelector(".container-dos-blocos.meses").innerHTML += ` ... + ${(mesesVividos * .85).toFixed(0)} ... `
 
       document.querySelector(".container-dos-blocos.meses").innerHTML += "<div id='mes-atual'></div>"
  
-      for (var count2 = 0; count2 < ((essenciaEm.meses * .1).toFixed(0)); count2++) {
+      for (var count2 = 0; count2 < ((essenciaEm.meses * .05).toFixed(0)); count2++) {
          document.querySelector(".container-dos-blocos.meses").innerHTML += `<div id='meses-futuros'></div>`
       }
-
-      document.querySelector(".container-dos-blocos.meses").innerHTML += ` + ${(essenciaEm.meses * .9).toFixed(0)}`
+      document.querySelector(".container-dos-blocos.meses").innerHTML += ` ... + ${(essenciaEm.meses * .95).toFixed(0)}`
    }
 }
 
