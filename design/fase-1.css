@@ -11,7 +11,7 @@
    outline:0;   
 }
 
-#formulario input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+#formulario input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button {
    appearance:none;
    margin:0;
 }
@@ -38,7 +38,7 @@
 .nascimento input {
    border:1px solid rgba(0,0,0,.2);
    font-size:17px;
-   width:170px;
+   width:180px;
 }
 
 .primeira-parte.active .sexo {

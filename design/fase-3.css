@@ -474,6 +474,22 @@
    top:-50px;
 }
 
+#formulario #loading {
+   width:30px;
+   height:30px;
+   border-radius:3rem 10px 10px 3rem;
+   position:fixed;
+   right:0px;
+   top:50px;
+   display:none;
+}
+
+@keyframes aparece-loading {
+   0% { transform:translateX(25px); }
+
+   100% { transform:translateX(0px); }
+}
+
 @media (max-width:970px) {
    #formulario .terceira-parte.active div h1 {
       font-size:19px;
@@ -819,6 +835,19 @@
       width:135px;
       left:43px;
       top:-68px;
+   }
+}
+
+@media (max-width:800px) {
+   #formulario #loading {
+      width:25px;
+      height:25px;
+   }
+
+   @keyframes aparece-loading-800 {
+      0% { transform:translateX(25px); }
+
+      100% { transform:translateX(-17px); }
    }
 }
 
