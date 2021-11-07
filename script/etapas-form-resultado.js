@@ -229,6 +229,85 @@ function resultado_da_essencia() {
    }
 }
 
+document.querySelector("#amplia-blocos-anos").onclick = () => {
+   mostra_blocos_ampliados()
+
+   const
+      data = /([0-9]{4})-([0-9]{2})-([0-9]{2})/,
+      pegarData = data.exec(document.querySelector('#nasce-user').value),
+
+      day = pegarData[3],
+      month = pegarData[2],
+      ano_de_nascimento = pegarData[1]
+
+   var momentoAtual = new Date().getFullYear()
+   var idade = momentoAtual - ano_de_nascimento
+   var anosFinais = 76 - idade
+   
+   document.querySelector("#indica-nome-bloco").innerHTML = 'Anos'
+   document.querySelector('#container-dos-blocos-ampliados').innerHTML = ""
+
+   for (var i = 0; i < (idade - 1); i++) {
+      document.querySelector('#container-dos-blocos-ampliados').innerHTML += "<div id='ano-que-passou'></div>"
+   }
+
+   document.querySelector('#container-dos-blocos-ampliados').innerHTML += "<div id='ano-atual'></div>"
+
+   var count = 0
+   while (count < anosFinais) {
+      count++
+      document.querySelector('#container-dos-blocos-ampliados').innerHTML += "<div id='ano-futuro'></div>"
+   }
+}
+
+document.querySelector('#amplia-blocos-meses').onclick = () => {
+   mostra_blocos_ampliados()
+
+   const
+      data = /([0-9]{4})-([0-9]{2})-([0-9]{2})/,
+      pegarData = data.exec(document.querySelector('#nasce-user').value),
+
+      day = pegarData[3],
+      month = pegarData[2],
+      ano_de_nascimento = pegarData[1]
+
+   var momentoAtual = new Date().getFullYear()
+   var mesAtual = new Date().getMonth()
+   var idade = momentoAtual - ano_de_nascimento
+
+   var anosFinais = 76 - idade
+   var essenciaEm = { meses: anosFinais * 12, }
+   var mesesVividos = ((idade * 12) + (mesAtual - 1))
+
+   document.querySelector("#indica-nome-bloco").innerHTML = 'Meses'
+   document.querySelector('#container-dos-blocos-ampliados').innerHTML = ""
+
+   for (var p = 0; p < ((mesesVividos * .3).toFixed(0)); p++) {
+      document.querySelector("#container-dos-blocos-ampliados").innerHTML += "<div id='meses-que-passaram'></div>"
+   }
+   document.querySelector("#container-dos-blocos-ampliados").innerHTML += ` ... + ${(mesesVividos * .7).toFixed(0)} ... `
+
+   document.querySelector("#container-dos-blocos-ampliados").innerHTML += "<div id='mes-atual'></div>"
+
+   for (var count2 = 0; count2 < ((essenciaEm.meses * .1).toFixed(0)); count2++) {
+      document.querySelector("#container-dos-blocos-ampliados").innerHTML += `<div id='meses-futuros'></div>`
+   }
+   document.querySelector("#container-dos-blocos-ampliados").innerHTML += ` ... + ${(essenciaEm.meses * .9).toFixed(0)}`
+}
+
+function mostra_blocos_ampliados() {
+   document.querySelector('.cobre-tela-para-blocos').style.display = 'block'
+   document.querySelector(".mostra-blocos-ampliados").style.display = 'block'
+}
+
+document.querySelector('.cobre-tela-para-blocos').onclick = () => { retira_blocos_ampliados() }
+document.querySelector('.fechar-blocos-por-x').onclick = () => { retira_blocos_ampliados() }
+
+function retira_blocos_ampliados() {
+   document.querySelector('.cobre-tela-para-blocos').style.display = 'none'
+   document.querySelector(".mostra-blocos-ampliados").style.display = 'none'
+}
+
 botaoQue.compartilhaSite.onclick = () => {
    mudaPara.fecharSharePorFora.style.display = 'block'
    mudaPara.abaDeCompartilhar.style.display = 'block'

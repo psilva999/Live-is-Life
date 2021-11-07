@@ -211,6 +211,133 @@
    transform:scale(1.1);
 }
 
+.cobre-tela-para-blocos, .mostra-blocos-ampliados {
+   display:none;
+}
+
+.cobre-tela-para-blocos {
+   background:rgba(0,0,0,.8);
+   position:fixed;
+   left:0;
+   top:0;
+   width:100vw;
+   height:100vh;
+   animation:aparece-blocos .1s linear forwards;
+}
+
+.mostra-blocos-ampliados {
+   overflow-y:auto;
+   width:500px;
+   max-height:500px;
+   padding-bottom:40px;
+   position:absolute;
+   color:#F2F2F2;
+   font-family:'Kalam', cursive;
+   text-align:center;
+   border-top:1px solid rgba(0,0,0,.5);
+   border-left:.5px solid rgba(0,0,0,.3);
+   border-radius:2rem 6rem 3rem 4rem;
+   box-shadow:2px 2px 3px rgba(0,0,0,.3);
+   scrollbar-width:thin;
+   scrollbar-color:#7c6a6a;
+   animation:aparece-blocos .2s linear forwards;
+}
+
+@keyframes aparece-blocos {
+   0% { opacity:0; }
+
+   100% { opacity:1; }
+}
+
+.mostra-blocos-ampliados::-webkit-scrollbar {
+   width:7px;
+}
+
+.mostra-blocos-ampliados::-webkit-scrollbar-track {
+   background:#7c6a6a;
+   border-radius:5px;
+}
+
+.mostra-blocos-ampliados::-webkit-scrollbar-thumb {
+   background-color:#E67F09;
+   border-radius:5px;
+   border:3px solid #E67F09;
+}
+
+.mostra-blocos-ampliados h1 {
+   margin-top:20px;
+   opacity:.8;
+   letter-spacing:3px;
+}
+
+.fechar-blocos-por-x {
+   position:fixed;
+   top:10px;
+   right:25px;
+   font-size:30px;
+   opacity:.8;
+   cursor:pointer;
+   transition:.6s;
+   font-weight:100;
+}
+
+.fechar-blocos-por-x:hover {
+   opacity:1;
+   transition:.6s;
+}
+
+#container-dos-blocos-ampliados {
+   display:flex;
+   flex-wrap:wrap;
+   margin:auto;
+   width:90%;
+   margin-top:7px;
+}
+
+#container-dos-blocos-ampliados #ano-que-passou, #ano-atual, #ano-futuro, #meses-que-passaram, #mes-atual, #meses-futuros {
+   width:21px;
+   height:21px;
+   transform:rotate(45deg);
+   border-radius:6px;
+   margin:5px;
+}
+
+#container-dos-blocos-ampliados #ano-que-passou, #meses-que-passaram {
+   background:rgba(254,105,10,1);
+}
+
+#container-dos-blocos-ampliados #ano-atual, #mes-atual {
+   background:rgb(230,127,9);
+   animation:pisca-bloco-atual 4s linear infinite;
+}
+
+#container-dos-blocos-ampliados #ano-futuro, #meses-futuros {
+   border:.5px solid #F2F2F2;
+   box-shadow:2px 2px 3px rgba(0,0,0,.3);
+}
+
+@media (max-width:600px) {
+   .fechar-blocos-por-x {
+      right:15px;
+      top:5px;
+   }
+
+   .mostra-blocos-ampliados {
+      width:85vw;
+      max-height:500px;
+   }
+
+   .mostra-blocos-ampliados h1 {
+      font-size:16px;
+   }
+}
+
+@media (max-height:600px) {
+   .mostra-blocos-ampliados {
+      max-height:85vh;
+   }
+}
+
 .essencia.active #texto-do-resultado {
    margin:auto;
    width:500px;
@@ -522,7 +649,7 @@
       width:80%;
    }
 
-   .essencia.active #ano-que-passou, #ano-atual, #ano-futuro, #meses-que-passaram, #mes-atual, #meses-futuros {
+   .essencia.active #ano-que-passou, #ano-atual, #ano-futuro, #meses-que-passaram, #mes-atual, #meses-futuros, #container-dos-blocos-ampliados #ano-que-passou, #ano-atual, #ano-futuro, #meses-que-passaram, #mes-atual, #meses-futuros {
       width:10px;
       height:21px;
       transform:rotate(45deg);
