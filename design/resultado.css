@@ -69,7 +69,7 @@
 .essencia.active article h1 {
    font-family:'Baloo Thambi 2', cursive;
    padding-top:1px;
-   border-radius:3rem 1rem 3rem 1rem;
+   border-radius:6rem 1rem 3rem 3rem;
    font-size:25px;
    font-weight:100;
    width:280px;
@@ -83,7 +83,7 @@
    width:16px;
    height:16px;
    transform:rotate(43deg);
-   border-radius:1px;
+   border-radius:4px;
    margin:-38px auto 20px;
    box-shadow:2px 2px 0px rgba(0,0,0,.3);
 }
@@ -105,13 +105,87 @@
    margin-top:10px;
 }
 
-.essencia.active #blocos-anos div {
-   background:orange;
-   width:30px;
-   height:30px;
+.essencia.active .blocos-anos, .blocos-meses {
+   width:400px;
+   max-height:325px;
+   border-top:1px solid transparent;
+   border-left:.5px solid rgba(0,0,0,.1);
+   border-radius:2rem 6rem 3rem 4rem;
    margin:auto;
-   transform:rotate(50deg);
-   border-radius:10px;
+   overflow-y:auto;
+   box-shadow:2px 2px 3px rgba(0,0,0,.3);
+   padding-bottom:30px;
+}
+
+.essencia.active .blocos-anos { margin-top:25px; }
+
+.essencia.active .blocos-meses { margin-top:40px; }
+
+.essencia.active .blocos-anos h1, .essencia.active .blocos-meses h1 {
+   border:none;
+   width:auto;
+   padding:auto;
+   background:none;
+   font-size:20px;
+   box-shadow:none;
+   letter-spacing:3px;
+   font-family:'Kalam', cursive;
+   margin-bottom:10px;
+}
+
+.essencia.active .container-dos-blocos {
+   display:flex;
+   justify-content:space-between;
+   flex-wrap:wrap;
+   margin:auto;
+   width:85%;
+}
+
+.essencia.active #ano-que-passou, #ano-atual, #ano-futuro, #meses-que-passaram, #mes-atual, #meses-futuros {
+   width:21px;
+   height:21px;
+   transform:rotate(45deg);
+   border-radius:6px;
+   margin:5px;
+}
+
+.essencia.active #ano-que-passou, #meses-que-passaram {
+   background:rgba(254,105,10,1);
+}
+
+.essencia.active #ano-atual, #mes-atual {
+   background:rgb(230,127,9);
+   animation:pisca-bloco-atual 4s linear infinite;
+}
+
+.essencia.active #ano-futuro, #meses-futuros {
+   border:.5px solid #F2F2F2;
+   box-shadow:2px 2px 3px rgba(0,0,0,.3);
+}
+
+@keyframes pisca-bloco-atual {
+   0% { opacity:.5; }
+
+   50% { opacity:1; }
+
+   100% { opacity:.5; }
+}
+
+.essencia.active #amplia-blocos-anos, #amplia-blocos-meses {
+   width:20px;
+   height:20px;
+   cursor:pointer;
+   transition:.3s;
+   opacity:.8;
+   position:absolute;
+   margin-left:-185px;
+   margin-top:-310px;
+}
+
+.essencia.active #amplia-blocos-anos:hover, #amplia-blocos-meses:hover {
+   opacity:1;
+   transition:.3s;
+   transform:scale(1.1);
 }
 
 .essencia.active #texto-do-resultado {
@@ -360,10 +434,12 @@
    height:25px;
    opacity:.8;
    cursor:pointer;
+   transition:.3s;
 }
 
 .share-site #fecha-share-por-x:hover {
    opacity:1;
+   transition:.3s;
 }
 
 @media (max-width:1050px) {
@@ -402,6 +478,43 @@
    .essencia.active article ul {
       width:200px;
       font-size:18px;
+   }
+
+   .essencia.active .blocos-anos, .blocos-meses {
+      width:270px;
+      height:230px;
+      border-radius:2rem 6rem 3rem 3rem;
+   }
+
+   .essencia.active .blocos-anos h1, .essencia.active .blocos-meses h1 {
+      margin-bottom:0px;
+   }
+
+   .essencia.active .blocos-anos { margin-top:10px; }
+
+   .essencia.active .blocos-meses { margin-top:25px; }
+
+   .essencia.active .container-dos-blocos {
+      width:80%;
+   }
+
+   .essencia.active #ano-que-passou, #ano-atual, #ano-futuro, #meses-que-passaram, #mes-atual, #meses-futuros {
+      width:10px;
+      height:21px;
+      transform:rotate(45deg);
+      border-radius:6px;
+      margin:5px;
+   }
+
+   .essencia.active .blocos-anos h1, .essencia.active .blocos-meses h1 {
+      font-size:15px;
+   }
+
+   .essencia.active #amplia-blocos-anos, #amplia-blocos-meses {
+      width:18px;
+      height:18px;
+      margin-left:-120px;
+      margin-top:-218px;
    }
 
    .essencia.active #texto-do-resultado {

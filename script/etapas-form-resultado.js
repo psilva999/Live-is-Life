@@ -117,12 +117,6 @@ botaoQue.entregaSegundaEtapa.addEventListener('click', () => {
    mudaPara.terceiraParteForm.classList.add('active')
 })
 
-botaoQue.finalizaEtapas.addEventListener('click', () => {
-
-   mudaPara.terceiraParteForm.classList.toggle('active')
-   mudaPara.resultado.classList.add('active')
-})
-
 botaoQue.voltaPrimeiraEtapa.addEventListener('click', () => {
 
    mudaPara.segundaParteForm.classList.toggle('active')
@@ -134,6 +128,82 @@ botaoQue.voltaSegundaEtapa.addEventListener('click', () => {
    mudaPara.terceiraParteForm.classList.toggle('active')
    mudaPara.segundaParteForm.classList.add('active')
 })
+
+botaoQue.finalizaEtapas.addEventListener('click', () => {
+   mudaPara.terceiraParteForm.classList.toggle('active')
+   mudaPara.resultado.classList.add('active')
+
+   resultado_da_essencia()
+})
+
+function resultado_da_essencia() {
+   const
+      data = /([0-9]{4})-([0-9]{2})-([0-9]{2})/,
+      pegarData = data.exec(document.querySelector('#nasce-user').value),
+
+      day = pegarData[3],
+      month = pegarData[2],
+      ano_de_nascimento = pegarData[1]
+
+   var momentoAtual = new Date().getFullYear()
+   var mesAtual = new Date().getMonth() 
+   var idade = momentoAtual - ano_de_nascimento 
+
+   var anosFinais = 76 - idade
+   var anosFinaisEmDias = anosFinais * 365
+
+   var essenciaEm = {
+      meses: anosFinais * 12,
+      semanas: anosFinais * 52,
+      horas: (anosFinais * 365) * 24
+   }
+
+   if (idade <= 15) {
+      document.querySelector('#passa-titulo-essencia').innerHTML = `Muito cedo pro teste 😅`
+   }
+
+   else if (idade >= 77 && idade <= 100) {
+      document.querySelector('#passa-titulo-essencia').innerHTML = `Aproveite sua essência 😋`
+   }
+
+   else if (idade >= 101) {
+      document.querySelector('#passa-titulo-essencia').innerHTML = `Você não tem essa idade 😑`
+   }
+
+   else {
+      document.querySelector('#passa-titulo-essencia').innerHTML = `Você tem ${anosFinaisEmDias} dias de essência`
+
+      document.querySelector('.essencia-anos').innerHTML = `${anosFinais} anos`
+      document.querySelector('.essencia-meses').innerHTML = `${essenciaEm.meses} meses`
+
+      document.querySelector('.essencia-semanas').innerHTML = `${essenciaEm.semanas} semanas`
+      document.querySelector('.essencia-horas').innerHTML = `${essenciaEm.horas} horas`
+
+      for (var i = 0; i < (idade - 1); i++) {
+         document.querySelector('.container-dos-blocos.anos').innerHTML += "<div id='ano-que-passou'></div>"
+      }
+
+      document.querySelector('.container-dos-blocos.anos').innerHTML += "<div id='ano-atual'></div>"
+      
+      var count = 0
+      while (count < anosFinais) {
+         count++
+         document.querySelector('.container-dos-blocos.anos').innerHTML += "<div id='ano-futuro'></div>"
+      }
+
+      for (var p = 0; p < ((idade * 12) + (mesAtual - 1)); p++) {
+         document.querySelector(".container-dos-blocos.meses").innerHTML += "<div id='meses-que-passaram'></div>"
+      }
+
+      document.querySelector(".container-dos-blocos.meses").innerHTML += "<div id='mes-atual'></div>"
+ 
+      for (var count2 = 0; count2 < ((essenciaEm.meses * .1).toFixed(0)); count2++) {
+         document.querySelector(".container-dos-blocos.meses").innerHTML += `<div id='meses-futuros'></div>`
+      }
+
+      document.querySelector(".container-dos-blocos.meses").innerHTML += ` + ${(essenciaEm.meses * .9).toFixed(0)}`
+   }
+}
 
 botaoQue.compartilhaSite.onclick = () => {
    mudaPara.fecharSharePorFora.style.display = 'block'
@@ -174,11 +244,3 @@ botaoQue.copiaLink.onclick = function copiarLinkDoSite(modo) {
       setTimeout()
    }, 1000)
 }
-
-// const
-   //    data = /([0-9]{4})-([0-9]{2})-([0-9]{2})/,
-   //    pegarData = data.exec(document.querySelector('#nasce-user').value),
-
-   //    day = pegarData[3],
-   //    month = pegarData[2],
-   //    year = pegarData[1]
