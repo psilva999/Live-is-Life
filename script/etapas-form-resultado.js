@@ -253,11 +253,13 @@ function resultado_da_essencia() {
       mes = pegarData[2],
       ano_de_nascimento = pegarData[1]
 
+   var fimDaEssencia = new Date(`Dec 31, ${Number(ano_de_nascimento) + Number(essencia)}`).getFullYear()
+
    var momentoAtual = new Date().getFullYear()
    var mesAtual = new Date().getMonth() 
    var idade = momentoAtual - ano_de_nascimento 
 
-   var anosFinais = essencia - idade
+   var anosFinais = (fimDaEssencia - 2000) - idade
    var anosFinaisEmDias = anosFinais * 365
 
    var essenciaEm = {
@@ -267,6 +269,8 @@ function resultado_da_essencia() {
    }
 
    var mesesVividos = ((idade * 12) + (mesAtual - 1))
+
+   
 
    if ((day == 30 || day == 31) && mes == 2) {
       document.querySelector('#passa-titulo-essencia').innerHTML = `Am I a joke to you?`
@@ -402,23 +406,23 @@ document.querySelector('#amplia-blocos-meses').onclick = () => {
          var idade = momentoAtual - ano_de_nascimento
 
          var anosFinais = 76 - idade
-         var essenciaEm = { meses: anosFinais * 12, }
+         var essenciaEm = { meses: anosFinais * 12 }
          var mesesVividos = ((idade * 12) + (mesAtual - 1))
 
          document.querySelector("#indica-nome-bloco").innerHTML = 'Meses'
          document.querySelector('#container-dos-blocos-ampliados').innerHTML = ""
 
-         for (var p = 0; p < ((mesesVividos * .3).toFixed(0)); p++) {
+         for (var p = 0; p < ((mesesVividos * .4).toFixed(0)); p++) {
             document.querySelector("#container-dos-blocos-ampliados").innerHTML += "<div id='meses-que-passaram'></div>"
          }
-         document.querySelector("#container-dos-blocos-ampliados").innerHTML += ` ... + ${(mesesVividos * .7).toFixed(0)} ... `
+         document.querySelector("#container-dos-blocos-ampliados").innerHTML += ` ... + ${(mesesVividos * .6).toFixed(0)} ... `
 
          document.querySelector("#container-dos-blocos-ampliados").innerHTML += "<div id='mes-atual'></div>"
 
-         for (var count2 = 0; count2 < ((essenciaEm.meses * .1).toFixed(0)); count2++) {
+         for (var count2 = 0; count2 < ((essenciaEm.meses * .2).toFixed(0)); count2++) {
             document.querySelector("#container-dos-blocos-ampliados").innerHTML += `<div id='meses-futuros'></div>`
          }
-         document.querySelector("#container-dos-blocos-ampliados").innerHTML += ` ... + ${(essenciaEm.meses * .9).toFixed(0)}`
+         document.querySelector("#container-dos-blocos-ampliados").innerHTML += ` ... + ${(essenciaEm.meses * .8).toFixed(0)}`
 
          clearInterval(mostraBlocosAmpliados)
       }

@@ -20,6 +20,12 @@
    -moz-appearance:textfield;
 }
 
+#formulario input[type=date] {
+   color:black;
+   appearance:initial;
+   -moz-appearance:initial;
+}
+
 .configura-nome, .nascimento {
    display:block;
    margin-bottom:30px;
