@@ -1,125 +1,84 @@
-var setorPara = {
-   saberSeTreinaFisico: document.querySelector('.exercicios'),
-   dieta: document.querySelector('.dieta'),
-
-   vidaIntima: document.querySelector('.vida-sexual'),
-   sono: document.querySelector('.sono'),
-
-   satisfeitoVida: document.querySelector('.satisfeito-vida')
-} 
-
-setorPara.saberSeTreinaFisico.addEventListener('click', () => {
-   var exercicios = {
-      gostaDemais: document.querySelector('#cariani'),
-      fazConstantemente: document.querySelector('#exercicios-constantes'),
-
-      maisMenos: document.querySelector('#mais-menos'),
-
-      bemComFisico: document.querySelector('#ryan'),
-      sedentario: document.querySelector('#pessoa-sedentaria')
-   }
-
+document.querySelector('.exercicios').onclick = () => {
    var mudaGif = document.querySelector('#gif-exercicios')
 
-   if (exercicios.gostaDemais.checked) {
+   if (document.querySelector('#cariani').checked) {
       mudaGif.src = 'midia/gifs/gosto-muito.gif'
    }
 
-   else if (exercicios.fazConstantemente.checked) {
+   else if (document.querySelector('#exercicios-constantes').checked) {
       mudaGif.src = 'midia/gifs/constante.gif'
    }
 
-   else if (exercicios.maisMenos.checked) {
+   else if (document.querySelector('#mais-menos').checked) {
       mudaGif.src = 'https://i.ibb.co/QmWDyJq/mais-menos.jpg'
    }
 
-   else if (exercicios.bemComFisico.checked) {
+   else if (document.querySelector('#ryan').checked) {
       mudaGif.src = 'midia/gifs/ryan-pizza.gif'
    }
 
-   else if (exercicios.sedentario.checked) {
+   else if (document.querySelector('#pessoa-sedentaria').checked) {
       mudaGif.src = 'midia/images/sedentario.jpg'
    }
-})
+}
 
-setorPara.dieta.addEventListener('click', () => {
-   var alimentacao = {
-      saudavel: document.querySelector('#saudavel'),
-      flexivel: document.querySelector('#flexivel'),
-
-      desregrada: document.querySelector('#desregrada')
-   }
+document.querySelector('.dieta').onclick = () => {
    var mudaDieta = document.querySelector('#img-alimentacao')
 
-   if (alimentacao.saudavel.checked) {
+   if (document.querySelector('#saudavel').checked) {
       mudaDieta.src = 'midia/images/alm-saudavel.jpg'
    }
 
-   else if (alimentacao.flexivel.checked) {
+   else if (document.querySelector('#flexivel').checked) {
       mudaDieta.src = 'midia/images/alm-flexivel.jpg'
    }
 
-   else if (alimentacao.desregrada.checked) {
+   else if (document.querySelector('#desregrada').checked) {
       mudaDieta.src = 'midia/images/alm-gordurosa.jpg'
    }
-})
+}
 
-setorPara.vidaIntima.addEventListener('click', () => {
-   var intimo = {
-      naoInforma: document.querySelector('#nao-informa-vida-sexual'),
-      baixa: document.querySelector('#baixa'),
-
-      equilibrada: document.querySelector('#equilibrada'),
-      ativa: document.querySelector('#ativa')
-   }
+document.querySelector('.vida-sexual').onclick = () => {
    var mudaVidaIntima = document.querySelector('#imagem-vida-sexual')
 
-   if (intimo.naoInforma.checked) {
+   if (document.querySelector('#nao-informa-vida-sexual').checked) {
       mudaVidaIntima.src = 'midia/images/silence.jpg'
    }
 
-   else if (intimo.baixa.checked) {
+   else if (document.querySelector('#baixa').checked) {
       mudaVidaIntima.src = 'midia/images/em-baixa.png'
    }
 
-   else if (intimo.equilibrada.checked) {
+   else if (document.querySelector('#equilibrada').checked) {
       mudaVidaIntima.src = 'midia/images/equilibrada.png'
    }
 
-   else if (intimo.ativa.checked) {
+   else if (document.querySelector('#ativa').checked) {
       mudaVidaIntima.src = 'https://i.ibb.co/7jRK69c/free-woman.jpg'
    }
-})
+}
 
-setorPara.sono.addEventListener('click', () => {
-   var nivelSono = {
-      nulo: document.querySelector('#sono-nulo'),
-      dormeMal: document.querySelector('#dorme-mal'),
-
-      normal: document.querySelector('#sono-normal'),
-      dorminhoco: document.querySelector('#dorminhoco')
-   }
-
+document.querySelector('.sono').onclick = () => {
    var mudaGifSono = document.querySelector("#gif-horas-sono")
 
-   if (nivelSono.nulo.checked) {
+   if (document.querySelector('#sono-nulo').checked) {
       mudaGifSono.src = 'midia/gifs/insonia.gif'
    }
 
-   else if (nivelSono.dormeMal.checked) {
+   else if (document.querySelector('#dorme-mal').checked) {
       mudaGifSono.src = 'midia/gifs/2-4-horas.gif'
    }
 
-   else if (nivelSono.normal.checked) {
+   else if (document.querySelector('#sono-normal').checked) {
       mudaGifSono.src = 'midia/gifs/5-8-horas.gif'
    }
 
-   else if (nivelSono.dorminhoco.checked) {
+   else if (document.querySelector('#dorminhoco').checked) {
       mudaGifSono.src = 'midia/gifs/dorminhoco.gif'
    }
-})
+}
 
-setorPara.satisfeitoVida.addEventListener('click', () => {
+document.querySelector('.satisfeito-vida').onclick = () => {
    var vida = {
       muitoBoa: document.querySelector('#muito-bom'),
       boa: document.querySelector('#bom'),
@@ -189,4 +148,4 @@ setorPara.satisfeitoVida.addEventListener('click', () => {
       gif.sad.src = ''
       gif.sad.style.display = 'none'
    }
-})
+}

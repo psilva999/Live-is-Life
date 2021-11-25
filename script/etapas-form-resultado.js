@@ -270,8 +270,6 @@ function resultado_da_essencia() {
 
    var mesesVividos = ((idade * 12) + (mesAtual - 1))
 
-   
-
    if ((day == 30 || day == 31) && mes == 2) {
       document.querySelector('#passa-titulo-essencia').innerHTML = `Am I a joke to you?`
 
