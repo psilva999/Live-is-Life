@@ -1,7 +1,5 @@
 var input = {
    nome: document.querySelector('#nome-user'),
-   nascimento: document.querySelector('#nasce-user'),
-
    altura: document.querySelector('#altura-user'),
    peso: document.querySelector('#peso-user'),
 
@@ -16,6 +14,23 @@ var input = {
 
    reabilitacao: document.querySelector("#reabilitacao"),
    limpo_de_substancias: document.querySelector("#limpo-substancias")
+}
+
+document.querySelector('#nasce-user').onclick = () => { teste() }
+
+function teste() {
+   var nasceUser = document.querySelector('#nasce-user')
+
+   nasceUser.value = '1999-04-03'
+   nasceUser.style.background = '#F2F2F2'
+   nasceUser.style.color = 'black'
+
+   nasceUser.style.animation = 'none'
+   nasceUser.style.border = '.1rem solid transparent'
+
+   nasceUser.style.backgroundClip = 'none'
+   nasceUser.style.opacity = '.8'
+   nasceUser.style.fontFamily = "'Baloo Thambi 2', cursive"
 }
 
 input.nome.onkeypress = function(insereNome) {
