@@ -1,0 +1,210 @@
+@charset 'UTF-8';
+
+#tela-borrada-para-mostrar-calendario, .calendario {
+   display:block;
+}
+
+#tela-borrada-para-mostrar-calendario {
+   position:fixed;
+   width:100vw;
+   height:100vh;
+   top:0;
+   left:0;
+   background:rgba(0,0,0,.5);
+   animation:mostra-calendario .1s linear forwards;
+}
+
+.calendario {
+   font-family:'Kalam', cursive;
+   padding:2rem;
+   position:fixed;
+   width:37.5rem;
+   height:25rem;
+   border-radius:3rem;
+   overflow-y:auto;
+   place-items:center;
+   box-shadow:4px 4px 8px rgba(0,0,0,.6);
+   border:.125rem solid #804C2B;
+   background:#fe690a;
+   background:linear-gradient(135deg, rgba(254,105,10,1) 8%, rgba(233,124,9,1) 42%, rgba(254,105,10,1) 86%);
+   animation:mostra-calendario .2s linear forwards;
+   scrollbar-width:thin;
+   scrollbar-color:#F2F2F2;
+}
+
+.calendario::-webkit-scrollbar {
+   width:.4rem;
+}
+
+.calendario::-webkit-scrollbar-track {
+   background:#F2F2F2;
+   border-radius:1rem;
+}
+
+.calendario::-webkit-scrollbar-thumb {
+   background-color:#CC5308;
+   border-radius:1rem;
+}
+
+
+@keyframes mostra-calendario {
+   0% {
+      opacity:0;
+   }
+
+   100% {
+      opacity:1;
+   }
+}
+
+@keyframes retira-calendario {
+   0% {
+      opacity:1;
+   }
+
+   100% {
+      opacity:0;
+   }
+}
+
+.calendario, .calendario span {
+   color:black;
+}
+
+.calendario span, li {
+   cursor:pointer;
+   transition:.3s;
+}
+
+.calendario span {
+   opacity:.6;
+}
+
+.calendario span:hover, .dias li:hover {
+   opacity:1;
+   transition:.6s;
+}
+
+.calendario div:nth-child(1), .dias div {
+   display:flex;
+   align-items:center;
+   justify-content:space-between;
+} 
+
+.calendario div:nth-child(1), .dias, .dias div {
+   width:100%;
+}
+
+.calendario div:nth-child(1) {
+   font-size:1.5rem;
+}
+
+.calendario ul {
+   list-style:none;
+   display:flex;
+}
+
+.calendario .dias {
+   font-size:1.3rem;
+   flex-wrap:wrap;
+   margin-top:1rem;
+} 
+
+.dias div {
+   margin-top:1rem;
+   font-family:'Baloo Thambi 2', cursive;
+}
+
+.calendario .dias div li {
+   margin-left:0rem;
+}
+
+.dias li {
+   width:2.5rem;
+   text-align:center;
+   min-height:2rem;
+   border-radius:.5rem;
+   padding-top:.2rem;
+   opacity:.7;
+}
+
+.dias li:hover {
+   background:#CC5308;
+}
+
+.dias div:nth-child(5) {
+   justify-content:space-between;
+   width:12.7rem;
+}
+
+#meses {
+   width:100%;
+}
+
+#meses div {
+   display:flex;
+   justify-content:space-between;
+   align-items:center;
+   font-size:1.3rem;
+   list-style:none;
+}
+
+#meses div li {
+   margin-top:2rem;
+   border-radius:.3rem;
+   padding-top:.1rem;
+   width:6rem;
+   text-align:center;
+   transition:.3s;
+   opacity:.8;
+}
+
+#meses div li:hover {
+   background:#CC5308;
+   transition:.6s;
+   opacity:1;
+}
+
+@media (max-width:920px) {
+   .calendario {
+      width:30rem;
+      height:25rem;
+   }
+
+   .dias div:nth-child(5) {
+      width:10.2rem;
+   }
+}
+
+@media (max-width:520px) {
+   .calendario {
+      width:24.375rem;
+   }
+
+   #meses div li {
+      margin-top:2.6rem;
+      width:5rem;
+      font-size:1rem;
+   }
+}
+
+@media (max-width:440px) {
+   .calendario {
+      width:18rem;
+   }
+
+   .dias div:nth-child(5) {
+      width:5.8rem;
+   }
+
+   #meses {
+      width:110%;
+      margin-left:-1rem;
+   }
+}
+
+@media (max-height:430px) {
+   .calendario {
+      height:85vh;
+   }
+}
