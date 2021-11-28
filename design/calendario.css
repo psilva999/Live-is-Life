@@ -1,7 +1,7 @@
 @charset 'UTF-8';
 
 #tela-borrada-para-mostrar-calendario, .calendario {
-   display:block;
+   display:none;
 }
 
 #tela-borrada-para-mostrar-calendario {
@@ -11,7 +11,6 @@
    top:0;
    left:0;
    background:rgba(0,0,0,.5);
-   animation:mostra-calendario .1s linear forwards;
 }
 
 .calendario {
@@ -27,9 +26,12 @@
    border:.125rem solid #804C2B;
    background:#fe690a;
    background:linear-gradient(135deg, rgba(254,105,10,1) 8%, rgba(233,124,9,1) 42%, rgba(254,105,10,1) 86%);
-   animation:mostra-calendario .2s linear forwards;
    scrollbar-width:thin;
    scrollbar-color:#F2F2F2;
+}
+
+#meses, #anos {
+   display:none;
 }
 
 .calendario::-webkit-scrollbar {
@@ -46,7 +48,6 @@
    border-radius:1rem;
 }
 
-
 @keyframes mostra-calendario {
    0% {
       opacity:0;
@@ -57,30 +58,30 @@
    }
 }
 
-@keyframes retira-calendario {
-   0% {
-      opacity:1;
-   }
-
-   100% {
-      opacity:0;
-   }
+#fecha-calendario {
+   position:fixed;
+   right:.7rem;
+   top:.4rem;
+   color:#F2F2F2;
+   font-size:2rem;
+   text-align:center;
+   height:2.5rem;
 }
 
 .calendario, .calendario span {
    color:black;
 }
 
-.calendario span, li {
+.calendario img, span, li {
    cursor:pointer;
    transition:.3s;
 }
 
-.calendario span {
+.calendario span, img {
    opacity:.6;
 }
 
-.calendario span:hover, .dias li:hover {
+.calendario img:hover, span:hover, .dias li:hover {
    opacity:1;
    transition:.6s;
 }
@@ -137,6 +138,26 @@
    width:12.7rem;
 }
 
+.calendario button {
+   position:absolute;
+   font-size:1.2rem;
+   background:#CC5308;
+   height:1.6rem;
+   min-width:2rem;
+   padding-left:.2rem;
+   border-radius:.2rem;
+   opacity:.8;
+   transition:.3s;
+   cursor:pointer;
+   margin-top:-1.8rem;
+   margin-left:83%;
+}
+
+.calendario button:hover {
+   opacity:1;
+   transition:.6s;
+}
+
 #meses {
    width:100%;
 }
@@ -165,10 +186,50 @@
    opacity:1;
 }
 
+#anos {
+   width:100%;
+}
+
+#anos div {
+   display:flex;
+   justify-content:space-between;
+   align-items:center;
+   font-size:1.1rem;
+   margin-top:2rem;
+}
+
+#anos div li {
+   padding-top:.3rem;
+   width:3rem;
+   border-radius:.6rem;
+   text-align:center;
+   opacity:.8;
+   list-style:none;
+   transition:.3s;
+}
+
+#anos div li:hover { 
+   background:#CC5308;
+   transition:.6s;
+   opacity:1;
+}
+
+.volta-calendar.desativado, .mes.desativado, .ano.desativado {
+   display:none;
+}
+
+.volta-calendar.active, .mes.active, .ano.active {
+   display:block;
+}
+
 @media (max-width:920px) {
    .calendario {
       width:30rem;
       height:25rem;
+   }
+
+   .calendario button {
+      margin-left:79%;
    }
 
    .dias div:nth-child(5) {
@@ -181,16 +242,33 @@
       width:24.375rem;
    }
 
+   #fecha-calendario {
+      font-size:1.7rem;
+      max-height:2.5rem;
+   }
+
+   .calendario button {
+      margin-left:74%;
+   }
+
    #meses div li {
       margin-top:2.6rem;
       width:5rem;
       font-size:1rem;
+   }
+
+   .dias div:nth-child(5) {
+      width:8.3rem;
    }
 }
 
 @media (max-width:440px) {
    .calendario {
       width:18rem;
+   }
+
+   .calendario button {
+      margin-left:66%;
    }
 
    .dias div:nth-child(5) {
@@ -200,6 +278,10 @@
    #meses {
       width:110%;
       margin-left:-1rem;
+   }
+
+   #anos div {
+      font-size:.9rem;
    }
 }
 
