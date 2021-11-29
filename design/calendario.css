@@ -111,6 +111,10 @@
    margin-top:1rem;
 } 
 
+.calendario .escolhido {
+   background:#CC5308;
+}
+
 .dias div {
    margin-top:1rem;
    font-family:'Baloo Thambi 2', cursive;
@@ -118,6 +122,10 @@
 
 .calendario .dias div li {
    margin-left:0rem;
+}
+
+.dias .d-31 {
+   display:none;
 }
 
 .dias li {
@@ -133,9 +141,13 @@
    background:#CC5308;
 }
 
-.dias div:nth-child(5) {
+.dias .container {
    justify-content:space-between;
    width:12.7rem;
+}
+
+.dias .container.ajustavel {
+   width:7.6rem;
 }
 
 .calendario button {
@@ -232,8 +244,12 @@
       margin-left:79%;
    }
 
-   .dias div:nth-child(5) {
+   .dias .container {
       width:10.2rem;
+   }
+
+   .dias .container.ajustavel {
+      width:6.37rem;
    }
 }
 
@@ -257,8 +273,12 @@
       font-size:1rem;
    }
 
-   .dias div:nth-child(5) {
+   .dias .container {
       width:8.3rem;
+   }
+
+   .dias .container.ajustavel {
+      width:5.41rem;
    }
 }
 
@@ -271,7 +291,7 @@
       margin-left:66%;
    }
 
-   .dias div:nth-child(5) {
+   .dias .container {
       width:5.8rem;
    }
 
@@ -282,6 +302,11 @@
 
    #anos div {
       font-size:.9rem;
+   }
+
+   .dias .container.ajustavel {
+      width:4.0rem;
+      margin-left:-.1rem;
    }
 }
 
