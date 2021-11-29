@@ -21,7 +21,6 @@
    background-color:#F2F2F2;
    background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQlocEIs9UbgxZWp1Son4-rI_cM7-bS7nLQfoWRFz77yRAk35jbqBjFmnU1DgQZRQZ834&usqp=CAU') no-repeat center;
    cursor:pointer;
-   height:3.2rem;
    background-clip:content-box;
    border-bottom:.1rem dashed #F2F2F2;
    border-right:.1rem dashed #F2F2F2;
@@ -209,7 +208,6 @@
    }
 
    #formulario input[type=date] {
-      height:2.7rem;
       margin-top:.3rem;
    }
 

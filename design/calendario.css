@@ -72,12 +72,12 @@
    color:black;
 }
 
-.calendario img, span, li {
+.calendario img, .calendario span, .calendario li {
    cursor:pointer;
    transition:.3s;
 }
 
-.calendario span, img {
+.calendario span, .calendario img {
    opacity:.6;
 }
 

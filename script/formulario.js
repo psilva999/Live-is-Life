@@ -635,7 +635,7 @@ function insere_nascimento() {
    dataNascimentoUser.style.color = 'black'
 
    dataNascimentoUser.style.animation = 'none'
-   dataNascimentoUser.style.border = '.1rem solid transparent'
+   dataNascimentoUser.style.border = '.08rem solid transparent'
 
    dataNascimentoUser.style.backgroundClip = 'none'
    dataNascimentoUser.style.opacity = '.8'
