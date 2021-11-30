@@ -772,7 +772,7 @@ function remove_background_dos_meses() {
 }
 
 function ativa_dias_finais_do_mes() {
-   document.querySelector('.d-29').style.display = 'block'
+   document.querySelector('.d-29').style.visibility = 'visible'
    document.querySelector('.d-30').style.display = 'block'
    document.querySelector('.d-31').style.display = 'block'
 }
@@ -801,16 +801,9 @@ mesDe.fevereiro.onclick = () => {
    mesDe.fevereiro.classList.add('escolhido')
    modifica.mes.innerHTML = 'Fevereiro'
    
+   document.querySelector('.d-29').style.visibility = 'hidden'
    document.querySelector('.d-30').style.display = 'none'
    document.querySelector('.d-31').style.display = 'none'
-
-   if (ano == 1924 || ano == 1928 || ano == 1932 || ano == 1936 || ano == 1940 || ano == 1944 || ano == 1948 || ano == 1952 || ano == 1956 || ano == 1960 || ano == 1964 || ano == 1968 || ano == 1972 || ano == 1976 || ano == 1980 || ano == 1984 || ano == 1988 || ano == 1992 || ano == 1996 || ano == 2000 || ano == 2004 || ano == 2008 || ano == 2012 || ano == 2016) {
-      document.querySelector('.d-29').style.display = 'block'
-   }
-
-   else {
-      document.querySelector('.d-29').style.display = 'none'
-   }
 }
 
 mesDe.marco.onclick = () => {
@@ -881,11 +874,10 @@ mesDe.setembro.onclick = () => {
 }
 
 mesDe.outubro.onclick = () => {
-   container_dias_finais_flexivel()
+   container_dias_finais_completo()
    remove_background_dos_meses()
    ativa_dias_finais_do_mes()
 
-   document.querySelector('.d-31').style.display = 'none'
    mesDe.outubro.classList.add('escolhido')
    modifica.mes.innerHTML = 'Outubro'
 }
